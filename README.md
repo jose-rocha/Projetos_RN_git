@@ -8,4 +8,4 @@ uma pequena alteração.
 
 Alteração feita no branch master
 
-hhhhd
+hhhhd clear

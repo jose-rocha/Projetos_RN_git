@@ -8,6 +8,4 @@ uma pequena alteração.
 
 Alteração feita no branch master
 
-hhhhd clear
-
-ffgggg
+modificado dia 26-02-20

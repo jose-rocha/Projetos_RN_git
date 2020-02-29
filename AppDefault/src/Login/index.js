@@ -1,20 +1,20 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
 
-class Configuracao extends Component{
+class Login extends Component{
   
 
     render(){
       return(
         <View style={styles.View}>
             <View style={styles.div}> 
-              <Text style={styles.Texto}>Configurações</Text>
+              <Text style={styles.Texto}>Login</Text>
             </View>
 
             <View style={{paddingTop: 10}}>
               <Button 
-                title='Voltar' 
-                onPress={()=> this.props.navigation.goBack()}
+                title='Navegar' 
+                onPress={()=> this.props.navigation.navigate ('Home')}
               />
             </View> 
          </View>
@@ -44,4 +44,4 @@ class Configuracao extends Component{
   
     });
   
-    export default Configuracao;
+    export default Login;

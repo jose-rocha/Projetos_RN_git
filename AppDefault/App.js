@@ -3,10 +3,13 @@ import{createStackNavigator} from 'react-navigation-stack';
 
 import Home from './src/Home';
 import Contato from './src/Contato';
-import Configuracao from './src/Configuracao';
+import Login from './src/Login';
 import Sobre from './src/Sobre';
 
 const AppNavigator = createStackNavigator  ({
+  Login: {
+    screen: Login
+  },
   Home:{
     screen: Home
     
@@ -14,9 +17,7 @@ const AppNavigator = createStackNavigator  ({
   Contato:{
     screen: Contato
   },
-  Configuracao: {
-    screen: Configuracao
-  },
+  
   Sobre: {
     screen: Sobre
   }

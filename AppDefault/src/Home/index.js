@@ -17,12 +17,7 @@ class Home extends Component{
               />
              </View>
              
-             <View style={{paddingTop: 10}}>
-             <Button 
-                title='ir para tela de Configuracões' 
-                onPress={()=> this.props.navigation.navigate('Configuracao')}
-              />
-             </View>
+             
 
              <View style={{paddingTop: 10}}>
              <Button 

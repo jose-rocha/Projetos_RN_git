@@ -7,6 +7,9 @@ class Login extends Component{
     render(){
       return(
         <View style={styles.View}>
+
+             <Text style={{fontSize: 20}}>Seja Bem Vindo</Text>
+
             <View style={styles.div}> 
               <Text style={styles.Texto}>Login</Text>
             </View>
@@ -33,8 +36,8 @@ class Login extends Component{
       width:'98%',
       height: 50,
       backgroundColor: 'black',
-      justifyContent: 'center'
-  
+      justifyContent: 'center',
+      margin: 5
     },
     Texto: {
       color: 'white',

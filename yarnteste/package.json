@@ -1,0 +1,11 @@
+{
+  "name": "yarnteste",
+  "version": "1.0.0",
+  "description": "projetos yarn",
+  "main": "index.js",
+  "author": "Jose Rocha",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}

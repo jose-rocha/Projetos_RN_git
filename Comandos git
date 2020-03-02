@@ -1,0 +1,63 @@
+Iniciando repositório em uma pasta/projeto git init.
+
+01- qual branch estou --->> git branch
+
+02- como saber o estado -->> git status e git log
+
+03- adicionando todos os arquivos  --->> git add -A   
+ 
+3.5- adicionando arquivo especifico --->> git add nome do aqruivo/pasta lembrando que se tiver extensão tem que colocar, ex: .html .pdf
+
+04- fazendo commit --> git commit  -m "aqui coloca uma prévia do que foi feito"
+
+4.5- fazendo commit sem precisar passar pelo git add -A --> git commit  -am "aqui coloca uma prévia do que foi feito"
+
+05- revertendo mudanças --
+
+5.1- voltando para versão anterior --> git reset --soft e os 7 primeiro digito do commit a qual quer reverter 480c13f,  ex: git reset --soft 480c13f
+
+5.2- voltando para versão anterior --> git reset --mixed e os 7 primeiro digito do commit a qual quer reverter 480c13f,  ex: git reset --mixed 480c13f
+nessa opção vai ser preciso depoisdar um git add -A.
+
+5.3- voltando para uma versão especifica e ignorando as mudanças anteriores --> git reset -hard e os 7 primeiro digito do commit a qual quer reverter 480c13f,  
+ex: git reset --hard 480c13f
+
+obs: não recomendado quando se estar trabalhando em equipe o ideal seria o --soft.
+
+
+6.0- criando um novo branch -->> git branch nome do branch,  ex: git branch teste
+
+6.1- mudando de branch -->> git checkout nome do branch a qual quer entrar, ex:git checkout teste
+
+7.0- como saber a lista dos arquivos que foram modificado -->> git diff
+
+7.1- como saber quais arquivos foram modificados -->> git diff  --name-only
+
+8.0- outro modo de voltar uma versão num arquivo especifico -->> git checkout HEAD -- nome do arquivo com extensão e ocaminho 
+ex: git checkout HEAD -- Projeto_RN/App/src/login/index.js
+
+9.0- revertendo o commit -->> git revert --no-edit e os 7 primeiros numeros do commit, ex:  git revert --no-edit 8b78b78
+
+
+
+10- criando branch remoto -->> git push origin nome do branch, ex: git push origin teste
+
+10.1 deletando branches remotos -- >> git push origin :nome do branch, ex: git push origin :teste
+
+10.2- deletando branches locais -- >> git branch -D nome do branch, ex: git branch -D teste
+
+11- trazendo modificações do repositório remoto -->> git pull origin nome do brach, ex:  git pull origin master
+
+
+12- clonando repositórios -->> git clone url do projeto, ex: git clone https://github.com/jose-rocha/Pojetos_RN_git
+
+
+-- ignorando arquivos para não subir para o repositório, crie um arquivo .gitignore e dentro dele coloque o nome das 
+extensões ou arquivos que não queira que sejam commitados --
+
+
+
+
+
+
+0- subindo arquivos para o repositório no github -->> git push -u origin master 8b78b78

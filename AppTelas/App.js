@@ -4,6 +4,7 @@ import {createStackNavigator} from 'react-navigation-stack';
 
 import Home from './src/Home';
 import Contato from './src/Contato';
+import TelaTeste from './src/TelaTeste';
 
 const NavegaTela = createStackNavigator({
   Home: {
@@ -11,6 +12,9 @@ const NavegaTela = createStackNavigator({
   },
   Contato:{ 
     screen: Contato
+  },
+  TelaTeste: {
+    screen: TelaTeste
   }
 });
 

@@ -1,0 +1,27 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add react-native
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/josedev/Android/Sdk/emulator:/home/josedev/Android/Sdk/tools:/home/josedev/Android/Sdk/tools/bin:/home/josedev/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  13.9.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:64:26)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

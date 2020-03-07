@@ -1,6 +1,6 @@
-Nesse projeo expo use a biblioteca 
+Nesse projeto expo usei a biblioteca 
 
  expo-speech
 
 
- é só rodr o comando  --->> expo install expo-speech
+ é só rodar o comando  --->> expo install expo-speech

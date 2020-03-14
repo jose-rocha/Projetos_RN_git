@@ -1,7 +1,7 @@
 Projeto Tarefas.
 
 
-Esse projeto foi feito através do Workshop aula 2 do sujeito programador.
+Esse projeto foi feito através do Workshop aula 2 no youtubedo sujeito programador.
 
 E como o próprio nome já diz "tarefas" a intenção dele é marcar a tarefas do dia dia.
 

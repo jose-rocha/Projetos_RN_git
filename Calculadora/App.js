@@ -128,8 +128,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#000',
     color: '#FFf',
-    fontSize:50,
-    textAlign: 'right'
+    fontSize:40,
+    textAlign: 'right',
   }
   
 

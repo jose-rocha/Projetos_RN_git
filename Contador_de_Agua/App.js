@@ -18,8 +18,16 @@ export default class ContaAgua extends Component{
       if (s.pct >= 100) {
          s.status ='Bom';
       }
-       else  {
-        s.status = 'Ruim';
+       else if (s.pct >= 25) {
+        s.status = 'Ainda falta muito';
+
+       if (s.pct >= 50) {
+        s.status = 'regular';
+
+       } if (s.pct >= 75) {
+        s.status = 'Quase lá';
+       }
+       
       } 
 
      

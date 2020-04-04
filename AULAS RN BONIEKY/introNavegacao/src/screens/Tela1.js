@@ -1,18 +1,12 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, Button} from 'react-native';
 
 export default class Tela1 extends Component{
     render(){
         return(
-            <View style={StyleSheet.body}>
-                    <Text>tela 1</Text>
+            <View>
+                <Button title="Ir para Specs" onPress={()=> this.props.navigation.navigate('Tela2',{nome: 'José', Idade: 27})} />
             </View>
-        )
+        );
     }
 }
-
-const styles = StyleSheet.create({
-    body:{
-
-    }
-});

@@ -6,13 +6,6 @@ Pacotes usados nessa aula:
 
 3: yarn add react-navigation-stack
 
-4: yarn add react-navigation-drawer    ----  esse só sera usado sefor mexer como Drawer
-
-
-
-As configurações iniciais está baseada na aula do Sujeito Programador do módulo 8 "Navegação" -> Trabalhando com Tabs, para que o app funcionasse sem problemas.
-
-
 lembre que para funcionar o passar dedo e abrir o "Drawer" precisa configurar o arquivo MainActivity.java e deixa-lo como é mostradoabaixo:
 
 

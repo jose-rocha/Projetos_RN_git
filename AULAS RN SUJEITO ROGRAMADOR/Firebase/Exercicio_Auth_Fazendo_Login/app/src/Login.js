@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet, TextInput, Button} from 'react-native';
 
-import firebase from  './src/firebaseConnection';
+import firebase from  './firebaseConnection';
+import {NavigationActions, StackActions} from 'react-navigation';
 
 console.disableYellowBox =true
 
-export default class App extends Component{
+export default class Login extends Component{
 
   constructor(props){
     super(props);
@@ -17,22 +18,25 @@ export default class App extends Component{
 
     this.logar = this.logar.bind(this);
 
-    this.sair = this.sair.bind(this);
+  
 
     //olheiro do firebase, onAuthStateChanged server para ficar olhando se o usuário logou, deslogou se mudar a senha ele vai ser executado
     firebase.auth().onAuthStateChanged((user)=> {
       if(user){
-        alert('Usuário logado com sucesso!');
+        alert('Bem vindo!');
+        this.props.navigation.dispatch(StackActions.reset({
+            index: 0,
+            actions:[
+                NavigationActions.navigate({routeName: 'Home'})
+            ]
+        }));
       } 
     })
 
      
   }
 
-  sair(){
-    firebase.auth().signOut();
-    alert('Deslogado com sucesso!');
-  }
+ 
 
   logar(){
    
@@ -53,7 +57,9 @@ export default class App extends Component{
   render(){
     return(
       <View style={styles.container}>
-        <Text style={{fontSize: 30, textAlign: 'center'}}>Fazer Login</Text>
+
+        <Text style={{fontSize: 30, textAlign: 'center'}}>Entrar</Text>
+
        <TextInput  style={styles.input} placeholder="Email"
         underlineColorAndroid="transparent" onChangeText={(email)=>{this.setState({email})}} />
 
@@ -62,7 +68,7 @@ export default class App extends Component{
 
        <Button title="Entrar" onPress={this.logar} />
 
-       <Button title="Logout" onPress={this.sair} />
+       
       </View>
     )
   }
@@ -71,10 +77,11 @@ export default class App extends Component{
 const styles = StyleSheet.create({
   container:{
     flex:1,
-    padding: 20,
+    padding: 15,
+    backgroundColor: '#aef'
   },
   input:{
-    width: 300,
+    width: 325,
     height:50,
     backgroundColor: '#ccc',
     fontSize: 22,

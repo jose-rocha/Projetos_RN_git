@@ -1,0 +1,4 @@
+#Mon Apr 27 17:14:45 BRT 2020
+base.0=C\:\\Users\\josem\\Pojetos_RN_git\\AULAS RN SUJEITO ROGRAMADOR\\Usando Maps\\UberMaps\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

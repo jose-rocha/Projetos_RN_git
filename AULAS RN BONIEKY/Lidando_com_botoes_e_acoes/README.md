@@ -1,1 +1,0 @@
-Nesse app ele tem a condição,se colocar o nome correto aparecera o alert("você acertou") caso contrário alert("você aerrou") 

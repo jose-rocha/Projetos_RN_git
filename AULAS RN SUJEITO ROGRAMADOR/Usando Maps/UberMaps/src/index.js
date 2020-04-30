@@ -15,20 +15,10 @@ export default class UberMaps extends Component{
         }
     };
 
-    this.moverCidade = this.moverCidade.bind(this);
+    
 }
 
-moverCidade(lat, long){
-    let state = this.state;
-    let region = {
-                latitude: lat,
-                longitude:long,
-                latitudeDelta:0.0922,
-                longitudeDelta:0.0421
-    };
-    state.region = region;
-    this.setState(state);
-}
+
     render(){
         const {region} = this.state;
     return(
@@ -41,13 +31,7 @@ moverCidade(lat, long){
             region={region}
             />
 
-        <View style={{flexDirection: 'row'}}>
-            <Button title={'Brasilia'} onPress={()=> {this.moverCidade(-15.808037, -47.8750231)}} />
-            <Button title={'São Paulo'} onPress={()=> {this.moverCidade(-23.5505, -46.6333)}} />
-            <Button title={'SBC-SP'} onPress={()=> {this.moverCidade(-23.6916052, -46.5664753)}} />
-        </View>
-
-        <Text>{region.latitude} | {region.longitude} </Text>
+    
         
         </View>
     )
@@ -64,6 +48,7 @@ const styles = StyleSheet.create({
     },
     mapa:{
         height:550,
-        width:'100%' 
+        width:'100%' ,
+        flex:1
     }
 });

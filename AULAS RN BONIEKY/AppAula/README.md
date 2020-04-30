@@ -1,0 +1,1 @@
+Nesse App fica mudando de segundo e segun a opção de comida.

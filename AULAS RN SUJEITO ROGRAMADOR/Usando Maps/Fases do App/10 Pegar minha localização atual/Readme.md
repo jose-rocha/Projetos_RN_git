@@ -19,7 +19,7 @@ colocar no  arquivo \mapsTeste3\android\app\src\main\AndroidManifest.xml
 não precisa criar o link
 2: react-native link react-native-maps
 
-no arquivo index.js, a parte que usa a localização real do dispositivo agora icou diferente da do curso.
+no arquivo index.js, a parte que usa a localização real do dispositivo agora ficou diferente da do curso.
 
 pimeira usa o import novo
 

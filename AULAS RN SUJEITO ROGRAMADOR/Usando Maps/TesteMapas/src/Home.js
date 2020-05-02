@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
-export default class TelaHome extends Component{
+export default function TelaHome(props) {
 
-    render(){
-  return(
+ 
+  
+ return(
+
+    
       
     <View style={styles.Container}>
       <Text style={styles.titulo}>Testando Navegação com Maps</Text>
      
-      <TouchableOpacity onPress={()=> this.props.navigation.navigate('Mapas')} style={styles.botao}>
+      <TouchableOpacity onPress={()=> props.navigation.navigate('Mapas')} style={styles.botao}>
           <Text style={styles.tituloBotao}>Ir para o Mapa</Text>
       </TouchableOpacity>
     </View>
   )
 }
-}
+
 
 const styles = StyleSheet.create({
   Container:{
@@ -42,4 +45,4 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: '#fff'
   }
-})
+});

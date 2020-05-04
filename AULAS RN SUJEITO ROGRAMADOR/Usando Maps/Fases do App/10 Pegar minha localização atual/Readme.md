@@ -2,6 +2,7 @@ Pacotes instalados no projeto
 
 1: yarn add react-native-maps --save
 	
+2: yarn add @react-native-community/geolocation
 
 
 colocar no  arquivo \mapsTeste3\android\app\src\main\AndroidManifest.xml  
@@ -17,7 +18,7 @@ colocar no  arquivo \mapsTeste3\android\app\src\main\AndroidManifest.xml
 
 
 não precisa criar o link
-2: react-native link react-native-maps
+3: react-native link react-native-maps
 
 no arquivo index.js, a parte que usa a localização real do dispositivo agora ficou diferente da do curso.
 

@@ -56,7 +56,7 @@ newMarker(e){
                 
             {markers.map((marker)=> {
                 return(
-                    <Marker coordinate={marker.key} coordinate={marker.coords} pinColor={marker.pinColor} />
+                    <Marker key={marker.key} coordinate={marker.coords} pinColor={marker.pinColor} />
                 )
             })}
 

@@ -18,7 +18,7 @@ export default class Jobs extends Component {
                        <EditText>Editar</EditText>
                    </EditItem>
 
-                   <EditItem onPress={()=> {this.props.excluir(this.props.data)}}>
+                   <EditItem onPress={()=> {}}>
                        <EditText>Excluir</EditText>
                    </EditItem>
                </CenterView>

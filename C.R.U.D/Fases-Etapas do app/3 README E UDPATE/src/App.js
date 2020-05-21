@@ -14,7 +14,8 @@ export default class App extends Component {
             nome: '',
             cargo: '',
             idEdit: null,
-            jobs: [] //vai ser para a lista
+            jobs: [], //vai ser para a lista
+            disableBtnCadastrar: true
         };
 
        this.editarJob = this.editarJob.bind(this);
@@ -50,6 +51,7 @@ export default class App extends Component {
         state.nome = data.nome;
         state.cargo = data.cargo;
         state.idEdit = data.id;
+        disableBtnCadastrar: true
         this.setState(state);
     }
 
@@ -78,6 +80,14 @@ export default class App extends Component {
                 <Input autoCapitalize="none" autoCorret={false} value={this.state.cargo} onChangeText={(cargo)=> this.setState({cargo: cargo})} />
 
                 <CenterView>
+                	 <Botao onPress={this.addJob} disabled={this.state.disableBtnCadastrar} 
+                        style={{opacity: this.state.disableBtnCadastrar ? 0.5 : 1}}
+                    >
+                        <BotaoText>Cadastrar</BotaoText>
+                    </Botao>
+
+                
+                
                     <Botao onPress={this.editJob}>
                         <BotaoText >Atualizar Dados</BotaoText>
                     </Botao>

@@ -34,7 +34,13 @@ export default class App extends Component {
     saveJob = async(data) => {
         const realm = await getRealm();
 
-        const id = realm.objects('Job').length + 1;
+        //const id = realm.objects('Job').length + 1;
+        const id = realm.objects('Job').sorted('id', true).length > 0 
+        ? realm.objects('Job').sorted('id', true)[0].id + 1 : 1;  /* Essa atualização de const foi feita na aula "Deletando Dados no minuto 07:20",
+        essa constante serve para se por acaso ao excluir o usuário e quando for criar outro não dê o erro de id, 
+        ex: tem dois users um com id:1 e outro com id:2 e xcluo o de id 1 ao tentar criar o próximo ele retornária um erro que já existe um com id:2, 
+        com essa constatnte não vai mais acontecer o erro */
+
         const dadosJobs = {
             id: id,
             nome: data.nome,

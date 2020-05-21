@@ -21,7 +21,7 @@ A Tela de Specs para poder fazer um botão peguei dicas a respeito do ToucableOp
 As configurações iniciais está baseada na aula do Sujeito Programador do módulo 8 "Navegação" -> Trabalhando com Tabs, para que o app funcionasse sem problemas.  
 
 
-lembre que para funcionar o passar dedo e abrir o "Drawer" precisa configurar o arquivo MainActivity.java e deixa-lo como é mostradoabaixo:
+lembre que para funcionar o passar dedo e abrir o "Drawer" precisa configurar o arquivo MainActivity.java e deixa-lo como é mostrado abaixo:
 
 
 

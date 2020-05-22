@@ -8,6 +8,8 @@ No arquivo AndroidManifest.xml:
 
 <uses-permission android:name="android.permission.USE_FINGERPRINT" />
 
+link da lib: touch-id  'https://www.npmjs.com/package/react-native-touch-id'
+
 
 3: yarn add react-navigation
 
@@ -15,7 +17,11 @@ No arquivo AndroidManifest.xml:
 
 5: yarn add react-navigation-stack
 
-6: yarn add react-navigation-drawer
+6: yarn add react-navigation-drawer    ---> obs: no final tem uma epxlicação para o drawer funcionar  <-----
+
+7: yarn add react-native-vector-icons
+
+8: yarn react-native  link  react-native-vector-icons
 
 
 lembre que para funcionar o passar dedo e abrir o "Drawer" precisa configurar o arquivo MainActivity.java e deixa-lo como é mostrado abaixo:
@@ -51,3 +57,4 @@ public class MainActivity extends ReactActivity {
     };
   }
 }
+

@@ -26,7 +26,7 @@ const NavegaFinger = createDrawerNavigator({
 contentOptions:{
   activeTintColor: '#fff',
   inactiveBackgroundColor: '#fff',
-  activeBackgroundColor:'#ff5500',
+  activeBackgroundColor:'#7159c1',
 
   itemsContainerStyle:{
     marginTop: -4

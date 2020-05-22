@@ -19,7 +19,8 @@ const styles = StyleSheet.create({
     Container:{
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: '#ADD8E6'
     },
     btn:{
         width: '25%',

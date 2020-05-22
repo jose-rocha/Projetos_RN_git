@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {SafeAreaView, StyleSheet, TextInput ,TouchableOpacity, Text, View, Alert } from 'react-native';
 import TouchID from 'react-native-touch-id';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 export default function Login({navigation}) {
 
@@ -21,7 +22,7 @@ export default function Login({navigation}) {
        
 
         <TouchableOpacity style={styles.button}>
-          <Text >Entrar</Text>
+          <Text style={styles.entrarBtn} >Entrar</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.buttonDigital} 
@@ -33,8 +34,13 @@ export default function Login({navigation}) {
           }).catch(()=>{
             Alert.alert('Autenticação Falhou!');
           })}>
-          <Text >Digital</Text>
+
+          <Text style={styles.entrarDigital}>Entrar com Digital</Text>
+          <Icon name="ios-finger-print" size={70} color="#7159c1"/>
+
         </TouchableOpacity>
+
+       
 
       </SafeAreaView>
     );
@@ -46,7 +52,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'grey'
+    backgroundColor: '#ADD8E6'
 
   },
   input:{
@@ -72,15 +78,20 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   buttonDigital:{
-    width: 90,
-    height: 45,
-    borderWidth: 2,
-    borderColor: '#7159c1',
-    backgroundColor: 'green',
+    width: 150,
+    height: 45,    
     borderRadius: 50,
     marginBottom: 10,
     padding: 10,
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  entrarBtn:{
+    color: '#fff',
+  },
+  entrarDigital:{
+    color: '#fff',
+    paddingTop: 55,
+    fontSize: 16
   }
 })

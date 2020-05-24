@@ -25,6 +25,8 @@ export default function Login({navigation}) {
           <Text style={styles.entrarBtn} >Entrar</Text>
         </TouchableOpacity>
 
+        <Text style={styles.entrarDigital}>Entrar com Digital</Text>
+
         <TouchableOpacity style={styles.buttonDigital} 
           onPress={()=>TouchID.authenticate('Por favor confirme a sua biometria!',{
           title: 'Acessar o App!'}).then(()=>{
@@ -35,7 +37,7 @@ export default function Login({navigation}) {
             Alert.alert('Autenticação Falhou!');
           })}>
 
-          <Text style={styles.entrarDigital}>Entrar com Digital</Text>
+          
           <Icon name="ios-finger-print" size={70} color="#7159c1"/>
 
         </TouchableOpacity>
@@ -84,14 +86,15 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     padding: 10,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    paddingTop:55
   },
   entrarBtn:{
     color: '#fff',
   },
   entrarDigital:{
     color: '#fff',
-    paddingTop: 55,
+    paddingTop: 5,
     fontSize: 16
   }
 })

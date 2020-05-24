@@ -1,20 +1,29 @@
+import React from 'react';
 import {createAppContainer} from 'react-navigation';
 import { createDrawerNavigator} from 'react-navigation-drawer';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import Dash from './screen/Dash';
-import Exit from './screen/Exit';
+
+import Dash from './screens/Dash';
+import Exit from './screens/Exit';
 
 const NavegaFinger = createDrawerNavigator({
   Dash:{
     screen: Dash,
     navigationOptions:{
-      headerShown: false
+      headerShown: false,
+      drawerIcon: ()=> (
+        <Icon name="desktop-mac-dashboard" size={20} color="#fff" />
+      )
     }
   },
  Exit:{
     screen:Exit,
     navigationOptions:{
-      headerShown: false
+      headerShown: false,
+      drawerIcon: ()=> (
+        <Icon name="exit-run" size={20} color="#fff" />
+      )
     }
   }
 },
@@ -27,13 +36,9 @@ contentOptions:{
   activeTintColor: '#fff',
   inactiveBackgroundColor: '#fff',
   activeBackgroundColor:'#7159c1',
+  
 
-  itemsContainerStyle:{
-    marginTop: -4
-  },
-  labelStyle:{
-    fontSize: 18
-  }
+  
 
 },
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet, TextInput, Button, TouchableOpacity } from 'react-native';
 
 import firebase from 'firebase';
 
@@ -9,12 +9,21 @@ console.disableYellowBox = true;
 export default class index extends Component {
     constructor(props){
         super(props);
+        
         this.state = {
+          idadeInput: '',
+          tokenInput: '',
+          nomeInput: '',
           token: 'Carregando...',
           nome:'Carregando...',
           idade: 'Carregando...'
         };
     
+        this.cadastrar =this.cadastrar.bind(this);
+        this.atualizarIdade = this.atualizarIdade.bind(this);
+        this.atualizarNome = this.atualizarNome.bind(this);
+
+
        let firebaseConfig = {
           apiKey: "AIzaSyC8Np2uvBplX9G33TV0SAeMpUW0ITO9Eys",
           authDomain: "reactjsapp-dab24.firebaseapp.com",
@@ -39,9 +48,9 @@ export default class index extends Component {
     
         }); */
     
-        //Aqui é um olheiro mas não em realtime  por causa do once.('value'),
+        //Aqui é um olheiro mas não em realtime  por causa do once.('value') se for on.('value') fica realtime,
         //só muda  quando quando dá um refreshná página.
-        firebase.database().ref('token').once('value').then((snapshot)=>{
+        firebase.database().ref('token').on('value',(snapshot)=>{
           let state = this.state;
           state.token = snapshot.val();
           this.setState(state);
@@ -61,8 +70,28 @@ export default class index extends Component {
           this.setState(state);
         });
     
-        
+      
     
+      }
+
+
+      cadastrar(){
+        //inserindo/criando  dados no banco
+       //   alert('t//');
+
+        firebase.database().ref('token').set(this.state.tokenInput);
+        this.state.tokenInput = "";
+
+      }
+
+      atualizarIdade(){
+          firebase.database().ref('usuarios').child(1).child('idade').set(this.state.idadeInput);
+          this.state.idadeInput = "";
+          
+      }
+
+      atualizarNome(){
+          firebase.database().ref('usuarios').child(1).child('nome').set(this.state.nomeInput);
       }
     
       //o nome do banco aqual foi usado nessa aplicação foi ReactJSAPP
@@ -71,11 +100,53 @@ export default class index extends Component {
         return (
          
           <View style={styles.container}>
-            <Text style={styles.texto} >Token: {token} </Text>
-            <Text style={styles.texto} >Nome: {nome} </Text>
-            <Text style={styles.texto} >Idade: {idade} </Text> 
             
-            <View style={styles.segunda}>
+            <View style={styles.form} >
+
+                  
+                    <TextInput autoCapitalize="none" 
+                    autoCorrect={false} 
+                    value={this.state.tokenInput}
+                    onChangeText={(tokenInput)=> this.setState({tokenInput: tokenInput})} 
+                    placeholder="Digite seu token" style={styles.input} 
+                    
+                    />
+
+                  {/*  <Button title="Gerar Token" onPress={()=> this.cadastrar()} /> */}
+
+                  <TouchableOpacity onPress={()=> this.cadastrar()} style={styles.TouchButton} >
+                        <Text style={styles.TextButton} > Cadastrar Token</Text>
+                  </TouchableOpacity>
+
+                    <TextInput autoCapitalize="none" 
+                    autoCorrect={false} 
+                    value={this.state.idadeInput}
+                    onChangeText={(idadeInput)=> this.setState({idadeInput: idadeInput})} 
+                    placeholder="Atualize a idade" style={styles.input} keyboardType="numeric" 
+                    
+                    />
+
+                  { /* <Button title="Atualizar Idade" onPress={()=> this.atualizarIdade()} /> */}
+                    
+                    <TouchableOpacity onPress={()=> this.atualizarIdade()} style={styles.TouchButton} >
+                        <Text style={styles.TextButton} > Atualizar Idade</Text>
+                    </TouchableOpacity>
+
+                    <TextInput autoCapitalize="none" 
+                    autoCorrect={false} 
+                    value={this.state.nomeInput}
+                    onChangeText={(nomeInput)=> this.setState({nomeInput: nomeInput})} 
+                    placeholder="Atualize seu nombre" style={styles.input}  
+                    
+                    />
+
+                  { /* <Button title="Atualizar Idade" onPress={()=> this.atualizarIdade()} /> */}
+                    
+                    <TouchableOpacity onPress={()=> this.atualizarNome()} style={styles.TouchButton} >
+                        <Text style={styles.TextButton} > Atualizar Nome</Text>
+                    </TouchableOpacity>
+
+                    <Text style={styles.texto} >Token: {token} </Text>
                     <Text style={styles.texto} >Nome: {nome} </Text>
                     <Text style={styles.texto} >Idade: {idade} </Text>
             </View>        
@@ -97,14 +168,36 @@ const styles = StyleSheet.create({
         fontSize: 25,
 
     },
-    segunda:{
+    form:{
         
         backgroundColor: '#0fd',
-        height: 100,
-        width: '70%',
+        height: 550,
+        width: '80%',
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 10
+    },
+
+    input:{
+      borderWidth: 2,
+      borderRadius: 5,
+      width: '66%',
+      marginBottom: 10,
+      marginTop: 10
+      
+    },
+    TouchButton:{
+      width: '65%',
+      height:50,
+      borderRadius: 5,
+      backgroundColor: '#836FFF',
+      justifyContent: 'center',
+      alignItems: 'center'
+
+    },
+    TextButton:{
+      fontSize: 18,
+      color: '#fff'
     }
 })
 

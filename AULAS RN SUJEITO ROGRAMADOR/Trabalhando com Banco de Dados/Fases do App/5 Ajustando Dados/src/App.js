@@ -63,8 +63,8 @@ export default class Cadastrar extends Component {
             const data = {nome: this.state.nome, cargo: this.state.cargo};
             await this.saveJob(data);
             let state = this.state;
-            state.nome = ''; //nessa linha ele apaga o nome escrito de qu apertar no cadastrar
-            state.cargo = ''; //nessa linha ele apaga o nome escrito de qu apertar no cadastrar
+            state.nome = ''; //nessa linha ele apaga o nome escrito  quando apertar no cadastrar
+            state.cargo = ''; //nessa linha ele apaga o nome escrito de quando apertar no cadastrar
             this.setState(state);
             Keyboard.dismiss();
             

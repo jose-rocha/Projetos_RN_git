@@ -5,10 +5,18 @@ export default class ReactJS extends Component{
   constructor(props){
     super(props);
     this.state = {
+      tokenInput: '',
+      idadeInput: '',
+      nomeInput: '',
       token: 'Carregando...',
       nome:'',
       idade: ''
     };
+
+
+    this.cadastrar = this.cadastrar.bind(this);
+    this.atualizaIdade = this.atualizaIdade.bind(this);
+    this.atualizaNome = this.atualizaNome.bind(this);
 
    let firebaseConfig = {
       apiKey: "AIzaSyC8Np2uvBplX9G33TV0SAeMpUW0ITO9Eys",
@@ -36,7 +44,7 @@ export default class ReactJS extends Component{
 
     //Aqui é um olheiro mas não em realtime  por causa do once.('value'),
     //só muda  quando quando dá um refreshná página.
-    firebase.database().ref('token').once('value').then((snapshot)=>{
+    firebase.database().ref('token').on('value', (snapshot)=>{
       let state = this.state;
       state.token = snapshot.val();
       this.setState(state);
@@ -56,16 +64,45 @@ export default class ReactJS extends Component{
       this.setState(state);
     });
 
-    //Olheiro de nome e idade
+   /* //Olheiro de nome e idade
     firebase.database().ref('usuarios').child(1).on('value', (snapshot)=>{
       let state = this.state;
       state.nome = snapshot.val().nome;
       state.idade = snapshot.val().idade;
       this.setState(state);
 
-    })
+    }) */
 
   }
+
+ cadastrar(e){
+
+    firebase.database().ref('token').set(this.state.tokenInput);
+
+
+  e.preventDeafult(); //para não atualizar a página quando clicar no botão cadastrar.
+ }
+
+
+
+ atualizaIdade(e){
+   
+   firebase.database().ref('usuarios').child(1).child('idade').set(this.state.idadeInput);
+  
+
+
+  e.preventDeafult(); //para não atualizar a página quando clicar no botão cadastrar.
+
+ }
+
+
+ atualizaNome(e){
+  firebase.database().ref('usuarios').child(1).child('nome').set(this.state.nomeInput);
+
+
+  e.preventDeafult();
+ }
+
 
   //o nome do banco aqual foi usado nessa aplicação foi ReactJSAPP
   render() {
@@ -73,12 +110,54 @@ export default class ReactJS extends Component{
     return (
      
       <div>
+
+        <br/>
+
+          <form   onSubmit={this.cadastrar}  >
+
+            <input  type="text" value={this.state.tokenInput}
+              onChange={(e)=> this.setState({tokenInput: e.target.value})}
+            />
+            <br/>
+
+            <button type="submit" >Cadastrar</button> <br/><br/>
+
+           
+          </form>
+
+          
+
+          <form   onSubmit={this.atualizaIdade} >
+
+          <input  type="text" value={this.state.idadeInput}
+              onChange={(e)=> this.setState({idadeInput: e.target.value})}
+            />
+            <br/>
+
+            <button type="submit" >Atualizar idade</button><br/><br/>
+
+
+          </form>
+
+          <form   onSubmit={this.atualizaNome} >
+
+          <input  type="text" value={this.state.nomeInput}
+              onChange={(e)=> this.setState({nomeInput: e.target.value})}
+            />
+            <br/>
+
+            <button type="submit" >Atualizar Nome</button>
+
+
+          </form>
+
+
+
         <h1>Token: {token} </h1>
         <h1>Nome: {nome} </h1>
         <h1>Idade: {idade} </h1> <hr></hr>
 
-        <h1>Nome: {nome} </h1>
-        <h1>Idade: {idade} </h1>
+        
 
       </div>
     )

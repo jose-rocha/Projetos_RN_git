@@ -9,45 +9,35 @@ export default class ReactJS extends Component{
         senha: ''
 
     };
-    this.logar = this.logar.bind(this);
-    this.sair = this.sair.bind(this);
-
-
-    // firebase.auth().signOut(); //deslogando user.
-
-    firebase.auth().onAuthStateChanged((user)=>{
-      if(user){
-      alert('Usuário logado com sucesso! \n Email: ' + user.email);
-    }
-    })
+    this.cadastrar = this.cadastrar.bind(this);
 
  }
 
 
-  logar(e){
+  cadastrar(e){
 
     /*lembrando que para poder usar essa função, tera que liberar na firebase na parte de 
       Authenticator/Sign-in method e ativar o Email/senha, vai ter duas opções só abilita a primeira
 
     */
-    firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.senha)
+    firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.senha)
     .catch((error)=>{
-      if(error.code === 'auth/wrong-password'){
-        alert('Senha Incorreta!');
+      if(error.code === 'auth/invalid-email'){
+        alert('Email invalido!');
+      }
+      if(error.code === 'auth/weak-password'){
+        alert('Senha Fraca!');
       }else{
-        alert('Codigo de erro: ' + error.code);
-      }      
+        alert('Codigo de erro: '+ error.code)
+      }
+
+      
     })
     
    
 
     e.preventDefault();
  }
-
-    sair(){
-      firebase.auth().signOut();
-      alert('Usuário deslogado!')
-    }
  
 
 
@@ -57,11 +47,10 @@ export default class ReactJS extends Component{
     return (
      
       <div  >
-        <h1>Entrar</h1>
-        <form onSubmit={this.logar} >
+        <form onSubmit={this.cadastrar} >
 
           <label>Email:</label>  <br/>
-          <input type="text" value={this.state.email}
+          <input type="email" value={this.state.email}
             onChange={(e)=> this.setState({email: e.target.value})}
           /> <br/><br/>
 
@@ -70,14 +59,10 @@ export default class ReactJS extends Component{
             onChange={(e)=> this.setState({senha: e.target.value})}
           /> <br/>
 
-          <button type="submit" >Logar</button>
+          <button type="submit" >Cadastrar</button>
 
 
-        </form> <br/>
-
-        <button onClick={this.sair} >Sair</button>
-
-        
+        </form>
       </div>
     )
   }

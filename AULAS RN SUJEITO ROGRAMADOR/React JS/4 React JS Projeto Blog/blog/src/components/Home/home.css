@@ -1,0 +1,39 @@
+section#posts{
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+section#posts article{
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+section#posts article header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+section#posts article header .title{
+    display: flex;
+    flex-direction: column;
+}
+
+section#posts article header span{
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+section#posts article >img{
+    width: 100%;
+}
+
+section#posts article footer{
+    padding: 20px;
+    word-wrap: break-word;
+}

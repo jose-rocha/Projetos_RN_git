@@ -1,7 +1,6 @@
 import app from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
-import { resolve } from 'dns';
 
 //conexão com a firebase
 let firebaseConfig = {

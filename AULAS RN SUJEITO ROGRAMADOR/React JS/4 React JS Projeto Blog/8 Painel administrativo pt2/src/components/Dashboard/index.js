@@ -52,7 +52,7 @@ import './dashboard.css';
 
               <p>Logado com: {firebase.getCurrent()}</p>
 
-                <button onClick={()=> this.logout()} className="butt" >Sair</button>        
+                <button onClick={()=> this.logout()} className="butao" >Sair</button>        
             </div>
         )
     }

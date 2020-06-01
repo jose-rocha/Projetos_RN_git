@@ -8,7 +8,8 @@ import './dashboard.css';
     constructor(props){
         super(props);
         this.state = {
-            nome: localStorage.nome
+            nome: localStorage.nome,
+            
         }
 
         this.logout = this.logout.bind(this);
@@ -47,7 +48,7 @@ import './dashboard.css';
               <h1>Olá  {this.state.nome} </h1>
               <Link to="/dashboard/newpost" >Novo Post</Link>     
               </div>       
-              <p>Logado com: rocha@progarmador.com</p><br/>
+              <p>Logado com: {firebase.getCurrent()} </p><br/>
               <button onClick={()=> this.logout()} 
                 className="botao"
               >Sair</button>        

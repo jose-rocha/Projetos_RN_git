@@ -14,6 +14,7 @@ import './dashboard.css';
         this.logout = this.logout.bind(this);
     }
 
+    //verifica se está logado, se não estiver retorna para página login
    async componentDidMount(){
        if(!firebase.getCurrent()){
            this.props.history.replace('/login');

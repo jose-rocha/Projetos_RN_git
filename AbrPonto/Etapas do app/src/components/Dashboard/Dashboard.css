@@ -1,0 +1,25 @@
+header#dashVoltar{
+
+    background: #272727;;
+    height: 72px;
+}
+
+header#dashVoltar .dashLink{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    
+}
+
+.botao{
+    background-color: #272727;
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 10px;
+    border: 0;
+}

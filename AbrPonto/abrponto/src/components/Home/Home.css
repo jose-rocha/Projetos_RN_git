@@ -1,0 +1,39 @@
+.full{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.t{
+    
+    text-align: center;
+    columns: #272727;;
+}
+
+.br7{
+    height: 665px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 20px; 
+   
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+
+header#inicio .link{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    
+}

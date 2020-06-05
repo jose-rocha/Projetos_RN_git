@@ -1,0 +1,90 @@
+section#ativos{
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 30px;
+    padding-top: 70px;
+}
+
+section#ativos article{
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+section#ativos article header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+section#ativos article header .title{
+    display: flex;
+    flex-direction: column;
+}
+
+section#ativos article header span{
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+section#ativos article >img{
+    width: 100%;
+}
+
+section#ativos article footer{
+    padding: 20px;
+    word-wrap: break-word;
+}
+
+
+header#inicio{
+
+    background: #272727;;
+    height: 72px;
+}
+
+header#inicio .link{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    
+}
+
+header#inicio .link2{
+    width: 100%;
+    margin: 10 auto;
+    padding-right: 80px;
+    margin-top:-70px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    
+    
+}
+
+header#inicio .link3{
+    width: 100%;
+    margin: 10 auto;
+    padding-right: 130px;
+    margin-top:-70px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    
+    
+}
+
+
+

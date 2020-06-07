@@ -39,7 +39,7 @@ form#register button{
 header#inicioVoltar{
 
     background: #272727;;
-    height: 72px;
+    height: 52px;
 }
 
 header#inicioVoltar .link{
@@ -50,6 +50,8 @@ header#inicioVoltar .link{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    
-    
+    padding-bottom: 20px;
+    padding-left: 20px;    
+    font-weight: bold;
 }
+

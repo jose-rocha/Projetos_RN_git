@@ -4,6 +4,7 @@ section#ativos{
     margin: 0 auto;
     padding: 0 30px;
     padding-top: 70px;
+    margin-left: 150px;
 }
 
 section#ativos article{
@@ -43,14 +44,14 @@ section#ativos article footer{
 nav#inicio{
 
     background: #272727;;
-    height: 72px;
+    height: 52px;
 }
 
 #inicio .link{
     width: 100%;
     margin: 0 auto;
     padding: 15px;
-    height: 72px;
+    height: 52px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -64,7 +65,7 @@ nav#inicio{
     padding-right: 20px;
     padding-left: 20px;
     margin-top:0px;
-    height: 72px;
+    height: 52px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -79,7 +80,7 @@ nav#inicio{
     padding-right: 20px;
     padding-left: 20px;
     margin-top:0px;
-    height: 72px;
+    height: 52px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -88,5 +89,50 @@ nav#inicio{
     
 }
 
+.br7I {
+    margin: 10 auto;
+    margin-right: 770px;
+    margin-top:0px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    
+    
+}
 
 
+
+#geral .fixed .link1{
+    padding-left: 10px ;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    font-size: 5px;
+    justify-content: space-around;
+}
+
+ .span1{
+    align-items: center;
+ }
+
+.span2{
+    font-size: 14px;
+    padding-left: 8px;
+    padding-top: 10px;
+    vertical-align: middle;
+}
+
+ 
+ #geral .menu .fixed{
+    position: fixed;
+    background: gray;
+    width: 150px;
+    height: calc(100% - 51px);
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.br7Name{
+    font-weight: bold;
+    padding-right: 37px;
+}

@@ -63,7 +63,7 @@ class Settings extends Component {
         return (
             <div>
                 <header id="inicioVoltar">
-                     <Link  to="/Itens" color="#fff" className="link" >Voltar</Link> 
+                     <Link  to="/Itens" color="#fff" className="link" >BR7mobilidade</Link> 
                  </header>
 
                <h1 className="register-h1" >Cadastrar Usuário na Plataforma</h1>

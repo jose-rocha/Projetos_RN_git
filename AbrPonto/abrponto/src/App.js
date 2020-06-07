@@ -9,6 +9,7 @@ import Login from './components/Login';
 import HomeItem from './components/HomeItem';
 import  Dashboard from './components/Dashboard';
 import  Settings from './components/Settings';
+import New from './components/New';
 
 
 
@@ -32,11 +33,12 @@ export default class App extends Component {
         <BrowserRouter>
           {/*<Header/> */}
           <Switch>
-           <Route exact path="/" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/Itens" component={HomeItem} />
-            <Route exact path="/dashboard" component={ Dashboard} />
+            <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/settings" component={Settings} />
+            <Route exact path="/dashboard/newOs" component={New} />
           </Switch>
         </BrowserRouter>
           

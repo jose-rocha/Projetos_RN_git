@@ -3,6 +3,10 @@ import {Link, withRouter} from 'react-router-dom';
 import firebase from '../../firebase';
 import './Dashboard.css';
 
+
+import {AiOutlineDashboard} from 'react-icons/ai'; //DashBoard
+import {FaCubes} from 'react-icons/fa';
+
  class Dashboard extends Component {
     constructor(props){
         super(props);
@@ -35,22 +39,55 @@ import './Dashboard.css';
             <div >
                 <nav id="dashboard">
                    <div >
-                     <Link  to="/Itens" color="#fff" className="dashLink" >Voltar</Link> 
+                        <Link  to="/Itens" color="#fff" className="dashLink" > 
+                            <span className="br7Name" >BR7mobilidade</span> 
+                        </Link> 
                    </div>
                  </nav>
 
 
+             <div id="geral">
 
                 <div className="user-info" >
                     <div className="dashLinkPai">
-                        <Link to="/dashboard/newOs" className="newOs">  Nova OS</Link>
+                        <Link to="/dashboard/newOs" > Nova OS</Link>
 
                     </div>
                     
                     <h1>Olá {this.state.nome} </h1>
                 </div>
                 <p>Usuário: {firebase.getCurrent()}</p>
+                  
+                <div className="menu">
+                <div >
+                     <div className="fixed">
+                        <div className="link1"> 
+                            <Link  to="/dashboard"    >
+                                <div className="span1">
+                                  <AiOutlineDashboard color="#fff" size="15px" /> 
+                                  <span className="span2" >DASHBOARD</span>  
+                                </div>                         
+                            </Link>
+                        </div>
+
+                        <div className="link1" >
+                            <Link  to="/Itens"   >
+                              <div className="span1">
+                                <FaCubes color="#fff" size="15px" /> 
+                                <span className="span2">ATIVOS</span>  
+                              </div>
+                            </Link>
+                        </div> 
+                     </div>
+                </div>
+                
             </div>
+
+           </div>
+                
+            </div>
+
+            
         )
     }
 }

@@ -3,9 +3,12 @@ import {Link} from 'react-router-dom';
 import firebase from '../../firebase';
 import './homeItem.css';
 
-import {GiExitDoor} from "react-icons/gi"; //exit
+import {IoMdExit} from "react-icons/io"; //exit
 import {AiFillSetting} from 'react-icons/ai'; //settings
 import {AiOutlineDashboard} from 'react-icons/ai'; //DashBoard
+
+import {FaCubes} from 'react-icons/fa';
+import {FaUserAlt} from 'react-icons/fa';
 
 export default class HomeItem extends Component {
     state = {
@@ -71,33 +74,65 @@ export default class HomeItem extends Component {
 
     render() {
         return (
-        <div>
+        <div id="geral">
             
                 <nav id="inicio" >
+
+                    <div className="br7I" > 
+                        <Link  to="/Itens" className="br7Link"   >
+                          <span className="br7Name"> BR7mobilidade</span>  {/*BR7mobilidade */}
+                        </Link>
+                    </div> 
+
                     <div>
-                       <Link  to="/dashboard" className="link"   >
-                            <AiOutlineDashboard color="#fff" size="30px"  /> {/*DashBoard */} 
+                       <Link  to="/user" className="link"  title="Meu perfil" >
+                            <FaUserAlt color="#fff" size="15px"  /> {/*User */} 
                        </Link>
                     </div>
             
                     <div>
-                        <Link  to="/settings" className="link2"   >
+                        <Link  to="/settings" className="link2" title="Configurações da conta"   >
                             
-                            <AiFillSetting color="#fff" size="30px"  />  {/*configurações */}
+                            <AiFillSetting color="#fff" size="15px"  />  {/*configurações */}
                         </Link>
                     </div> 
 
                     <div>
                         <Link  to="/login" className="link3" onClick={()=> this.logout()}  >
-                            <GiExitDoor color="#fff" size="30px"  /> {/*Sair */}
+                            <IoMdExit color="#fff" size="15px"  /> {/*Sair */}
                         </Link>
                     </div> 
+
+                    
 
                 
                 </nav>
 
            
-            
+            <div className="menu">
+                <div >
+                     <div className="fixed">
+                        <div className="link1"> 
+                            <Link  to="/dashboard"    >
+                                <div className="span1">
+                                  <AiOutlineDashboard color="#fff" size="15px" /> 
+                                  <span className="span2" >DASHBOARD</span>  
+                                </div>                         
+                            </Link>
+                        </div>
+
+                        <div className="link1" >
+                            <Link  to="/Itens"   >
+                              <div className="span1">
+                                <FaCubes color="#fff" size="15px" /> 
+                                <span className="span2">ATIVOS</span>  
+                              </div>
+                            </Link>
+                        </div> 
+                     </div>
+                </div>
+                
+            </div>
             
 
             <section id="ativos" >

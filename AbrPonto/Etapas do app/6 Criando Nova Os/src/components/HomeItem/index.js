@@ -57,7 +57,7 @@ export default class HomeItem extends Component {
             return null;
         }
 
-        firebase.getUserName((info)=>{
+        firebase.getCurrent((info)=>{
             localStorage.nome = info.val().nome;
             this.setState({nome: localStorage.nome});
         })
@@ -143,12 +143,11 @@ export default class HomeItem extends Component {
                         <div className="user-info-link">
                             <Link to="/dashboard/newOs" > Nova OS</Link>
 
-                            <h1>Olá {this.state.nome} </h1>
-                            <span>Usuário: {firebase.getCurrent()}</span> 
                         </div>
                     </div>     
                         
-                         
+                      { /* <h1>Olá {this.state.nome} </h1>
+                        <span>Usuário: {firebase.getCurrent()}</span> */}
             </div>
 
             

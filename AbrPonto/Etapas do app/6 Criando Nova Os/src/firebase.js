@@ -22,7 +22,7 @@ import 'firebase/auth';
     // Initialize Firebase
     app.initializeApp(firebaseConfig);
     
-    // para poder usar de outro arquivo a conexão com  o banco
+    // para poder usar de outro arquivo a conexão co  o banco
     this.app = app.database();
     }
 

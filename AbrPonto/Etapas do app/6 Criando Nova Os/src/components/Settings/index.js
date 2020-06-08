@@ -36,12 +36,13 @@ class Settings extends Component {
 
     onRegister = async()=>{
         try{
-            
             const {nome, email, password} = this.state;
+            alert("Para cadastrar o usuário é necessário um nome!");
+            return null;
+
             await firebase.register(nome, email, password);
-            if(this.state.nome === ''){
-                alert("Para cadastrar o usuário é necessário um nome!");
-                return null;
+            if(this.state.nome = ""){
+            
             }
             this.props.history.replace('/Itens');
         }catch(error){
@@ -50,10 +51,8 @@ class Settings extends Component {
 
     }
     
-    /*Essa função serve para verificar se tem usuário logado trabalha em conjunto
-     com a state "nome: localStorage.nome", mesmo colocando a url correta ela vai redirecionar 
-     para a página de login. */
-    async componentDidMount(){
+    
+    async componentWillMount(){
         if(!firebase.getCurrent()){
             alert('Area restrita, para acessar essa página você precisa estar logado!');
             this.props.history.replace('/login');
@@ -65,16 +64,6 @@ class Settings extends Component {
             this.setState({nome: localStorage.nome});
         })
     }
-    
-   //função para deslogar
-    logout = async ()=> {
-       await firebase.logout()
-       .catch((error)=>{
-           console.log(error);
-       });
-      localStorage.removeItem("nome");
-       this.props.history.push('/login');
-    } 
     
     render() {
         return (

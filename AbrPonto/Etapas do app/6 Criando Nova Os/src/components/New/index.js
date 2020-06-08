@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import  {Link, withRouter} from 'react-router-dom';
-import firebase from '../../firebase';
+
 import './New.css';
 
 
@@ -11,66 +11,22 @@ import {FaUserAlt} from 'react-icons/fa'; //User
 
 class New extends Component{
 
-
     constructor(props){
         super(props);
         this.state = {
+            tipo: "",
             image: '',
-            descricao: '',
-            alert: '',
-            tipo: '',
-            
+            descricao: ''
 
         };
 
-        this.cadastrarOS = this.cadastrarOS.bind(this);
+        this.cadstrarOS = this.cadstrarOS.bind(this);
 
     }
-
-    /*Essa função serve para verificar se tem usuário logado trabalha em conjunto
-     com a state "nome: localStorage.nome", mesmo colocando a url correta ela vai redirecionar 
-     para a página de login. */
-     async componentWillMount(){
-        if(!firebase.getCurrent()){
-            alert('Area restrita, para acessar essa página você precisa estar logado!');
-            this.props.history.replace('/login');
-            return null;
-        }
-
-        firebase.getCurrent((info)=>{
-            localStorage.nome = info.val().nome;
-            this.setState({nome: localStorage.nome});
-        })
-    }
-    
-   //função para deslogar
-    logout = async ()=> {
-       await firebase.logout()
-       .catch((error)=>{
-           console.log(error);
-       });
-      localStorage.removeItem("nome");
-       this.props.history.push('/login');
-    } 
     
 
-   cadastrarOS = async(e)=>{
-       e.preventDefault();
-
-       if(this.state.tipo !== '' && this.state.image !== '' && this.state.descricao){
-          let criaOS = firebase.app.ref('ativos');
-          let chave = criaOS.push().key;
-          await criaOS.child(chave).set({
-              tipo: this.state.tipo,
-              image: this.state.image,
-              descricao: this.state.descricao,
-              executador: localStorage.nome
-          });
-
-          this.props.history.push('/Itens');
-       }else{
-           this.setState({alert: 'Preencha todos os campos!'});
-       }
+   cadstrarOS(){
+    alert('Teste')
     }
 
 
@@ -105,47 +61,41 @@ class New extends Component{
                     </div> 
 
 
-           
 
 
                 </nav>
 
-                <form onSubmit={this.cadastrarOS} id="new-form-os" >
-
-                    <span>{this.state.alert} </span>
+                <form onSubmit={this.cadstrarOS} id="new-form-os" >
                     <label>Tipo</label><br/>
-                        <select name="selecao" >
-                            <option value={this.state.tipo} onChange={(e)=> this.setState({tipo: e.target.value})}>
-                                --
-                            </option>
-                            <option value={this.state.tipo} onChange={(e)=> this.setState({tipo: e.target.value})}>
-                               Abrigo  
+                        <select name="selecao"  >
+                            <option value="">--</option>
+                            <option value={this.state.tipo} onChange={(e)=> this.setState({titulo: e.target.value})}>
+                                 Abrigo
                              </option>
-                             <option value={this.state.tipo} onChange={(e)=> this.setState({tipo: e.target.value})}> 
+                            <option value={this.state.tipo} onChange={(e)=> this.setState({titulo: e.target.value})}> 
                                 Abrigo › Modelo Antigo 
                             </option>
-                            <option value={this.state.tipo} onChange={(e)=> this.setState({tipo: e.target.value})}> 
+                            <option value={this.state.tipo} onChange={(e)=> this.setState({titulo: e.target.value})}> 
                                 Abrigo › Modelo Concreto 
                             </option>
-                            <option value={this.state.tipo} onChange={(e)=> this.setState({tipo: e.target.value})}>
+                            <option value={this.state.tipo} onChange={(e)=> this.setState({titulo: e.target.value})}>
                                  Abrigo › Modelo Corredor 
                             </option>
-                            <option value={this.state.tipo} onChange={(e)=> this.setState({tipo: e.target.value})} > 
+                            <option value={this.state.tipo} onChange={(e)=> this.setState({titulo: e.target.value})} > 
                                 Abrigo › Modelo novo iluminado 
                             </option>
-                            <option value={this.state.tipo} onChange={(e)=> this.setState({tipo: e.target.value})}> 
+                            <option value={this.state.tipo} onChange={(e)=> this.setState({titulo: e.target.value})}> 
                                 Abrigo › Modelo Novo sem iluminação 
                             </option>
-                            <option value={this.state.tipo} onChange={(e)=> this.setState({tipo: e.target.value})} > 
+                            <option value={this.state.tipo} onChange={(e)=> this.setState({titulo: e.target.value})} > 
                                 Placa 
                             </option>
-                            <option value={this.state.tipo} onChange={(e)=> this.setState({tipo: e.target.value})}>
+                            <option value={this.state.tipo} onChange={(e)=> this.setState({titulo: e.target.value})}>
                                  Ponto Fictício
                              </option>
-                            <option value={this.state.tipo} onChange={(e)=> this.setState({tipo: e.target.value})}> 
+                            <option value={this.state.tipo} onChange={(e)=> this.setState({titulo: e.target.value})}> 
                                 Totem
                              </option>
-                           
                         </select> <br/><br/>
 
                         <label>Descrição:</label><br/>

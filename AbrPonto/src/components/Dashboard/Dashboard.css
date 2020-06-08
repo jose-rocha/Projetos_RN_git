@@ -1,0 +1,56 @@
+
+
+
+
+
+.br7Name{
+    font-weight: bold;
+}
+
+nav#inicioN{
+
+    background: #272727;;
+    height:52px;
+}
+
+#inicioN .linkPerfil{
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: red;
+    padding-right: 20px;
+}
+
+#inicioN .linkConfigConta{
+    width: 100%;
+    margin: 10 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top:0px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: blue;
+    
+    
+}
+
+#inicioN .linkSair{
+    width: 100%;
+    margin: 10 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top:0px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: yellow;
+    
+    
+}

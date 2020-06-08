@@ -19,17 +19,13 @@ class New extends Component{
             descricao: '',
             alert: '',
             tipo: '--',
+            tipo1: 'Abrigo'
             
 
         };
 
         this.cadastrarOS = this.cadastrarOS.bind(this);
-        this.pegarSelect = this.pegarSelect.bind(this);
 
-    }
-
-    pegarSelect(e){
-        this.setState({tipo: e.target.value});
     }
 
     /*Essa função serve para verificar se tem usuário logado trabalha em conjunto
@@ -110,7 +106,7 @@ class New extends Component{
                     </div> 
 
 
-           
+            {/* https://static.inventsys.com.br/70/thumb/f-509766-400.jpg */}
 
 
                 </nav>
@@ -119,40 +115,14 @@ class New extends Component{
 
                     <span>{this.state.alert} </span>
                     <label>Tipo</label><br/>
-
-                        <select name="selecao" value={this.state.tipo}
-                            onChange={this.pegarSelect}
-                        >
-                            <option value="--">
+                        <select name="selecao" >
+                            <option value={this.state.tipo} onChange={(e)=> this.setState({tipo: e.target.value})}>
                                 --
                             </option>
-                            <option value="Abrigo" >
+                            <option value={this.state.tipo1} onChange={(e)=> this.setState({tipo1: e.target.value})}>
                                Abrigo  
                              </option>
-                             <option value="Abrigo › Modelo Antigo"> 
-                                Abrigo › Modelo Antigo 
-                            </option>
-                            <option value="Abrigo › Modelo Concreto"> 
-                                Abrigo › Modelo Concreto 
-                            </option>
-                            <option value="Abrigo › Modelo Corredor" >
-                                 Abrigo › Modelo Corredor 
-                            </option>
-                            <option value="Abrigo › Modelo novo iluminado" > 
-                                Abrigo › Modelo novo iluminado 
-                            </option>
-                            <option value="Abrigo › Modelo Novo sem iluminação" > 
-                                Abrigo › Modelo Novo sem iluminação 
-                            </option>
-                            <option value="Placa" > 
-                                Placa 
-                            </option>
-                            <option value="Ponto Fictício">
-                                 Ponto Fictício
-                             </option >
-                            <option value="Totem"> 
-                                Totem
-                             </option>
+                             
                            
                         </select> <br/><br/>
 

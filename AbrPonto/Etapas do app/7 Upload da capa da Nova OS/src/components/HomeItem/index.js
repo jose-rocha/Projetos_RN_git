@@ -39,7 +39,7 @@ export default class HomeItem extends Component {
                 
                 })
             });
-
+            state.ativos.reverse(); //essa função faz com que as ultimas OS fiquem por primeioro 
             this.setState(state);
         })
        
@@ -57,7 +57,7 @@ export default class HomeItem extends Component {
             return null;
         }
 
-        firebase.getCurrent((info)=>{
+        firebase.getUserName((info)=>{
             localStorage.nome = info.val().nome;
             this.setState({nome: localStorage.nome});
         })
@@ -143,11 +143,12 @@ export default class HomeItem extends Component {
                         <div className="user-info-link">
                             <Link to="/dashboard/newOs" > Nova OS</Link>
 
+                            <h1>Olá {this.state.nome} </h1>
+                            <span>Usuário: {firebase.getCurrent()}</span> 
                         </div>
                     </div>     
                         
-                      { /* <h1>Olá {this.state.nome} </h1>
-                        <span>Usuário: {firebase.getCurrent()}</span> */}
+                         
             </div>
 
             

@@ -1,6 +1,7 @@
 import app from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
+import 'firebase/storage'; //para subir imagem para o storage
 
 
         let  firebaseConfig = {
@@ -22,8 +23,12 @@ import 'firebase/auth';
     // Initialize Firebase
     app.initializeApp(firebaseConfig);
     
-    // para poder usar de outro arquivo a conexão co  o banco
+    // para poder usar de outro arquivo a conexão com o banco
     this.app = app.database();
+
+
+    //para subir imagem para o storage
+    this.storage = app.storage();
     }
 
 
@@ -62,6 +67,11 @@ import 'firebase/auth';
     login leve para página HomeItem */
     getCurrent(){
         return app.auth().currentUser && app.auth().currentUser.email
+    }
+    
+    //para pegar uid do usuário logado, e será usado a uid do usuário quando fizer upload de imagem
+    getCurrentUid(){
+        return app.auth().currentUser && app.auth().currentUser.uid
     }
 
     async getUserName(callback){

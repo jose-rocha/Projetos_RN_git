@@ -39,7 +39,7 @@ export default class HomeItem extends Component {
                 
                 })
             });
-            state.ativos.reverse(); //essa função faz com que as ultimas OS fiquem por primeioro 
+            state.ativos.reverse(); //essa função faz com que as ultimas OS fiquem por primeioro
             this.setState(state);
         })
        

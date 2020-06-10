@@ -92,6 +92,12 @@ nav#inicioL{
     padding: 0 20px; 
 }
 
+#new-form-os span{
+    text-align: center;
+    color: #ff0000;
+    font-size: 15px;
+}
+
 #new-form-os textarea{
     height: 80px;
     border-radius: 5px;

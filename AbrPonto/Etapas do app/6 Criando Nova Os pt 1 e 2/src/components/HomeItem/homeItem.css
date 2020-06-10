@@ -22,6 +22,15 @@ div .user-info{
 
  }
 
+ .user-info-link h1{
+     margin-left: 550px;
+ }
+
+ .user-info-link span{
+    margin-left: 550px;
+}
+ 
+
 
 
 nav#inicio{

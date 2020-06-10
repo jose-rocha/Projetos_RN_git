@@ -20,7 +20,7 @@ class New extends Component{
             descricao: '',
             alert: '',
             tipo: '--',
-            
+            progress: 0,
 
         };
 
@@ -62,9 +62,11 @@ class New extends Component{
       
         // console.log(currentUid);
 
-       /* await uploadTask.on('state_changed',
+        await uploadTask.on('state_changed',
         (snapshot)=>{
             //progress
+            const progress = Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100 );
+            this.setState({progress});
         },
         (error)=>{
             //error
@@ -72,7 +74,12 @@ class New extends Component{
         },
         ()=>{
             //sucesso!
-        }) */
+            firebase.storage.ref(`images/${currentUid}`)
+            .child(image.name).getDownloadURL()
+            .then(url =>{
+                this.setState({url: url});
+            })
+        }) 
 
     }
 
@@ -113,12 +120,16 @@ class New extends Component{
    cadastrarOS = async(e)=>{
        e.preventDefault();
 
-       if(this.state.tipo !== '' && this.state.image !== '' && this.state.descricao){
+       if(this.state.tipo !== ''
+        && this.state.image !== '' 
+        && this.state.descricao !== ''
+        && this.state.image !== null
+        && this.state.url !== ''){
           let criaOS = firebase.app.ref('ativos');
           let chave = criaOS.push().key;
           await criaOS.child(chave).set({
               tipo: this.state.tipo,
-              image: this.state.image,
+              image: this.state.url,
               descricao: this.state.descricao,
               executador: localStorage.nome
           });
@@ -211,7 +222,13 @@ class New extends Component{
                          /> <br/><br/>
 
                        
-                        <input type="file" onChange={this.handleFile} /><br/><br/>
+                        <input type="file" onChange={this.handleFile} />
+                        {this.state.url !== '' ?
+                        <img src={this.state.url} width="250" height="150" alt="imagem da OS" />
+                        :
+                        <progress value={this.state.progress} max="100" />
+
+                        } <br/><br/>
 
                          <button type="submit" >Cadastrar OS</button>
 

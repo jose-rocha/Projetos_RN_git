@@ -98,6 +98,16 @@ nav#inicioL{
     font-size: 15px;
 }
 
+form#new-form-os label{
+    margin-bottom: 15px;
+}
+
+form#new-form-os img{
+    width: 150px;
+    height: 100px;
+    margin-top: 10px;
+}
+
 #new-form-os textarea{
     height: 80px;
     border-radius: 5px;

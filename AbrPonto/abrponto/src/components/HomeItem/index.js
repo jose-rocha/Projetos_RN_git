@@ -3,12 +3,17 @@ import {Link} from 'react-router-dom';
 import firebase from '../../firebase';
 import './homeItem.css';
 
-import {IoMdExit} from "react-icons/io"; //exit
-import {AiFillSetting} from 'react-icons/ai'; //settings
-import {AiOutlineDashboard} from 'react-icons/ai'; //DashBoard
 
-import {FaCubes} from 'react-icons/fa';
-import {FaUserAlt} from 'react-icons/fa';
+import {FaUserAlt} from 'react-icons/fa'; //User 
+import {AiFillSetting} from 'react-icons/ai'; //settings
+import {IoMdExit} from "react-icons/io"; //exit
+
+import {AiOutlineDashboard} from 'react-icons/ai'; //DashBoard
+import {FaCubes} from 'react-icons/fa'; //Ativos
+import {AiFillFileText} from 'react-icons/ai';  //file
+import {FaWrench} from 'react-icons/fa'; //Tarefas
+import {FaExclamationCircle} from 'react-icons/fa'; //Chamados
+
 
 export default class HomeItem extends Component {
     state = {
@@ -133,7 +138,47 @@ export default class HomeItem extends Component {
                               </div>
                             </Link>
                         </div> 
+
+                        <div className="linkOs" >
+                            <Link  to="/OS"   >
+                              <div className="span1">
+                                <AiFillFileText color="#fff" size="15px" /> 
+                                <span className="span2">ORDENS DE SERVIÇOS</span>  
+                              </div>
+                            </Link>
+                        </div> 
+
+                        <div className="linkOs" >
+                            <Link  to="/tarefas"   >
+                              <div className="span1">
+                                <FaWrench color="#fff" size="15px" /> 
+                                <span className="span2">TAREFAS</span>  
+                              </div>
+                            </Link>
+                        </div> 
+
+                        <div className="linkOs" >
+                            <Link  to="/chamados"   >
+                              <div className="span1">
+                                <FaExclamationCircle color="#fff" size="15px" /> 
+                                <span className="span2">CHAMADOS</span>  
+                              </div>
+                            </Link>
+                        </div> 
+
+                        <div className="linkOs" >
+                            <Link  to="/config"   >
+                              <div className="span1">
+                                <AiFillSetting color="#fff" size="15px" /> 
+                                <span className="span2">CONFIGURAÇÕES</span>  
+                              </div>
+                            </Link>
+                        </div> 
+
+
                      </div>
+
+                     
                 </div>
                 
             </div>

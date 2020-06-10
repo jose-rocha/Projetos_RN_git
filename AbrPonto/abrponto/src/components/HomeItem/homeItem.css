@@ -86,7 +86,7 @@ nav#inicio{
  }
 
 .span2{
-    font-size: 14px;
+    font-size: 12px;
     padding-left: 8px;
     vertical-align: middle;
 }
@@ -95,7 +95,7 @@ nav#inicio{
  #geral .menu .fixed{
     position: fixed;
     background: gray;
-    width: 150px;
+    width: 170px;
     height: 100% ;
     flex-direction: column;
     justify-content: space-between;
@@ -118,6 +118,13 @@ nav#inicio{
 }
 
 #geral .fixed .link1{
+    padding-left: 10px ;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    font-size: 5px;
+}
+
+#geral .fixed .linkOs{
     padding-left: 10px ;
     padding-top: 5px;
     margin-bottom: 5px;
@@ -178,6 +185,7 @@ section#ativos article header span{
 
 section#ativos article >img{
     width: 10%;
+    max-height: 439px;
 }
 
 section#ativos article footer{

@@ -62,7 +62,7 @@ class Login extends Component {
             <div>
                
                 <form onSubmit={this.entrar} id="login"  >
-                    <label>Email</label> <br/>
+                    <label>Emai</label> <br/>
                     <input type="email" autoComplete="off" autoFocus
                      value={this.state.email}
                      onChange={(e)=> this.setState({email: e.target.value})}

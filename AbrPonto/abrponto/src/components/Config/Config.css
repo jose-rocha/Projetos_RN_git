@@ -1,0 +1,31 @@
+.espaco{
+    margin-right: 20px;
+}
+
+.dropdown{
+    margin-right: 10px;
+    margin-top: -5px;
+}
+
+#body .menu .fixed{
+    position: fixed;
+    bottom: 0px;
+    z-index: 0px;
+    width: 180px;
+    height: calc(100% - 51px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 9px;
+    position: relative;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.span2{
+   color: #fff;
+}
+
+.qr{
+    padding-left: 350px;
+}

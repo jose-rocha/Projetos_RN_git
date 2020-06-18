@@ -2,8 +2,7 @@ import React, {Component} from 'react'
 import  {Link, withRouter} from 'react-router-dom';
 import firebase from '../../firebase';
 import './New.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Dropdown } from 'react-bootstrap';
+
 
 
 import {IoMdExit} from "react-icons/io"; //exit
@@ -145,46 +144,38 @@ class New extends Component{
     render(){
         return(
             <div>
-               <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <div className="navbar-header" >
-                        <Link  to="/Itens"   className="navbar-brand" >
-                            <span > BR7mobilidade</span>  {/*BR7mobilidade */}
+               <nav id="inicioL" >
+
+                    <div className="br7In" > 
+                        <Link  to="/Itens" className="br7Link"   >
+                        <span className="br7NameL"> BR7mobilidade</span>  {/*BR7mobilidade */}
                         </Link>
+                    </div> 
+
+                    <div>
+                    <Link  to="/user" className="linkPerfil"  title="Meu perfil" >
+                            <FaUserAlt color="#fff" size="15px"  /> {/*User */} 
+                    </Link>
                     </div>
 
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav mr-auto">  </ul>
-                                
-                   
-                    <div >
-                    <div className="nav navbar-nav navbar-right" >
-                    
-
-
-                        <div className="espaco">   
-                        <Link  to="/user"   title="Meu perfil" >
-                        <FaUserAlt color="#fff" size="15px"  /> {/*User */} 
-                        </Link>
-                        </div>
-
-                        <div>
-                        <Link  to="/settings"  title="Configurações da conta"   className="espaco">
+                    <div>
+                        <Link  to="/settings" className="linkConfigConta" title="Configurações da conta"   >
+                            
                             <AiFillSetting color="#fff" size="15px"  />  {/*configurações */}
                         </Link>
-                        </div> 
+                    </div> 
 
-                        <div>
-                        <Link  to="/login"  onClick={()=> this.logout()} title="Sair" >
+                    <div>
+                        <Link  to="/login" className="linkSair" onClick={()=> this.logout()} title="Sair" >
                             <IoMdExit color="#fff" size="15px"  /> {/*Sair */}
                         </Link>
-                        </div> 
+                    </div> 
 
-                        </div>
 
-                    </div>
+           
 
-  </div>
-</nav>
+
+                </nav>
 
                 <form onSubmit={this.cadastrarOS} id="new-form-os" >
 

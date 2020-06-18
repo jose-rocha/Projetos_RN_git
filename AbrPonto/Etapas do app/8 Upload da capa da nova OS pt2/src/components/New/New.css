@@ -1,0 +1,131 @@
+nav#inicioL{
+
+    background: #272727;;
+    height: 52px;
+}
+
+.br7In {
+    margin: 10 auto;
+    margin-right: 780px;
+    margin-top:0px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.br7NameL{
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+#inicioL .linkPerfil{
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: red;
+    padding-right: 20px;
+}
+
+#inicioL .linkConfigConta{
+    width: 100%;
+    margin: 10 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top:0px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: blue;
+    
+    
+}
+
+#inicioL .linkSair{
+    width: 100%;
+    margin: 10 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top:0px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: yellow;
+    
+    
+}
+
+.br7I {
+    margin: 10 auto;
+    margin-right: 770px;
+    margin-top:0px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+#new-form-os{
+    background: #fff;
+    width: 100%;
+    max-width: 600px;
+    margin: 0px auto 0px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#new-form-os input{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 0 20px; 
+}
+
+#new-form-os span{
+    text-align: center;
+    color: #ff0000;
+    font-size: 15px;
+}
+
+form#new-form-os label{
+    margin-bottom: 15px;
+}
+
+form#new-form-os img{
+    width: 150px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+#new-form-os textarea{
+    height: 80px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 0 20px; 
+    padding-top: 10px;
+}
+
+#new-form-os button{
+    padding:  10px 20px;
+    border-radius: 5px;
+    padding-top: 10px;
+    border: 0px;
+    background: #272727;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+

@@ -12,9 +12,6 @@ import  Settings from './components/Settings';
 import New from './components/New';
 import Config from './components/Config';
 
-import Navbar  from './components/Navbar';
-import Sidebar from './components/Sidebar';
-
 
 
 export default class App extends Component {
@@ -33,15 +30,10 @@ export default class App extends Component {
 
   render() {
       return this.state.firebaseInitialized !== false ? /*? se estiver diferente de falso
-      então vai exibir essa parte abaixo */(
+      então vai exibir essa parte aaixo */(
         <BrowserRouter>
           {/*<Header/> */}
-        
-         {/* <Navbar/>
-          <Sidebar/> */}
-
           <Switch>
-         
             <Route exact path="/" component={Home} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/Itens" component={HomeItem} />

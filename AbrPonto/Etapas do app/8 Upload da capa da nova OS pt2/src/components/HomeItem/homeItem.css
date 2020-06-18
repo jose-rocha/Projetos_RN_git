@@ -92,20 +92,16 @@ nav#inicio{
 }
 
  
-  .menu .fixed{
+ #geral .menu .fixed{
     position: fixed;
-    background: #ddd;
-    width: 180px;
+    background: gray;
+    width: 170px;
     height: 100% ;
     flex-direction: column;
     justify-content: space-between;
     z-index: 10;
 }
 
-#fixa nav{
-    position: fixed;
-    padding-top: 0px;
-}
 .br7I {
     margin: 10 auto;
     margin-right: 770px;
@@ -142,35 +138,17 @@ nav#inicio{
     padding-right: 30px;
 }
 
-.menu{
-    padding-top: 72px;
-}
-.ativosPai{
-    padding-top: 80px;
-    margin-left: 35px ;
-    
-    
-}
-
 section#ativos{
     width: 100%;
     max-width: 930px;
     margin: 0 auto;
-    padding: 0 20px;
-    padding-top: 10px;
+    padding: 0 30px;
+    padding-top: 0px;
     margin-left: 150px;
     background: blueviolet;
-    height: 265px;
+    height: 180px;
     width: 28%;
-   
 
-}
-
-
-
-#geral{
-    padding-top: 0px;
-    padding-left: 0px;
 }
 
 section#ativos article{
@@ -214,17 +192,4 @@ section#ativos article footer{
     padding: 10px;
     word-wrap: break-word;
 
-}
-
-#fixa {
-
- background: #343A40;
-}
-
-.fixar{
-    padding-top: -5px;
-}
-
-.qrcode{
-    background: blue;
 }

@@ -79,45 +79,33 @@ class Settings extends Component {
     render() {
         return (
             <div>
-               <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <div className="navbar-header" >
-                        <Link  to="/Itens"   className="navbar-brand" >
-                            <span > BR7mobilidade</span>  {/*BR7mobilidade */}
-                        </Link>
-                    </div>
+                <nav id="inicio" >
 
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav mr-auto">  </ul>
-                                
-                   
-                    <div >
-                    <div className="nav navbar-nav navbar-right" >
-                    
+<div className="br7I" > 
+    <Link  to="/Itens" className="br7Link"   >
+    <span className="br7Name"> BR7mobilidade</span>  {/*BR7mobilidade */}
+    </Link>
+</div> 
 
+<div>
+<Link  to="/user" className="link"  title="Meu perfil" >
+        <FaUserAlt color="#fff" size="15px"  /> {/*User */} 
+</Link>
+</div>
 
-                        <div className="espaco">   
-                        <Link  to="/user"   title="Meu perfil" >
-                        <FaUserAlt color="#fff" size="15px"  /> {/*User */} 
-                        </Link>
-                        </div>
+<div>
+    <Link  to="/settings" className="link2" title="Configurações da conta"   >
+        
+        <AiFillSetting color="#fff" size="15px"  />  {/*configurações */}
+    </Link>
+</div> 
 
-                        <div>
-                        <Link  to="/settings"  title="Configurações da conta"   className="espaco">
-                            <AiFillSetting color="#fff" size="15px"  />  {/*configurações */}
-                        </Link>
-                        </div> 
+<div>
+    <Link  to="/login" className="link3" onClick={()=> this.logout()} title="Sair" >
+        <IoMdExit color="#fff" size="15px"  /> {/*Sair */}
+    </Link>
+</div> 
 
-                        <div>
-                        <Link  to="/login"  onClick={()=> this.logout()} title="Sair" >
-                            <IoMdExit color="#fff" size="15px"  /> {/*Sair */}
-                        </Link>
-                        </div> 
-
-                        </div>
-
-                    </div>
-
-  </div>
 </nav>
 
 

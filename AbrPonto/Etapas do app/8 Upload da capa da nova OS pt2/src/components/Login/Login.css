@@ -8,8 +8,6 @@ form#login{
     display: flex;
     flex-direction: column;
     border-radius:10px ;
-    padding-top: 100px;
-    margin-top: 0px;
 }
 
 form#login input{

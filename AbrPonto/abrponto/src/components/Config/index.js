@@ -77,7 +77,7 @@ import QrCode from 'react.qrcode.generator';
           
             </nav>
 
-            <Map google={this.props.google} zoom={14} 
+          <Map google={this.props.google} zoom={14} 
             containerStyle={containerStyle}
             initialCenter={{
                 lat: -23.738673 ,
@@ -95,14 +95,18 @@ import QrCode from 'react.qrcode.generator';
 
                 </InfoWindow>
 
-            </Map>
+            <div>
 
+                <div className="qr">
+                    <QrCode value='https://www.google.com'/>
+                </div> 
+        
+             </div>
 
-           <div className="qr">
-            <QrCode value='https://www.google.com'/>
-          </div>
-       
+            
+            </Map> 
 
+            
 </div>
         )
     }

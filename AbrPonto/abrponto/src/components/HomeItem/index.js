@@ -9,7 +9,7 @@ import { Dropdown } from 'react-bootstrap';
 
 
 import {FaUserAlt} from 'react-icons/fa'; //User 
-import {AiFillSetting} from 'react-icons/ai'; //settings
+import {AiFillSetting, AiOutlinePlus} from 'react-icons/ai'; //settings
 import {IoMdExit} from "react-icons/io"; //exit
 
 import {AiOutlineDashboard} from 'react-icons/ai'; //DashBoard
@@ -17,6 +17,10 @@ import {FaCubes} from 'react-icons/fa'; //Ativos
 import {AiFillFileText} from 'react-icons/ai';  //file
 import {FaWrench} from 'react-icons/fa'; //Tarefas
 import {FaExclamationCircle} from 'react-icons/fa'; //Chamados
+
+
+
+
 
 
 
@@ -99,7 +103,7 @@ export default class HomeItem extends Component {
                                   <Link className="navbar-brand" to="/Itens"    >
                                       <span > BR7mobilidade</span>  {/*BR7mobilidade */}
                                   </Link>
-
+                                  
                                   <button  className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMainToggler"
                                       aria-controls="navbarMainToggler" aria-expanded="false" aria-label="Toggle navigation" >
                                       <span className="navbar-toggler-icon" ></span>
@@ -112,9 +116,9 @@ export default class HomeItem extends Component {
                                           <Dropdown >
                                           <Dropdown.Toggle variant="secundary" id="dropdown-basic" className="bg-light"> 
                                          ABRIGOS
-                                 </Dropdown.Toggle>
+                                 </Dropdown.Toggle >
 
-                                              <Dropdown.Menu>
+                                              <Dropdown.Menu >
                                                   <Dropdown.Item href="#/action-1"></Dropdown.Item>
                                                   <Dropdown.Item href="#/action-2">TODAS AS OPERAÇÕES</Dropdown.Item>
                                                   <Dropdown.Item href="#/action-3">ABRIGOS</Dropdown.Item>
@@ -145,14 +149,17 @@ export default class HomeItem extends Component {
                                     </div>  
                                   </section>
 
+                                  
+
         
           </nav>
 
+          
+            </div>  
+          
+            <div className="fixar">  
+                  {/*menu lateral*/}
 
-        </div>            
-            
-            
-        <div className="fixar">  
              <div className="menu">
                 <div className="fixed"  >
                     <div className="link1"> 
@@ -213,53 +220,137 @@ export default class HomeItem extends Component {
                 </div>
             </div>
 
+           
+
+          { /*    <div className="user-info" >
                 
-                <div className="user-info" >
-                <div>
-                    <div className="user-info-link">
+                        
                         <Link to="/dashboard/newOs" > ATIVOS</Link>
 
-                        <h1>Olá {this.state.nome} </h1>
+                        <h1  >Olá {this.state.nome} </h1>
                         <span>Usuário: {firebase.getCurrent()}</span> 
-                    </div>
-                </div>     
-                    
-                    
-             </div>
+
+                        
+                   
+
+                        
+        </div> */}
 
             </div> 
 
-            <div className="ativosPai" > 
-
-                <section id="ativos" >
-                    {this.state.ativos.map((ativo)=>{
-                        return(
-                            <div>
-                            <article key={ativo.key} >
-                                <header>
-                                    <div className="title">
-                                        <strong>Tipo: {ativo.tipo} </strong>
-                                        <span>Executador: {ativo.executador} </span>
-                                    </div>
-                                </header>
-                                <img src={ativo.image} alt="Imagem do Ativo" className="imgAtivos"  />
+            <table className="table" >
+                <tr className="tr1">
+                    <th className="trb" ><FaCubes color="#fff" size="15px" /> 
+                    <span className="span2" >ATIVOS ( 1152 )</span> 
+                     </th>
+                    <th><span>Olá {this.state.nome} </span></th>
+                    <th><span>Usuário: {firebase.getCurrent()}</span> </th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>   
+                        <div className="linkAtivos" >
+                            <Link to="/dashboard/newOs"  > 
                             
-                                <footer>
-                                    <p>Ação: {ativo.descricao} </p>
+                            <AiOutlinePlus color="#fff" size="15px" />
+                            ATIVOS 
+                        </Link>
+                        </div>   
+                    </th>
+                 </tr>
 
-                                    
-                                </footer>
-                            </article>  
+                <tr >
+                    <th className="trb" ><input type="checkbox"  /></th>
+                    <th className="trb">REFERÊNCIA</th>
+                    <th className="trb">QR CODE</th>
+                    <th className="trb">ENDEREÇO</th>
+                    <th className="trb">CONDIÇÂO</th>
+                    <th className="trb">ABRIR ORDEM DE SERVICO </th>
+                    <th className="trb">ULTIMA OCORRÊNCIA</th>
+                    <th className="trb">ATUALIZADO EM</th>
+                </tr>
 
-                            <hr/>
-                            </div>
-                        )
+          
+               {this.state.ativos.map((ativo) =>{
+                   return(
+                    <tr key={ativo.key}>
+                        <td >
+                            
+                                 <input type="checkbox"  />
+                                 <img src={ativo.image} alt="Imagem do Ativo" className="imgAtivos" height="60px" />
+                            
+                        </td>
+                        <td><a>AVENIDA TAL</a></td>
+                        <td> CODE</td>
+                        <td>---</td>
+                        <td>0 </td>
+                        <td>{ativo.descricao}</td>
+                        <td>{ativo.executador} </td>
+                        <td>20/06/20</td>
+                    </tr>
+
+                   )
+               })}
+              
+          
+          
+
+         </table>
+
+      
+            
+            
+              
+
+
+    {/*  <div className="ativosPai" > 
+
+        
+            <section id="ativos" >
+                            
+                {this.state.ativos.map((ativo)=>{
+                    return(
+                        <div >
+                            
+
+                        <article key={ativo.key} >
 
                         
-                    })}
-                </section> 
 
-            </div>      
+                        
+                            <header>
+                                <div className="title">
+                                    <strong>Tipo: {ativo.tipo} </strong>
+                                    <span>Executador: {ativo.executador} </span>
+                                    
+                                </div>
+                            </header>
+                            <img src={ativo.image} alt="Imagem do Ativo" className="imgAtivos"  />
+                        
+                            <footer>
+                                <p>Ação: {ativo.descricao} </p>
+
+                                
+                            </footer>
+
+                            <td className="ch" >
+                                <input type="checkbox"  />
+                            </td>
+                        </article>  
+
+                        
+                        <hr/>
+                        </div>
+                    )
+
+                    
+                })}
+            </section> 
+
+            
+
+        </div>      */}
 
                     
            

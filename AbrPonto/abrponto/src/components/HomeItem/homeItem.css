@@ -11,7 +11,7 @@
 }
 
 .linkAtivos  a{
-    padding: 8px;
+    padding: 10px;
     border-radius: 4px;
     font-size: 14px;
     background-color: #226DBC;
@@ -41,7 +41,7 @@ div .user-info{
 }
 
 nav{
-    height: 60px;
+    height: 52px;
 }
 
 nav .navbar-brand{
@@ -141,23 +141,23 @@ nav#inicio{
     
 }
 
-.fixed{
+/* .fixed{
     display: block;
-}
+} */
 
 #geral .fixed .link1{
     padding-left: 10px ;
-    padding-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: -5px;
+    margin-top: 0px;
     font-size: 5px;
 }
 
-#geral .fixed .linkOs{
+/* #geral .fixed .linkOs{
     padding-left: 10px ;
     padding-top: 5px;
     margin-bottom: 5px;
     font-size: 5px;
-}
+} */
 
 
 
@@ -167,7 +167,7 @@ nav#inicio{
 }
 
 .menu{
-    padding-top: 60px;
+    padding-top: 52px;
 }
 .ativosPai{
     padding-top: 80px;
@@ -268,18 +268,50 @@ justify-content: center;
 
 }
 
+/* Div de contagem de Ativos */
+.divLength{
+    width: 83.5%;
+    height: 60px;
+    margin-left: 16%;
+    background: blue;
+    padding-top: 30px;
+}
+
+.iconCube{
+    padding-left: 10px;
+    float: left;
+}
+
+
+.spanLength{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 8px;
+    vertical-align: middle;
+}
+
+
+/* Tabel dos Ativos */
 .table{
-    margin-top: 0px;
-    width: 83%;
+    margin-top:0px;
+    width: 83.5%;
     font-size: 10px;
     padding-left: 5px;
     padding-right: 5px;
     margin-left: 16%;
+    background: gray;
     
+}
+
+.tr1{
+    height: 50px;
 }
 
 .trb{
     width: 10%;
+    height: 10px;
+    padding-left: 20%;
+    
 }
 
 img{
@@ -289,6 +321,6 @@ img{
     border-color: #ff0000;
 }
 
-.tr1{
-    height: 100px;
+.trAtivos{
+    height: 200px;
 }

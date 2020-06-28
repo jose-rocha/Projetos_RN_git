@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link, withRouter} from 'react-router-dom';
+import {Link, /*withRouter */} from 'react-router-dom';
 import './Config.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Dropdown } from 'react-bootstrap';
@@ -10,7 +10,7 @@ import {IoMdExit} from "react-icons/io"; //exit
 
 import {GoogleApiWrapper, Marker, InfoWindow, Map, } from 'google-maps-react';
 
-import {render} from 'react-dom';
+//import {render} from 'react-dom';
 import QrCode from 'react.qrcode.generator';
 
 

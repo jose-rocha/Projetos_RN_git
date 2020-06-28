@@ -3,7 +3,7 @@ import  {Link, withRouter} from 'react-router-dom';
 import firebase from '../../firebase';
 import './New.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Dropdown } from 'react-bootstrap';
+//import { Dropdown } from 'react-bootstrap';
 
 
 import {IoMdExit} from "react-icons/io"; //exit
@@ -94,7 +94,7 @@ class New extends Component{
     /*Essa função serve para verificar se tem usuário logado trabalha em conjunto
      com a state "nome: localStorage.nome", mesmo colocando a url correta ela vai redirecionar 
      para a página de login. */
-     async componentWillMount(){
+     async componentDidMount(){
         if(!firebase.getCurrent()){
             alert('Area restrita, para acessar essa página você precisa estar logado!');
             this.props.history.replace('/login');

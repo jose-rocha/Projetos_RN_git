@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, } from 'react';
 import {Link} from 'react-router-dom';
 import firebase from '../../firebase';
 import './homeItem.css';
@@ -31,16 +31,18 @@ export default class HomeItem extends Component {
         nome: localStorage.nome
     }
     state ={
-        ativos: [ ]
+        ativos: [ ],
     }
 
-
+    
     
 
     componentDidMount(){
         firebase.app.ref('ativos').once('value', (snapshot)=>{
             let state = this.state;
             state.ativos = [];
+
+            
 
             snapshot.forEach((childItem)=>{
                 state.ativos.push({
@@ -50,7 +52,8 @@ export default class HomeItem extends Component {
                     localizacao: childItem.val().localizacao,
                     ultimaOcorrencia: childItem.val().ultimaOcorrencia,
           /*autor*/ executador: childItem.val().executador,
-                    descricao: childItem.val().descricao
+                    descricao: childItem.val().descricao,
+                    
 
                 
                 })
@@ -60,6 +63,8 @@ export default class HomeItem extends Component {
         })
        
         this.logout = this.logout.bind(this);
+        this.dataAtual = this.dataAtual.bind(this);
+    
     }
 
 
@@ -88,6 +93,13 @@ export default class HomeItem extends Component {
        this.props.history.push('/login');
     } 
 
+   
+
+    dataAtual(){
+        
+    }
+    
+
     render() {
         return (
         <div id="geral">
@@ -96,7 +108,7 @@ export default class HomeItem extends Component {
         <div className="container-fluid p-0" id="fixa">
 
           
-              
+              {/* NavBar */}    
               <nav className="navbar navbar-expand-md navbar-dark bg-dark "  >
                               
 
@@ -156,7 +168,8 @@ export default class HomeItem extends Component {
 
           
             </div>  
-          
+
+             {/* Menu Lateral */}
             <div className="fixar">  
                   {/*menu lateral*/}
 
@@ -165,7 +178,7 @@ export default class HomeItem extends Component {
                     <div className="link1"> 
                         <Link  to="/dashboard"    >
                             <div className="navbar-brand">
-                            <AiOutlineDashboard color="#fff" size="15px" /> 
+                            <AiOutlineDashboard color="#fff" size="22px" /> 
                             <span className="span2" >DASHBOARD</span>  
                             </div>                         
                         </Link>
@@ -180,7 +193,7 @@ export default class HomeItem extends Component {
                         </Link>
                     </div> 
 
-                    <div className="linkOs" >
+                    <div className="link1" >
                         <Link  to="/OS"   >
                         <div className="navbar-brand">
                             <AiFillFileText color="#fff" size="15px" /> 
@@ -189,7 +202,7 @@ export default class HomeItem extends Component {
                         </Link>
                     </div> 
 
-                    <div className="linkOs" >
+                    <div className="link1" >
                         <Link  to="/tarefas"   >
                         <div className="navbar-brand">
                             <FaWrench color="#fff" size="15px" /> 
@@ -198,7 +211,7 @@ export default class HomeItem extends Component {
                         </Link>
                     </div> 
 
-                    <div className="linkOs" >
+                    <div className="link1" >
                         <Link  to="/chamados"   >
                         <div className="navbar-brand">
                             <FaExclamationCircle color="#fff" size="15px" /> 
@@ -207,7 +220,7 @@ export default class HomeItem extends Component {
                         </Link>
                     </div> 
 
-                    <div className="linkOs" >
+                    <div className="link1" >
                         <Link  to="/Itens/config"   >
                         <div className="navbar-brand">
                             <AiFillSetting color="#fff" size="15px" /> 
@@ -236,29 +249,54 @@ export default class HomeItem extends Component {
                         
         </div> */}
 
+{   /*     {this.state.ativos.map((ativo) =>{
+                        return( */}
+
             </div> 
 
-            <table className="table" >
-                <tr className="tr1">
-                    <th className="trb" ><FaCubes color="#fff" size="15px" /> 
-                    <span className="span2" >ATIVOS ( 1152 )</span> 
-                     </th>
-                    <th><span>Olá {this.state.nome} </span></th>
-                    <th><span>Usuário: {firebase.getCurrent()}</span> </th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th>   
-                        <div className="linkAtivos" >
-                            <Link to="/dashboard/newOs"  > 
+                 
+                        
+                <div className="divLength" >
+                    <div className="iconCube"> 
+                    
+                    <FaCubes color="#fff" size="15px" /> 
+                    </div>
+                    
+                    <span className="spanLength" >ATIVOS ({this.state.ativos.length})  </span>
+                    
+                    
+                </div>                                     
+                                    
+             
+                                   
+                                  
+
+          <table className="table" >
+    
                             
-                            <AiOutlinePlus color="#fff" size="15px" />
-                            ATIVOS 
-                        </Link>
-                        </div>   
-                    </th>
-                 </tr>
+                          <thead >
+                          <tr className="tr1" >
+                            <th></th>
+                            <th></th>
+                            <th><span>Olá {this.state.nome} </span></th>
+                            <th></th>
+                            <th><span>Usuário: {firebase.getCurrent()}</span> </th>
+                            <th></th>
+                            <th></th>
+                            <th>   
+                                <div className="linkAtivos" >
+                                    <Link to="/dashboard/newOs"  > 
+                                    
+                                    <AiOutlinePlus color="#fff" size="15px" />
+                                    ATIVOS 
+                                </Link>
+                                </div>   
+                            </th>
+                            </tr>
+
+                        </thead> 
+                        
+                
 
                 <tr >
                     <th className="trb" ><input type="checkbox"  /></th>
@@ -274,14 +312,14 @@ export default class HomeItem extends Component {
           
                {this.state.ativos.map((ativo) =>{
                    return(
-                    <tr key={ativo.key}>
+                    <tr key={ativo.key} className="trAtivos">
                         <td >
                             
                                  <input type="checkbox"  />
-                                 <img src={ativo.image} alt="Imagem do Ativo" className="imgAtivos" height="60px" />
+                                 <img src={ativo.image} alt="Imagem do Ativo" className="imgAtivos" height="60px" id="qtd" />
                             
                         </td>
-                        <td><a>AVENIDA TAL</a></td>
+                        <td><Link to="#">AVENIDA TAL</Link></td>
                         <td> CODE</td>
                         <td>---</td>
                         <td>0 </td>
@@ -296,7 +334,7 @@ export default class HomeItem extends Component {
           
           
 
-         </table>
+         </table> 
 
       
             

@@ -12,8 +12,8 @@ import  Settings from './components/Settings';
 import New from './components/New';
 import Config from './components/Config';
 
-import Navbar  from './components/Navbar';
-import Sidebar from './components/Sidebar';
+/* import Navbar  from './components/Navbar';
+import Sidebar from './components/Sidebar'; */
 
 
 

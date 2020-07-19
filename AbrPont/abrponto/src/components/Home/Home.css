@@ -1,0 +1,59 @@
+ div .pai{
+    display: flex;
+    flex-direction: column;
+    background: #0d2636;
+    
+    
+    
+   
+}
+
+
+/* html{
+    background: #0d2636;
+} */
+
+
+
+.t{
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+
+}
+
+.br7{
+    height: 505px;
+    border-radius: 15px;
+    padding: 10px 10px 20px 10px;
+
+    
+   
+}
+
+
+a{
+    color: blue;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #272727;
+    
+}
+
+
+
+
+
+.link{
+    
+}

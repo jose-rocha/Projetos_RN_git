@@ -1,7 +1,11 @@
 nav#inicioL{
 
-    background: #272727;;
+    background: #272727;
     height: 52px;
+}
+
+body{
+    background: #0D2636;
 }
 
 .br7In {

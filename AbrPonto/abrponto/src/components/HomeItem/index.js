@@ -239,13 +239,10 @@ export default class HomeItem extends Component {
                 
                         
                         <Link to="/dashboard/newOs" > ATIVOS</Link>
-
                         <h1  >Olá {this.state.nome} </h1>
                         <span>Usuário: {firebase.getCurrent()}</span> 
-
                         
                    
-
                         
         </div> */}
 
@@ -343,7 +340,6 @@ export default class HomeItem extends Component {
 
 
     {/*  <div className="ativosPai" > 
-
         
             <section id="ativos" >
                             
@@ -351,11 +347,8 @@ export default class HomeItem extends Component {
                     return(
                         <div >
                             
-
                         <article key={ativo.key} >
-
                         
-
                         
                             <header>
                                 <div className="title">
@@ -368,26 +361,20 @@ export default class HomeItem extends Component {
                         
                             <footer>
                                 <p>Ação: {ativo.descricao} </p>
-
                                 
                             </footer>
-
                             <td className="ch" >
                                 <input type="checkbox"  />
                             </td>
                         </article>  
-
                         
                         <hr/>
                         </div>
                     )
-
                     
                 })}
             </section> 
-
             
-
         </div>      */}
 
                     
@@ -396,7 +383,3 @@ export default class HomeItem extends Component {
         )
     }
 }
-
-
-
-

@@ -270,9 +270,9 @@ justify-content: center;
 
 /* Div de contagem de Ativos */
 .divLength{
-    width: 83.5%;
+    width: 81%;
     height: 60px;
-    margin-left: 16%;
+    margin-left: 18.5%;
     background: blue;
     padding-top: 30px;
 }
@@ -294,11 +294,11 @@ justify-content: center;
 /* Tabel dos Ativos */
 .table{
     margin-top:0px;
-    width: 83.5%;
+    width: 80%;
     font-size: 10px;
     padding-left: 5px;
     padding-right: 5px;
-    margin-left: 16%;
+    margin-left: 18.5%;
     background: gray;
     
 }

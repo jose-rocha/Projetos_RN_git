@@ -79,7 +79,7 @@ class Settings extends Component {
     render() {
         return (
             <div>
-               <nav className="navbar navbar-expand-lg navbar-light bg-light">
+               <nav className="navbar navbar-expand-lg navbar-light bg-dark">
                     <div className="navbar-header" >
                         <Link  to="/Itens"   className="navbar-brand" >
                             <span > BR7mobilidade</span>  {/*BR7mobilidade */}

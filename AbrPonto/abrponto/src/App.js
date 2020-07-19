@@ -11,6 +11,7 @@ import  Dashboard from './components/Dashboard';
 import  Settings from './components/Settings';
 import New from './components/New';
 import Config from './components/Config';
+import Local from './components/Local';
 
 /* import Navbar  from './components/Navbar';
 import Sidebar from './components/Sidebar'; */
@@ -49,11 +50,12 @@ export default class App extends Component {
             <Route exact path="/settings" component={Settings} />
             <Route exact path="/dashboard/newOs" component={New} />
             <Route exact path="/Itens/config" component={Config} />
+            <Route exact path="/Local/:Local" component={Local} />
           </Switch>
         </BrowserRouter>
           
       ) : /* se não mostra essa parte*/ (
-        <h1>Carregando...</h1>
+        <h1 style={{backgroundColor: '#0D2636', color: '#fff'}} >Carregando...</h1>
       )
   }
 }

@@ -11,6 +11,3 @@
 5 - yarn add  react-native-vector-icons --save
 
 6 - react-native link react-native-vector-icons
-
-
-

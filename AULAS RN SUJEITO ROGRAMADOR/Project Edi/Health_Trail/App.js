@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import Icon from 'react-native-vector-icons/SimpleLineIcons';
+import Icon from 'react-native-vector-icons/Ionicons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -61,7 +61,7 @@ export default function App() {
           options={{
             tabBarLabel: '',
             tabBarIcon: ({ color, /* size */ }) => (
-              <Icon name="home" size={30} color={color} />
+              <Icon name="home-outline" size={35} color={color} />
             ),
           }}
         />
@@ -77,7 +77,7 @@ export default function App() {
           options={{
             tabBarLabel: 'chat',
             tabBarIcon: ({ color, size }) => (
-              <Ionicons name="chatbubble-ellipses-outline" size={size} color={color} />
+              <Ionicons name="chatbubble-ellipses-outline" size={35} color={color} />
             ),
           }}
         />
@@ -85,7 +85,7 @@ export default function App() {
           options={{
             tabBarLabel: 'perfil',
             tabBarIcon: ({ color, size }) => (
-              <FontAwesome name="user-o" size={size} color={color} />
+              <FontAwesome name="user-o" size={35} color={color} />
             )
           }}
         />
@@ -94,4 +94,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-

@@ -1,71 +1,91 @@
 import React from 'react';
-import { View, Text, TextInput, StyleSheet, StatusBar, TouchableOpacity } from 'react-native';
+import { View, StatusBar,} from 'react-native';
+import {Container, HeaderPinkPai, ImgProfile,
+         InputSearch, BtnSearch, NUser, Qtde,
+        Celo,TPGestacao, TDica, ImgQtde, TextQtde
+        } from './styles';
 
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
+import Icone from  'react-native-vector-icons/Ionicons';
+
+
 
 export default function Home() {
     return (
-        <View style={styles.container}>
+        <Container /* style={styles.container} */ >
             <StatusBar
-                barStyle={'dark-content'} por padrão a letra da StatusBar já é branca
+                barStyle={'dark-content'} //por padrão a letra da StatusBar já é branca
                 hidden={true} //aqui esconde a StatusBar
                 backgroundColor="#da5388"
             />
-            <View style={styles.rosa}>
-                <Text> Home </Text>
-                <TextInput
-                    placeholder="Search"
-                    placeholderTextColor="#fff"
-                    style={styles.SearchInput}
-                />
-                <TouchableOpacity style={styles.btnSearch}>
-                    <EvilIcons
-                        name="search"
-                        size={30}
-                        color="#fff"
-                        style={styles.iconSearch}
-                    />
-                </TouchableOpacity>
-                <Text
-                    style={{
-                        color: '#fff',
-                        fontWeight: 'bold',
-                        fontSize: 25,
-                        marginTop: 95,
-                        marginLeft: 10,
-                    }}>
+            <HeaderPinkPai /* style={styles.rosa} */>
+                  <View>
+                        
+                        <InputSearch
+                            placeholder="Search"
+                            placeholderTextColor="#fff"
+                        /* style={styles.SearchInput} */
+                        />
+                        <BtnSearch /* style={styles.btnSearch} */>
+                            <EvilIcons
+                                name="search"
+                                size={30}
+                                color="#fff"
+                                // style={styles.iconSearch}
+                            />
+                        </BtnSearch>
+                    </View> 
+
+                    <ImgProfile >
+                        <ImgQtde>
+                            <TextQtde>4</TextQtde>
+                        </ImgQtde>            
+                    </ImgProfile>    
+
+                <NUser>
+                    Maria alves 
+                </NUser>  
+
+                <Qtde>
+                    12 Total     
+                </Qtde> 
+
+                <Celo>
+                <Icone name="pricetag"   color="yellow" />
+                </Celo>
+
+                <TPGestacao >
                     Programa Gestação
-          </Text>
-            </View>
-            <Text style={{ marginLeft: 10, marginTop: 10, fontSize: 20 }}>Dicas</Text>
-        </View>
+               </TPGestacao>
+               
+            </HeaderPinkPai>
+            <TDica>Dicas</TDica>
+        </Container>
     );
 }
-
-const styles = StyleSheet.create({
+/* const styles = StyleSheet.create({
     container: {},
     rosa: {
         backgroundColor: '#da5388',
         height: 190,
     },
-    SearchInput: {
+     SearchInput: {
         backgroundColor: '#e05d87',
         borderRadius: 25,
         width: 250,
         marginLeft: 30,
         paddingLeft: 20,
-    },
-    btnSearch: {
+    }, 
+      btnSearch: {
         // backgroundColor: 'black',
         width: 25,
         marginLeft: 240,
         marginTop: -35,
-    },
+    }, 
     iconSearch: {
         marginLeft: -2,
     },
 
-    bolPerfil: {
-        backgroundColor: '#fff',
-    },
-});
+   
+    
+}); */

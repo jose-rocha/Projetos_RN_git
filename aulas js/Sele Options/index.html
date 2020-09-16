@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap-4.3.1.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Select Options</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="col-6 col-md-4">
+        <label class="StyleText">Motivo*</label>
+        <select
+          id="select"
+          name="ticketcategories"
+          data-label="ticketcategories"
+          class="form-control"
+          ><option value="">Selecionar motivo</option
+          ><option value="Elogio">Elogio</option
+          ><option value="Informação">Informação</option
+          ><option value="Reclamação">Reclamação</option
+          ><option value="Sugestão">Sugestão</option></select
+        >
+
+        <div id="pai">
+          <label style="margin-top: 20px; margin-left: 0px; color: blue;"
+            >Assunto*</label
+          >
+          <select
+            class="form-control"
+            id="select"
+            name="assunto"
+            data-label="assunto"
+            class="field"
+            style="margin-top: 0px; margin-left: 0px;"
+            required=""
+          >
+            <!-- Elogios-->
+            <option value="">---</option>
+
+            <option
+              value="Elogio comportamental em excelente atendimento do colaborador"
+              id="Elogio"
+              >Elogio comportamental em excelente atendimento do
+              colaborador</option
+            >
+            <option
+              value="Elogios de ação extraordinária do colaborador"
+              id="Elogio2"
+              >Elogios de ação extraordinária do colaborador</option
+            >
+
+            <!-- Reclamação-->
+
+            <option value="Negativa de cartão Especial" id="Negativa"
+              >Negativa de cartão Especial</option
+            ><option
+              value="Problemas com recarga nos Cartões"
+              id="ProblemasCartões"
+              >Problemas com recarga nos Cartões</option
+            >
+            <option value="Problemas com Cartão Escolar" id="ProblemasEscolar"
+              >Problemas com Cartão Escolar</option
+            ><option value="Cartão inválido" id="CartãoInválido"
+              >Cartão inválido</option
+            >
+            <option value="Integração" id="Integração">Integração</option>
+            <option value="Gratuidade cancelada" id="GratuidadeCancelada"
+              >Gratuidade cancelada</option
+            ><option value="Erro de leitura" id="ErroLeitura"
+              >Erro de leitura</option
+            >
+            <option value="Problema com documentação" id="ProblemaDocumentação"
+              >Problema com documentação</option
+            ><option
+              value="Recarga pendente do cartão cidadão e vale transporte"
+              id="RecargaPendenteCartãoCidadãoValeTransporte"
+              >Recarga pendente do cartão cidadão e vale transporte</option
+            ><option
+              value="Tratar usuário sem urbanidade"
+              id="TratarSemUrbanidade"
+              >Tratar usuário sem urbanidade</option
+            ><option value="Atendimento Presencial" id="AtendimentoPresencial"
+              >Atendimento Presencial</option
+            ><option
+              value="Máquina de autoatendimento"
+              id="MáquinaAutoatendimento"
+              >Máquina de autoatendimento</option
+            >
+            <option value="Problema com agendamento" id="ProblemaAgendamento"
+              >Problema com agendamento</option
+            >
+            <option
+              value="Problema com atendimento telefônico"
+              id="ProblemaTelefônico"
+              >Problema com atendimento telefônico</option
+            ><option
+              value="Problema com atendimento telemático"
+              id="ProblemaTelemático"
+              >Problema com atendimento telemático</option
+            ><option
+              value="Problemas com acesso ao Portal Vale Transporte"
+              id="ProblemasPortalValeTransporte"
+              >Problemas com acesso ao Portal Vale Transporte</option
+            ><option value="Site Cartão Legal" id="SiteCartãoLegal"
+              >Site Cartão Legal</option
+            >
+            <option value="Questionamento de taxas" id="QuestionamentoTaxas"
+              >Questionamento de taxas</option
+            >
+            <option
+              value="Boleto não encontrado na base de dados"
+              id="BoletoNãoEncontradoBaseDados"
+              >Boleto não encontrado na base de dados</option
+            ><option value="Reclamação de prazos" id="ReclamaçãPrazos"
+              >Reclamação de prazos</option
+            >
+            <!--Informação-->
+            <option
+              value="Cancelamento por perda/roubo/furto"
+              id="CancelamentoPerdaRouboFurto"
+              >Cancelamento por perda/roubo/furto</option
+            >
+            <option
+              value="Consulta de cartões vinculados ao CPF"
+              id="ConsultaCartõesVinculadosCPF"
+              >Consulta de cartões vinculados ao CPF</option
+            >
+            <option
+              value="Consulta de solicitação cartão com gratuidade"
+              id="ConsultaSolicitaçãoCartãoGratuidade"
+              >Consulta de solicitação cartão com gratuidade</option
+            ><option
+              value="Documentação necessária para solicitar o cartão"
+              id="DocumentaçãoNcessáriaSolicitarCartão"
+              >Documentação necessária para solicitar o cartão</option
+            ><option
+              value="Formas de pagamento de taxas"
+              id="FormasPagamentoTaxas"
+              >Formas de pagamento de taxas</option
+            ><option
+              value="Formas de pagamento de recargas"
+              id="FormasPagamentoRecargas"
+              >Formas de pagamento de recargas</option
+            >
+            <option
+              value="Horário e Locais e Atendimento físico"
+              id="HorárioLocaisAtendimentofísico"
+              >Horário e Locais e Atendimento físico</option
+            ><option
+              value="Postos de recarga disponíveis"
+              id="PostosRecargaDisponíveis"
+              >Postos de recarga disponíveis</option
+            ><option
+              value="Prazos para emissão da 2° via dos cartões"
+              id="PrazosEmissão2°ViaCartões"
+              >Prazos para emissão da 2° via dos cartões</option
+            ><option
+              value="Recarga pendente do cartão cidadão e vale transporte"
+              id="RecargaPendenteCartãoCidadãoValeTransporte"
+              >Recarga pendente do cartão cidadão e vale transporte</option
+            ><option value="Valores e taxas cobradas" id="ValoresTaxasCobradas"
+              >Valores e taxas cobradas</option
+            ><option
+              value="Retirada de Vale Transporte"
+              id="RetiradaValeTransporte"
+              >Retirada de Vale Transporte</option
+            >
+
+            <option value="Segunda via" id="SegundaVia">Segunda via</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <option value="" onclick="mostrarElogio()">Elogio</option> <br /><br />
+
+    <option value="" onclick="mostrarReclamacao()">Reclamação</option>
+    <br /><br />
+
+    <option value="Informação" onclick="mostrarInformacao()">Informação</option>
+    <br />
+
+    <script src="/JS/script.js"></script>
+    <script src="/JS/bootstrap-4.3.1.min.js"></script>
+  </body>
+</html>

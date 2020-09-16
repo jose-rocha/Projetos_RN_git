@@ -1,0 +1,75 @@
+.azul {
+  background: #0000ff;
+  color: #fff;
+}
+.vermelho {
+  background: #ff0000;
+  color: #fff;
+}
+
+.verde {
+  background: #00ff00;
+  color: #000;
+}
+
+.oculto {
+  display: none;
+}
+
+.styleAzul {
+  width: 80px;
+  height: 30px;
+  background: #0000ff;
+  color: #fff;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.styleVermelho {
+  width: 80px;
+  height: 30px;
+  background: #ff0000;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.styleVerde {
+  width: 80px;
+  height: 30px;
+  background: #00ff00;
+  border-radius: 5px;
+  border: 0px;
+  cursor: pointer;
+}
+.styleDark {
+  width: 80px;
+  height: 30px;
+  background: #000;
+  border-radius: 5px;
+  color: #fff;
+  border: 0px;
+  cursor: pointer;
+}
+.styleWhite {
+  width: 80px;
+  height: 30px;
+  background: #fff;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+}
+.darkMode {
+  background-color: #181a1b;
+  color: #fff;
+}
+
+.corpoWhite {
+  background-color: rgb(167, 151, 151);
+  color: #000;
+}
+
+#esconde {
+  display: none;
+}

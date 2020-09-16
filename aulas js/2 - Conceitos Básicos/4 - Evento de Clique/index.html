@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos de Cliques</title>
+  </head>
+  <body>
+    <h1 id="texto" onclick="alert('clicado')">Eventos!</h1>
+    <h1 onclick="alert('clicado')">Evento 2</h1>
+    <h1 onmouseover="console.log('passou o mouse')">Passou o mouse</h1>
+    <h1 onmouseout="console.log('Tirou o mouse')">Tirou o mouse</h1>
+
+    <script>
+      document.write("Eventos de cliques");
+    </script>
+    <script src="/Evento de Clique/script.js"></script>
+    <br />
+
+    <button onclick="clicou()">Clique</button> <br /><br />
+
+    <button onclick="this.innerHTML='mudar o texto'">
+      Clique aqui para mudar o texto botão
+    </button>
+  </body>
+</html>

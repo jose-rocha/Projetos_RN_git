@@ -5,14 +5,15 @@ function digitou(e) {
     // 13 no teclado é enter
     let texto = document.getElementById("campo").value;
 
-    console.log(texto);
+    console.log(`O primeiro input o nome é ${texto} `);
   }
 }
 
 function digitou2(e) {
+  //se o evento keycode for = enter e se o evento ctrlkeycode for == verdadeiro.
   if (e.keyCode == 13 && e.ctrlKey == true) {
     let texto2 = document.getElementById("campo2").value;
 
-    console.log(texto2);
+    console.log(`O segundo input o nome é ${texto2} `);
   }
 }

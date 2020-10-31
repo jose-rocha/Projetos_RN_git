@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./functionCalback.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="tempo"></div>
+    <div id="tempo2"></div>
+
+    <script>
+      setInterval(() => {
+        let f = new Date();
+        let h = f.getHours();
+        let m = f.getMinutes();
+        let s = f.getSeconds();
+        if (s < 10) {
+          s = "0" + s;
+        }
+        if (m < 10) {
+          m = "0" + m;
+        }
+
+        document.getElementById("tempo").innerHTML = `Hora: ${h}:${m}:${s}  `;
+      }, 1000);
+    </script>
+  </body>
+</html>

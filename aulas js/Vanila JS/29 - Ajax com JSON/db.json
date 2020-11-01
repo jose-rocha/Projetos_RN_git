@@ -1,0 +1,12 @@
+{
+  "moto": [
+    {
+      "color": "red",
+      "year": 2009
+    },
+    {
+      "color": "blue",
+      "year": 2020
+    }
+  ]
+}

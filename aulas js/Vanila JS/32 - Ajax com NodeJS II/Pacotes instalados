@@ -1,0 +1,7 @@
+yarn add express --save (o pacote mais completo, que é o básico para para trabalhar com o node)
+
+yarn add nodemon --save (nodemon serve para executar o servidor de maneira que atualize o servidor constantemente)
+
+yarn add body-parser --save (para receber de forma mais pratica os dados dos formulários)
+
+yarn add cors --save  (Para poder trabalhar com requisições em dominios diferentes)

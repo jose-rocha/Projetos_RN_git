@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herança atarvés do Escopo Global</title>
+  </head>
+  <body>
+    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
+    <script>
+      let obj3 = new app((1000).toFixed(2), 2000);
+      console.log(obj3.result());
+
+      /* Ess objeto new app está sendo importado do arquivo script.js através do
+do parametro  win.app = app;
+
+
+*/
+    </script>
+  </body>
+</html>

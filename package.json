@@ -5,6 +5,7 @@
     "@react-navigation/native": "^5.1.5",
     "@react-navigation/stack": "^5.2.10",
     "app": "^0.1.0",
+    "express": "^4.17.1",
     "firebase": "^7.14.6",
     "node": "^14.2.0",
     "react-native-gesture-handler": "^1.6.1",

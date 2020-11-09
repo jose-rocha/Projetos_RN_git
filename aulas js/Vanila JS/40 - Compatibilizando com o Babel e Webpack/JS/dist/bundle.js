@@ -1,0 +1,1 @@
+(()=>{"use strict";let e=new class{andar(){return"A pessoa andou!"}comer(){return"A pessoa comeu!"}};alert(e.andar()),alert(e.comer())})();

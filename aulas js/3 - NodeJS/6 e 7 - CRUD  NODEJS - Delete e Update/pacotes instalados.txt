@@ -1,0 +1,11 @@
+1: yarn add  express --save
+
+ 2: yarn add  nodemon --save
+
+ 3: yarn add  mysql --save
+
+ 4: yarn add  body-parser --save
+
+ 5: yarn add express-handlebars  --save
+
+ 6: yarn add @fortawesome/fontawesome-free

@@ -1,0 +1,28 @@
+<title>SELECT</title>
+
+<div id="form1">
+    <table>
+        <tr>
+            <td>Action</td>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Age</td>
+        </tr>
+
+        {{#data}} {{!-- Esse data é da query select linha 55 do app.js --}}
+
+        <tr>
+            <td>
+                <a href="deletar"><img src="/IMG/trash.png" alt="" width="20px" s></a>
+                <a href="update"><img src="/IMG/edit.png" alt="" width="20px"> </a>
+            </td>
+
+            <td>{{id}}</td>
+            <td>{{name}}</td>
+            <td>{{age}}</td>
+        </tr>
+
+        {{/data}} {{!-- Esse data é da query select linha 55 do app.js --}}
+    </table>
+
+</div>

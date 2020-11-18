@@ -1,0 +1,56 @@
+/* #divForm {
+  text-align: center;
+  position: absolute;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: #5f7c8a;
+}
+
+form {
+  background: white;
+  max-width: 500px;
+  width: 70%;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form h3 {
+  text-align: center;
+  color: #5f7c8a;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+
+form button {
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+  background: #5f7c8a;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 20px;
+}

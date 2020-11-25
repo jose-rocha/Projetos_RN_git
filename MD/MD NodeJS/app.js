@@ -52,8 +52,14 @@ app.post('/controllerForm', urlencodeParser, function (req, res) {
         req.body.descricao1, req.body.descricao2, req.body.descricao3, req.body.descricao4, req.body.descricao5, req.body.descricao6, req.body.descricao7, req.body.descricao8,
         req.body.precoUni1, req.body.precoUni2, req.body.precoUni3, req.body.precoUni4, req.body.precoUni5, req.body.precoUni6, req.body.precoUni7, req.body.precoUni8,
         req.body.frete1, req.body.frete2, req.body.frete3, req.body.frete4, req.body.frete5, req.body.frete6, req.body.frete7, req.body.frete8,
-        req.body.valor_final1 = (parseInt(req.body.quant1) * parseInt(req.body.precoUni1) + parseInt(req.body.frete1)), req.body.valor_final2 = parseInt(req.body.quant2) * parseInt(req.body.precoUni2) + parseInt(req.body.frete2),
-        req.body.valor_final3 = parseInt(req.body.quant3) * parseInt(req.body.precoUni3) + parseInt(req.body.frete3), req.body.valor_final4, req.body.valor_final5, req.body.valor_final6, req.body.valor_final7, req.body.valor_final8,
+        req.body.valor_final1 = (parseInt(req.body.quant1) * parseInt(req.body.precoUni1) + parseInt(req.body.frete1)),
+        req.body.valor_final2 = parseInt(req.body.quant2) * parseInt(req.body.precoUni2) + parseInt(req.body.frete2),
+        req.body.valor_final3 = parseInt(req.body.quant3) * parseInt(req.body.precoUni3) + parseInt(req.body.frete3),
+        req.body.valor_final4 = parseInt(req.body.quant4 * req.body.precoUni4) + parseInt(req.body.frete4),
+        req.body.valor_final5 = parseInt(req.body.quant5 * req.body.precoUni5) + parseInt(req.body.frete5),
+        req.body.valor_final6 = parseInt(req.body.quant6 * req.body.precoUni6) + parseInt(req.body.frete6),
+        req.body.valor_final7 = parseInt(req.body.quant7 * req.body.precoUni7) + parseInt(req.body.frete7),
+        req.body.valor_final8,
         req.body.valor_nota]);
     res.render('controllerForm');
 

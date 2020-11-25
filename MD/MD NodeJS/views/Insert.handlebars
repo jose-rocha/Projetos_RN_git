@@ -1,0 +1,287 @@
+{{!-- <h1>Insert</h1> --}}
+
+<head>
+        <link rel="stylesheet" href="/CSS/styles.css">
+        <style>
+                .divInsert {
+                        margin-bottom: 10px;
+                        background-color: yellow;
+                        height: 430px;
+                        border-style: solid;
+                        border-color: #000;
+                        border-width: 1px;
+                }
+        </style>
+        <title>Insert</title>
+</head>
+
+<form class="nota" name="form1" action="/controllerForm" method="POST">
+        <div class="divInsert">
+                <div class="cabePai">
+                        <div class="cabeFilhoEsq">
+                                <b style="display: flex; justify-content: center; font-size: 14.5px;">Empreendimento e
+                                        Cabeceira MD</b>
+                                <b style="display: flex; justify-content: center; font-size: 14.5px;">Estofados(a)
+                                        Independetes</b>
+                                <b style="display: flex; justify-content: center; font-size: 14.5px;">Tel:
+                                        94950-4239</b>
+                                <h6 style="font-size: 12.8px; ">
+                                        Rua Izabel Andrade Maia nº498 - CEP: 09790-430 - Vila São José -
+                                        S. B. do Campo-SP
+                                </h6>
+                        </div>
+                        <div>
+                                <div class="cabeCPF">
+                                        <span>CNPJ</span>
+                                        <br />
+                                        <span>36.066703/0001-60</span>
+                                </div>
+
+                                <div class="cabeNIRE">
+                                        <span>NIRE</span>
+                                        <br />
+                                        <span>3584112059-4</span>
+                                </div>
+                        </div>
+                </div>
+                <!-- Segunda Parte ads informações -->
+
+                <div class="cabePai2">
+                        <div class="cabeFilhoEsq2">
+                                <span>São Bernardo do Campo:
+                                </span>
+                                {{!--  ---------------- Data ---------------------}}
+                                <span id="tempo" style="font-size: 13px"></span>
+                                {{!-- -----------------------------------------  --}}
+                                <br />
+                                <span class="titulosEsq">Ilmo Sr. (a):</span>
+                                <input type="text" style="width: 83%" name="nome_cliente" id="nome_cliente"><br>
+                                <span class="titulosEsq">Endereço:</span>
+                                <input type="text" style="width: 86%" name="endereco" id="endereco"><br />
+
+                                <span class="titulosEsq">
+                                        Telefone para Contato
+                                </span><input type="text" style="width: 70%" name="telefone" id="telefone"
+                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57"> <br>
+                                <span class="titulosEsq">Nome da Vendedora</span>
+                                <input type="text" style="width: 70%" name="nome_vendedora" id="nome_vendedora">
+                        </div>
+                        <div>
+                                <div class="cabeNumNota">
+                                        <h4 style="text-align: center;">Nº ----</h4>
+                                        <img src="/IMG/logoMD.png" alt="MD Cabeceiras e Baús">
+
+                                        <h4 style="text-align: center; margin-top: -3px;">VIA MD</h4>
+                                </div>
+
+                                <div class="cabeDataEntrega">
+                                        <span style="color: red; font-weight: bold; padding-bottom: -10px;  ">Data da
+                                                Entrega</span>
+
+                                </div>
+                        </div>
+                </div>
+
+                <div name="teste" id="form1" style="background: crimson;">
+                        <table>
+                                <tr>
+                                        <th style="width: 8%; font-size:12px; ">Quant</th>
+                                        <th style="width:48%; ">Descrição</th>
+                                        <th style="width: 21.7%; ">Preço Unitário</th>
+                                        <th style="width: 10%;">Frete</th>
+                                        <th style="width: 15%;">Valor Final</th>
+                                </tr>
+                                <tr>
+                                        <td><input type="number" name="quant1" id="quant1" style="width: 50px;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="descricao1" id="descricao1" style="width: 100%;">
+                                        </td>
+                                        <td><input type="text" name="precoUni1" id="precoUni1" style="width: 100%;"
+                                                        placeholder="Preço por Unidade"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="frete1" id="frete1" style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td>
+                                                <input type="hidden" name="valor_final1" id="valor_final1"
+                                                        style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                                <b id="result" style="color: #000; font-size: 15px"
+                                                        class="valor_final1">R$</b>
+
+
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td><input type="number" id="quant2" name="quant2" style="width: 50px;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="descricao2" id="descricao2" style="width: 100%;">
+                                        </td>
+                                        <td><input type="text" name="precoUni2" id="precoUni2" style="width: 100%;"
+                                                        placeholder="Preço Unidade 2"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="frete2" id="frete2" style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td>
+                                                <input type="hidden" name="valor_final2" id="valor_final2"
+                                                        style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+
+                                                <b id="result2" style="color: #000; font-size: 15px"
+                                                        class="valor_final2">R$</b>
+
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td><input type="number" id="quant3" name="quant3" style="width: 50px;"
+                                                        placeholder="Q3"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="descricao3" id="descricao3" style="width: 100%;"
+                                                        placeholder="descrição">
+                                        </td>
+                                        <td><input type="text" name="precoUni3" id="precoUni3" style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                                        placeholder="preço3" </td>
+                                        <td><input type="text" name="frete3" id="frete3" style="width: 100%;"
+                                                        placeholder="Frete3"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td>
+                                                <input type="hidden" name="valor_final3" id="valor_final3"
+                                                        style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+
+                                                <b id="result3" style="color: #000; font-size: 15px"
+                                                        class="valor_final3">R$</b>
+
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td><input type="number" id="quant4" name="quant4" style="width: 50px;"></td>
+                                        <td><input type="text" name="descricao4" id="descricao4" style="width: 100%;">
+                                        </td>
+                                        <td><input type="text" name="precoUni4" id="precoUni4" style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="frete4" id="frete4" style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="valor_final4" id="valor_final4"
+                                                        style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td><input type="number" id="quant5" name="quant5" style="width: 50px;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="descricao5" id="descricao5" style="width: 100%;">
+                                        </td>
+                                        <td><input type="text" name="precoUni5" id="precoUni5" style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="frete5" id="frete5" style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="valor_final5" id="valor_final5"
+                                                        style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td><input type="number" id="quant6" name="quant6" style="width: 50px;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="descricao6" id="descricao6" style="width: 100%;">
+                                        </td>
+                                        <td><input type="text" name="precoUni6" id="precoUni6" style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="frete6" id="frete6" style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="valor_final6" id="valor_final6"
+                                                        style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td><input type="number" id="quant7" name="quant7" style="width: 50px;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="descricao7" id="descricao7" style="width: 100%;">
+                                        </td>
+                                        <td><input type="text" name="precoUni7" id="precoUni7" style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="frete7" id="frete7" style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="valor_final7" id="valor_final7"
+                                                        style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <td><input type="number" id="quant8" name="quant8" style="width: 50px;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="descricao8" id="descricao8" style="width: 100%;">
+                                        </td>
+                                        <td><input type="text" name="precoUni8" id="precoUni8" style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="frete8" id="frete8" style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                        <td><input type="text" name="valor_final8" id="valor_final8"
+                                                        style="width: 100%;"
+                                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                        </td>
+                                </tr>
+
+                        </table>
+                        <span>Assinatura do Cliente</span>___________________________________________
+                        <span>Total da Nota:</span> <b><input type="text" name="valor_nota" id="valor_nota"
+                                        style="width: 72px; height:20px"
+                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57"></b>
+                </div>
+        </div>
+
+
+
+
+
+        <input id="print" type="submit" name="btnSubmit" id="btnSubmit" value="Cadastrar"
+                style="text-align: center; margin-top: 30px">
+
+
+        <script src="/JS/somaValNota.js"></script>
+        <script>
+                let tempo = document.querySelector("#tempo");
+                let temp = new Date();
+                let day = temp.getDate();
+                let month = temp.getMonth() + 1;
+                let year = temp.getFullYear();
+
+                if (day < 10) {
+                        day = "0" + day;
+                }
+
+                if (month < 10) {
+                        month = "0" + month;
+                }
+
+                tempo.innerHTML = `${day}/${month}/${year}`;
+
+      // console.log(`${day}/${month}/${year}`);
+        </script>
+
+
+</form>

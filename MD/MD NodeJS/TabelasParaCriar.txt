@@ -1,0 +1,64 @@
+Criar bd: MD; ok
+
+Criar Tabela de user: usuarios; ok
+
+id: auto increment
+name: admin
+email: user@gmail;
+Password: ******;
+
+
+------------------------------------
+Criar Tabela de dados da nota: dados_nota; ok
+n° da nota: id auto increment
+Ilmo Sr. (a): = Nome do Cliente;
+Endereço;
+Telefone;
+Nome da Vendedora;
+
+Quant:1
+Quant:2
+Quant:3
+Quant:4
+Quant:5
+Quant:6
+Quant:7
+Quant:8
+
+Descrição:1
+Descrição:2
+Descrição:3
+Descrição:4
+Descrição:5
+Descrição:6
+Descrição:7
+Descrição:8
+
+Preço Unitário:1
+Preço Unitário:2
+Preço Unitário:3
+Preço Unitário:4
+Preço Unitário:5
+Preço Unitário:6
+Preço Unitário:7
+Preço Unitário:8
+
+Frete:1
+Frete:2
+Frete:3
+Frete:4
+Frete:5
+Frete:6
+Frete:7
+Frete:8
+
+Valor Final:1
+Valor Final:2
+Valor Final:3
+Valor Final:4
+Valor Final:5
+Valor Final:6
+Valor Final:7
+Valor Final:8
+
+Total da Nota: ?????????????????

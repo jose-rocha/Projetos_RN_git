@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+}
+.nota {
+  /* background-color: red; */
+  max-width: 698px;
+  width: 100%;
+  height: 480px;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  margin-top: 230px;
+  /* top:25%; */
+  transform: translate(-50%, -50%);
+}
+
+.div1 {
+  margin-bottom: 10px;
+  background-color: yellow;
+  height: 372px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+}
+
+.div2 {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  background-color: teal;
+  height: 372px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+  border-right-width: 1px;
+}
+
+.cabePai {
+  display: flex;
+}
+.cabeFilhoEsq {
+  background-color: ghostwhite;
+  width: 75%;
+  height: 75px;
+  padding-left: 3px;
+}
+
+.titulosEsq {
+  padding-left: 3px;
+  font-size: 13px;
+}
+
+.cabePai2 {
+  display: flex;
+}
+.cabeFilhoEsq2 {
+  background-color: #f1f1f1;
+  width: 75%;
+  height: 100px;
+  margin-top: -10px;
+  /* text-align: center; */
+  font-size: 14px;
+  /* padding-left: 3px */
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+  border-left-width: 0px;
+}
+.cabeCPF {
+  margin-left: 0px;
+  /* margin-top: -22px; */
+  width: 180px;
+  height: 32px;
+  background-color: greenyellow;
+  padding-left: 3px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  font-size: 12.8px;
+}
+.cabeNIRE {
+  margin-left: 0px;
+  /* margin-top: -22px; */
+  width: 180px;
+  background-color: pink;
+  height: 35px;
+  padding-left: 3px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+  border-right: 0px;
+  border-bottom: 0px;
+  font-size: 12.8px;
+}
+.cabeNumNota {
+  margin-left: 1px;
+  margin-top: -10px;
+  width: 230px;
+  height: 60px;
+  background-color: orchid;
+  padding-left: 3px;
+  font-size: 12px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+  border-right: 0px;
+  border-left-width: 0px;
+}
+
+.cabeNumNota img {
+  height: 30px;
+  width: 229px;
+  margin-left: -3px;
+  /* margin-top: -3px; */
+}
+.cabeDataEntrega {
+  margin-left: 0px;
+  /* margin-right: 1px; */
+  /* margin-top: -22px; */
+  width: 230px;
+  background-color: orange;
+  height: 40px;
+  /* margin-right: 1px; */
+  font-size: 13px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 0px 0px 1px 0px;
+}
+
+/* ------------------- */
+
+/* Table */
+
+th {
+  /* width: 150px; */
+
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+}
+
+td {
+  align-items: center;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+  text-align: center;
+  font-size: 13px;
+}
+
+#print {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  border: 0px;
+  background: rgb(224, 149, 8);
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}

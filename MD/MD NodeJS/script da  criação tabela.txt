@@ -1,0 +1,4 @@
+create table user (id int not null auto_increment, primary key (id), name varchar(90), age int(3));
+
+
+coamndo para ver a descrição da tabela: desc nomedatabela

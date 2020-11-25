@@ -1,0 +1,108 @@
+/* Via Empresa MD  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #5f7c84;
+  }
+  .nota {
+    background-color: red;
+    max-width: 700px;
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .cabePai {
+    display: flex;
+    
+    
+  }
+  .cabeFilhoEsq {
+    background-color: ghostwhite;
+    width: 75%;
+    height: 80px;
+    padding-left: 3px;
+  }
+  
+  .titulosEsq{
+    padding-left: 3px; font-size: 13px
+  }
+  .cabeCPF {
+    margin-left: 0px;
+    /* margin-top: -22px; */
+    width: 180px;
+    height: 35px;
+    background-color: greenyellow;
+    padding-left: 3px;
+  }
+  .cabeCNPJ {
+    margin-left: 0px;
+    /* margin-top: -22px; */
+    width: 180px;
+    background-color: pink;
+    height: 35px;
+    padding-left: 3px;
+  }
+  .cabeCPF2 {
+    margin-left: 0px;
+    margin-top: -10px;
+    width: 230px;
+    height: 65px;
+    background-color:orchid;
+    padding-left: 3px;
+    font-size: 13px;
+  
+  }
+  
+  .cabeCPF2 img{
+    height: 35px;
+    width: 230px;
+    margin-left: -3px;
+    /* margin-top: -3px; */
+   
+  }
+  .cabeCNPJ2 {
+    margin-left: 0px;
+    /* margin-top: -22px; */
+    width: 230px;
+    background-color: orange;
+    height: 45px;
+    padding-left: 3px;
+    font-size: 13px;
+  }
+  
+  
+  
+  .cabePai2 {
+    display: flex;
+  }
+  .cabeFilhoEsq2 {
+    background-color: gray;
+    width: 75%;
+    height: 110px;
+    margin-top: -10px;
+  }
+  
+  /* ------------------- */
+  .div2 {
+    margin-bottom: 10px;
+    background-color: teal;
+    height: 500px;
+  }
+  
+  /* .div2 {
+    background-color: gray;
+    margin-top: 10px;
+    height: 500px;
+  }
+  
+   */

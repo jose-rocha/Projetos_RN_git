@@ -20,9 +20,10 @@
     let frete1 = doc.querySelector('#frete1');
     frete1.value = 0;
     let result = doc.querySelector('#result');
-    result.value = 0;
+    // result.value = 0;
 
 
+    // var result1s = 0;
 
 
     //responsavel pela linha valor final da linha 1
@@ -39,20 +40,31 @@
 
         function somar() {
 
-            let juntos = parseInt(quant1.value) * parseInt(precoUni1.value) + parseInt(frete1.value);
-            let juntas = juntos.toFixed(2)
+            let juntos1 = parseInt(quant1.value) * parseInt(precoUni1.value) + parseInt(frete1.value);
+            let juntos1s = juntos1.toFixed(2)
 
             if (frete1.value == '') {
-                juntas = `...`;
+                juntos1s = `...`;
             }
-            result.textContent = `R$${juntas} `;
+            let result1s = result.innerHTML = `R$${juntos1s} `;
+
+
+
+
 
         }
         frete1.addEventListener('keyup', somar, false);
 
     }
 
-    precoUni1.addEventListener('keyup', valorFina1, false)
+
+
+
+    precoUni1.addEventListener('keyup', valorFina1, false);
+
+
+
+
 
     /* ------------- Fim da  function valorFina1()  ------------------------ */
 
@@ -187,7 +199,7 @@
     let quant5 = doc.querySelector('#quant5');
     quant5.value = 0;
     let descricao5 = doc.querySelector('#descricao5');
-    descricao5.value = 0;
+    // descricao5.value = 0;
     let precoUni5 = doc.querySelector('#precoUni5');
     precoUni5.value = 0;
     let frete5 = doc.querySelector('#frete5');
@@ -214,7 +226,7 @@
                 juntos5s = `...`;
             }
 
-            result5.innerHTML = juntos5s;
+            result5.innerHTML = `R$ ${juntos5s}`;
         }
 
         frete5.addEventListener('keyup', somar5, false);
@@ -229,7 +241,7 @@
     let quant6 = doc.querySelector('#quant6');
     quant6.value = 0;
     let descricao6 = doc.querySelector('#descricao6');
-    descricao6.value = 0;
+    // descricao6.value = 0;
     let precoUni6 = doc.querySelector('#precoUni6');
     precoUni6.value = 0;
     let frete6 = doc.querySelector('#frete6');
@@ -308,5 +320,49 @@
 
     precoUni7.addEventListener('keyup', valorFina7, false);
     /* ----------------Fim da  function valorFina7()------------------------- */
+
+    let quant8 = doc.querySelector('#quant8');
+    quant8.value = 0;
+    let descricao8 = doc.querySelector('#descricao8');
+    // descricao8.value = 0;
+    let precoUni8 = doc.querySelector('#precoUni8');
+    precoUni8.value = 0;
+    let frete8 = doc.querySelector('#frete8');
+    frete8.value = 0;
+    let result8 = doc.querySelector('#result8');
+    result8.value = 0;
+    //responsavel pela linha valor final da linha 8
+
+    function valorFina8() {
+        let multQuant8ePrecouni8 = parseInt(quant8.value) * parseInt(precoUni8.value);
+        let multQuant8ePrecouni8s = multQuant8ePrecouni8.toFixed(2);
+
+        if (precoUni8.value == '') {
+            multQuant8ePrecouni8s = `...`;
+        }
+
+        result8.innerHTML = `R$ ${multQuant8ePrecouni8s}`;
+
+        function somar8() {
+            let juntos8 = parseInt(quant8.value) * parseInt(precoUni8.value) + parseInt(frete8.value);
+            let juntos8s = juntos8.toFixed(2);
+
+            if (frete8.value == '') {
+                juntos8s = `...`;
+            }
+
+            result8.innerHTML = `R$ ${juntos8s}`;
+        }
+
+        frete8.addEventListener('keyup', somar8, false);
+    }
+
+    precoUni8.addEventListener('keyup', valorFina8, false);
+
+    /* ----------------Fim da  function valorFina8()------------------------- */
+
+    // console.log(`Verificação da nota ${}`)
+
+
 
 })(window, document);

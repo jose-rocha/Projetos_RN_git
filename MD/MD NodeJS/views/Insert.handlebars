@@ -62,7 +62,8 @@
                                 <span class="titulosEsq">
                                         Telefone para Contato
                                 </span><input type="text" style="width: 70%" name="telefone" id="telefone"
-                                        onkeypress="return event.charCode >= 48 && event.charCode <= 57"> <br>
+                                        maxlength="14" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                                <br>
                                 <span class="titulosEsq">Nome da Vendedora</span>
                                 <input type="text" style="width: 70%" name="nome_vendedora" id="nome_vendedora">
                         </div>
@@ -255,20 +256,23 @@
                                         <td><input type="text" name="frete8" id="frete8" style="width: 100%;"
                                                         onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                                         </td>
-                                        <td><input type="text" name="valor_final8" id="valor_final8"
+                                        <td><input type="hidden" name="valor_final8" id="valor_final8"
                                                         style="width: 100%;"
                                                         onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 
-                                                {{!--  <b id="result8" style="color: #000; font-size: 16px"
-                                                        class="valor_final8">R$</b> --}}
+                                                <b id="result8" style="color: #000; font-size: 16px"
+                                                        class="valor_final8">R$</b>
                                         </td>
                                 </tr>
 
                         </table>
                         <span>Assinatura do Cliente</span>___________________________________________
-                        <span>Total da Nota:</span> <b><input type="text" name="valor_nota" id="valor_nota"
+                        <span>Total da Nota:</span> <b><input type="hidden" name="valor_nota" id="valor_nota"
                                         style="width: 72px; height:20px"
                                         onkeypress="return event.charCode >= 48 && event.charCode <= 57"></b>
+
+                        <b id="resulttotalNota" style="color: #000; font-size: 16px" class="resulttotalNota">R$</b>
+
                 </div>
         </div>
 
@@ -281,6 +285,8 @@
 
 
         <script src="/JS/somaValNota.js"></script>
+        <script src="/JS/totalNota.js"></script>
+        <script src="/JS/mascaraTel.js"></script>
         <script>
                 let tempo = document.querySelector("#tempo");
                 let temp = new Date();

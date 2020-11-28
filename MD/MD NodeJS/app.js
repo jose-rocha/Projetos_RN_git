@@ -59,8 +59,8 @@ app.post('/controllerForm', urlencodeParser, function (req, res) {
         req.body.valor_final5 = parseInt(req.body.quant5 * req.body.precoUni5) + parseInt(req.body.frete5),
         req.body.valor_final6 = parseInt(req.body.quant6 * req.body.precoUni6) + parseInt(req.body.frete6),
         req.body.valor_final7 = parseInt(req.body.quant7 * req.body.precoUni7) + parseInt(req.body.frete7),
-        req.body.valor_final8,
-        req.body.valor_nota]);
+        req.body.valor_final8 = parseInt(req.body.quant8 * req.body.precoUni8) + parseInt(req.body.frete8),
+        req.body.valor_nota = req.body.valor_final1 + req.body.valor_final2 + req.body.valor_final3 + req.body.valor_final4 + req.body.valor_final5 + req.body.valor_final6 + req.body.valor_final7 + req.body.valor_final8]);
     res.render('controllerForm');
 
     /*  sql.query("insert into dadosnota values (?,?,?,?,?,?,   ?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?,    ?,?,?,?,?,?,?,?,  ?,?,?,?,?,?,?,?, ?,?,?,?,?,?,?,?)",

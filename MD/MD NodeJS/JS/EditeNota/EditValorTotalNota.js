@@ -2,11 +2,8 @@
     'use strict';
 
     let quant1 = doc.querySelector('#quant1');
-    quant1.value = 0;
     let precoUni1 = doc.querySelector('#precoUni1');
-    precoUni1.value = 0;
     let frete1 = doc.querySelector('#frete1');
-    frete1.value = 0;
 
     let resulttotalNota = doc.querySelector('#resulttotalNota');
     // console.log(resulttotalNota);
@@ -18,19 +15,16 @@
         let somaTestes = somaTeste.toFixed(2);
 
 
-
-
         resulttotalNota.innerHTML = `R$ ${somaTestes}`;
     }, false);
+
+
 
     /* -------------------------------------------- */
 
     let quant2 = doc.querySelector('#quant2');
-    quant2.value = 0;
     let precoUni2 = doc.querySelector('#precoUni2');
-    precoUni2.value = 0;
     let frete2 = doc.querySelector('#frete2');
-    frete2.value = 0;
 
     frete2.addEventListener('keyup', function () {
         let valor_final1 = parseInt(quant1.value) * parseInt(precoUni1.value) + parseInt(frete1.value);
@@ -44,11 +38,8 @@
     /* ------------------------------------------------------- */
 
     let quant3 = doc.querySelector('#quant3');
-    quant3.value = 0;
     let precoUni3 = doc.querySelector('#precoUni3');
-    precoUni3.value = 0;
     let frete3 = doc.querySelector('#frete3');
-    frete3.value = 0;
 
     frete3.addEventListener('keyup', function () {
         let valor_final1 = parseInt(quant1.value) * parseInt(precoUni1.value) + parseInt(frete1.value);
@@ -63,11 +54,8 @@
     /* ------------------------------------------------------- */
 
     let quant4 = doc.querySelector('#quant4');
-    quant4.value = 0;
     let precoUni4 = doc.querySelector('#precoUni4');
-    precoUni4.value = 0;
     let frete4 = doc.querySelector('#frete4');
-    frete4.value = 0;
 
     frete4.addEventListener('keyup', function () {
         let valor_final1 = parseInt(quant1.value) * parseInt(precoUni1.value) + parseInt(frete1.value);
@@ -83,11 +71,8 @@
     /* ------------------------------------------------------- */
 
     let quant5 = doc.querySelector('#quant5');
-    quant5.value = 0;
     let precoUni5 = doc.querySelector('#precoUni5');
-    precoUni5.value = 0;
     let frete5 = doc.querySelector('#frete5');
-    frete5.value = 0;
 
     frete5.addEventListener('keyup', function () {
         let valor_final1 = parseInt(quant1.value) * parseInt(precoUni1.value) + parseInt(frete1.value);
@@ -104,11 +89,8 @@
     /* ------------------------------------------------------- */
 
     let quant6 = doc.querySelector('#quant6');
-    quant6.value = 0;
     let precoUni6 = doc.querySelector('#precoUni6');
-    precoUni6.value = 0;
     let frete6 = doc.querySelector('#frete6');
-    frete6.value = 0;
 
     frete6.addEventListener('keyup', function () {
         let valor_final1 = parseInt(quant1.value) * parseInt(precoUni1.value) + parseInt(frete1.value);
@@ -126,11 +108,8 @@
     /* ------------------------------------------------------- */
 
     let quant7 = doc.querySelector('#quant7');
-    quant7.value = 0;
     let precoUni7 = doc.querySelector('#precoUni7');
-    precoUni7.value = 0;
     let frete7 = doc.querySelector('#frete7');
-    frete7.value = 0;
 
     frete7.addEventListener('keyup', function () {
         let valor_final1 = parseInt(quant1.value) * parseInt(precoUni1.value) + parseInt(frete1.value);
@@ -149,11 +128,8 @@
     /* ------------------------------------------------------- */
 
     let quant8 = doc.querySelector('#quant8');
-    quant8.value = 0;
     let precoUni8 = doc.querySelector('#precoUni8');
-    precoUni8.value = 0;
     let frete8 = doc.querySelector('#frete8');
-    frete8.value = 0;
 
     frete8.addEventListener('keyup', function () {
         let valor_final1 = parseInt(quant1.value) * parseInt(precoUni1.value) + parseInt(frete1.value);

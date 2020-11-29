@@ -2,28 +2,32 @@
     'use strict'
 
     let quant1 = doc.querySelector('#quant1');
-    quant1.value = 0;
-    if (quant1.value == 0) {
-        quant1.style.color = "red";
-        // console.log(`O valor de quant1 por enquanto é ${quant1.value} `);
-
-        function remoValue() {
-            quant1.value = '';
+    quant1.addEventListener('keyup', function () {
+        if (quant1.value == '') {
+            quant1.value = 0;
         }
+    }, false);
 
-        quant1.addEventListener('click', remoValue, false);
-    }
+    console.log(quant1.value)
+
     let descricao1 = doc.querySelector('#descricao1');
-    // descricao1.value = 0;
+
     let precoUni1 = doc.querySelector('#precoUni1');
-    precoUni1.value = 0;
+    precoUni1.addEventListener('keyup', function () {
+        if (precoUni1.value == '') {
+            precoUni1.value = 0;
+        }
+    }, false);
+
     let frete1 = doc.querySelector('#frete1');
-    frete1.value = 0;
+    frete1.addEventListener('keyup', function () {
+        if (frete1.value == '') {
+            frete1.value = 0;
+        }
+    }, false);
+
     let result = doc.querySelector('#result');
-    // result.value = 0;
 
-
-    // var result1s = 0;
 
 
     //responsavel pela linha valor final da linha 1
@@ -68,15 +72,30 @@
 
 
     let quant2 = doc.querySelector('#quant2');
-    quant2.value = 0;
+    quant2.addEventListener('keyup', function () {
+        if (quant2.value == '') {
+            quant2.value = 0;
+        }
+    }, false);
+
     let descricao2 = doc.querySelector('#descricao2');
-    // descricao2.value = 0;
+
     let precoUni2 = doc.querySelector('#precoUni2');
-    precoUni2.value = 0;
+    precoUni2.addEventListener('keyup', function () {
+        if (precoUni2.value == '') {
+            precoUni2.value = 0;
+        }
+    }, false);
+
     let frete2 = doc.querySelector('#frete2');
-    frete2.value = 0;
+    frete2.addEventListener('keyup', function () {
+        if (frete2.value == '') {
+            frete2.value = 0;
+        }
+    }, false);
+
     let result2 = doc.querySelector('#result2');
-    result2.value = 0;
+
 
 
     //responsavel pela linha valor final da linha 2
@@ -112,15 +131,30 @@
 
 
     let quant3 = doc.querySelector('#quant3');
-    quant3.value = 0;
+    quant3.addEventListener('keyup', function () {
+        if (quant3.value == '') {
+            quant3.value = 0;
+        }
+    }, false);
+
     let descricao3 = doc.querySelector('#descricao3');
     // descricao3.value = 0;
     let precoUni3 = doc.querySelector('#precoUni3');
-    precoUni3.value = 0;
+    precoUni3.addEventListener('keyup', function () {
+        if (precoUni3.value == '') {
+            precoUni3.value = 0;
+        }
+    }, false);
+
     let frete3 = doc.querySelector('#frete3');
-    frete3.value = 0;
+    frete3.addEventListener('keyup', function () {
+        if (frete3.value == '') {
+            frete3.value = 0;
+        }
+    }, false);
+
     let result3 = doc.querySelector('#result3');
-    // result3.value = 0
+
 
     //responsavel pela linha valor final da linha 3
 
@@ -151,17 +185,32 @@
     /* ----------------Fim da  function valorFina3()------------------------- */
 
     let quant4 = doc.querySelector('#quant4');
-    quant4.value = 0;
+    quant4.addEventListener('keyup', function () {
+        if (quant4.value == '') {
+            quant4.value = 0;
+        }
+    }, false);
+
     let descricao4 = doc.querySelector('#descricao4');
-    // descricao4.value = 0;
+
     let precoUni4 = doc.querySelector('#precoUni4');
-    precoUni4.value = 0;
+    precoUni4.addEventListener('keyup', function () {
+        if (precoUni4.value == '') {
+            precoUni4.value = 0;
+        }
+    }, false);
+
     let frete4 = doc.querySelector('#frete4');
-    frete4.value = 0;
+    frete4.addEventListener('keyup', function () {
+        if (frete4.value == '') {
+            frete4.value = 0;
+        }
+    }, false);
+
     let valor_final4 = doc.querySelector('#valor_final4');
-    valor_final4.value = 0;
+
     let result4 = doc.querySelector('#result4');
-    result4.value = 0;
+
 
     //responsavel pela linha valor final da linha 4
 
@@ -195,15 +244,29 @@
     /* ----------------Fim da  function valorFina4()------------------------- */
 
     let quant5 = doc.querySelector('#quant5');
-    quant5.value = 0;
+    quant5.addEventListener('keyup', function () {
+        if (quant5.value == '') {
+            quant5.value = 0;
+        }
+    }, false);
+
     let descricao5 = doc.querySelector('#descricao5');
     // descricao5.value = 0;
     let precoUni5 = doc.querySelector('#precoUni5');
-    precoUni5.value = 0;
+    precoUni5.addEventListener('keyup', function () {
+        if (precoUni5.value == '') {
+            precoUni5.value = 0;
+        }
+    }, false);
+
     let frete5 = doc.querySelector('#frete5');
-    frete5.value = 0;
+    frete5.addEventListener('keyup', function () {
+        if (frete5.value == '') {
+            frete5.value = 0;
+        }
+    }, false);
+
     let result5 = doc.querySelector('#result5');
-    result5.value = 0;
 
     //responsavel pela linha valor final da linha 5
 
@@ -237,15 +300,30 @@
 
 
     let quant6 = doc.querySelector('#quant6');
-    quant6.value = 0;
+    quant6.addEventListener('keyup', function () {
+        if (quant6.value == '') {
+            quant6.value = 0;
+        }
+    }, false);
+
     let descricao6 = doc.querySelector('#descricao6');
-    // descricao6.value = 0;
+
     let precoUni6 = doc.querySelector('#precoUni6');
-    precoUni6.value = 0;
+    precoUni6.addEventListener('keyup', function () {
+        if (precoUni6.value == '') {
+            precoUni6.value = 0;
+        }
+    }, false);
+
     let frete6 = doc.querySelector('#frete6');
-    frete6.value = 0;
+    frete6.addEventListener('keyup', function () {
+        if (frete6.value == '') {
+            frete6.value = 0;
+        }
+    }, false);
+
     let result6 = doc.querySelector('#result6');
-    result6.value = 0;
+
 
 
     //responsavel pela linha valor final da linha 6
@@ -281,15 +359,30 @@
     /* ----------------Fim da  function valorFina6()------------------------- */
 
     let quant7 = doc.querySelector('#quant7');
-    quant7.value = 0;
+    quant7.addEventListener('keyup', function () {
+        if (quant7.value == '') {
+            quant7.value = 0;
+        }
+    }, false);
+
     let descricao7 = doc.querySelector('#descricao7');
-    // descricao7.value = 0;
+
     let precoUni7 = doc.querySelector('#precoUni7');
-    precoUni7.value = 0;
+    precoUni7.addEventListener('keyup', function () {
+        if (precoUni7.value == '') {
+            precoUni7.value = 0;
+        }
+    }, false);
+
     let frete7 = doc.querySelector('#frete7');
-    frete7.value = 0;
+    frete7.addEventListener('keyup', function () {
+        if (frete7.value == '') {
+            frete7.value = 0;
+        }
+    }, false);
+
     let result7 = doc.querySelector('#result7');
-    result7.value = 0;
+
     //responsavel pela linha valor final da linha 7
 
 
@@ -318,15 +411,30 @@
     /* ----------------Fim da  function valorFina7()------------------------- */
 
     let quant8 = doc.querySelector('#quant8');
-    quant8.value = 0;
+    quant8.addEventListener('keyup', function () {
+        if (quant8.value == '') {
+            quant8.value = 0;
+        }
+    }, false);
+
     let descricao8 = doc.querySelector('#descricao8');
-    // descricao8.value = 0;
+
     let precoUni8 = doc.querySelector('#precoUni8');
-    precoUni8.value = 0;
+    precoUni8.addEventListener('keyup', function () {
+        if (precoUni8.value == '') {
+            precoUni8.value = 0;
+        }
+    }, false);
+
     let frete8 = doc.querySelector('#frete8');
-    frete8.value = 0;
+    frete8.addEventListener('keyup', function () {
+        if (frete8.value == '') {
+            frete8.value = 0;
+        }
+    }, false);
+
     let result8 = doc.querySelector('#result8');
-    result8.value = 0;
+
     //responsavel pela linha valor final da linha 8
 
 

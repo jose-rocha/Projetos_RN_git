@@ -2,143 +2,167 @@
 
 <head>
   <link rel="stylesheet" href="/CSS/styles.css" />
+
+  <title>Selecão de Notas</title>
+
+  <style>
+    .navbar {
+      position: fixed;
+    }
+
+    #dados {
+      padding-top: 50px;
+
+    }
+
+    thead {
+      background-color: #4e4b4b;
+      width: 400;
+    }
+  </style>
 </head>
 
-<table id="dadosTabela">
-  <tr>
-    <td>Action</td>
-    <td>Nº da Nota</td>
-    <td>Ilmo Senhor</td>
-    <td>Endereço:</td>
-    <td>Telefone para Contato</td>
-    <td>Nome da Vendendora</td>
-    {{!-- ------------------ --}}
-    <td>Quantidade (1º)</td>
-    <td>Quantidade (2º)</td>
-    <td>Quantidade (3º)</td>
-    <td>Quantidade (4º)</td>
-    <td>Quantidade (5º)</td>
-    <td>Quantidade (6º)</td>
-    <td>Quantidade (7º)</td>
-    <td>Quantidade (8º)</td>
+<table id="dados" class="dados">
+  <thead>
+    <tr style="width: 40%;">
+      <td>Action</td>
+      <td>Nº da Nota</td>
+      <td>Ilmo Senhor</td>
+      <td>Endereço:</td>
+      <td>Telefone para Contato</td>
+      <td>Nome da Vendendora</td>
+      {{!-- ------------------ --}}
+      <td>Quantidade (1º)</td>
+      <td>Quantidade (2º)</td>
+      <td>Quantidade (3º)</td>
+      <td>Quantidade (4º)</td>
+      <td>Quantidade (5º)</td>
+      <td>Quantidade (6º)</td>
+      <td>Quantidade (7º)</td>
+      <td>Quantidade (8º)</td>
 
-    {{!-- ------------------ --}}
-    <td>Descrição 1</td>
-    <td>Descrição 2</td>
-    <td>Descrição 3</td>
-    <td>Descrição 4</td>
-    <td>Descrição 5</td>
-    <td>Descrição 6</td>
-    <td>Descrição 7</td>
-    <td>Descrição 8</td>
+      {{!-- ------------------ --}}
+      <td>Descrição 1</td>
+      <td>Descrição 2</td>
+      <td>Descrição 3</td>
+      <td>Descrição 4</td>
+      <td>Descrição 5</td>
+      <td>Descrição 6</td>
+      <td>Descrição 7</td>
+      <td>Descrição 8</td>
 
-    {{!-- ------------------ --}}
-    <td>precoUni 1</td>
-    <td>precoUni 2</td>
-    <td>precoUni 3</td>
-    <td>precoUni 4</td>
-    <td>precoUni 5</td>
-    <td>precoUni 6</td>
-    <td>precoUni 7</td>
-    <td>precoUni 8</td>
+      {{!-- ------------------ --}}
+      <td>precoUni 1</td>
+      <td>precoUni 2</td>
+      <td>precoUni 3</td>
+      <td>precoUni 4</td>
+      <td>precoUni 5</td>
+      <td>precoUni 6</td>
+      <td>precoUni 7</td>
+      <td>precoUni 8</td>
 
-    {{!-- ------------------ --}}
-    <td>frete 1</td>
-    <td>frete 2</td>
-    <td>frete 3</td>
-    <td>frete 4</td>
-    <td>frete 5</td>
-    <td>frete 6</td>
-    <td>frete 7</td>
-    <td>frete 8</td>
+      {{!-- ------------------ --}}
+      <td>frete 1</td>
+      <td>frete 2</td>
+      <td>frete 3</td>
+      <td>frete 4</td>
+      <td>frete 5</td>
+      <td>frete 6</td>
+      <td>frete 7</td>
+      <td>frete 8</td>
 
-    {{!-- ------------------ --}}
-    <td>Valor Final 1</td>
-    <td>Valor Final 2</td>
-    <td>Valor Final 3</td>
-    <td>Valor Final 4</td>
-    <td>Valor Final 5</td>
-    <td>Valor Final 6</td>
-    <td>Valor Final 7</td>
-    <td>Valor Final 8</td>
+      {{!-- ------------------ --}}
+      <td>Valor Final 1</td>
+      <td>Valor Final 2</td>
+      <td>Valor Final 3</td>
+      <td>Valor Final 4</td>
+      <td>Valor Final 5</td>
+      <td>Valor Final 6</td>
+      <td>Valor Final 7</td>
+      <td>Valor Final 8</td>
 
-    {{!-- ------------------ --}}
-    <td>Total da Nota</td>
-  </tr>
+      {{!-- ------------------ --}}
+      <td>Total da Nota</td>
+    </tr>
+  </thead>
   {{#data}}
-  <tr>
-    <td>
-      <a href="/Update/{{id}}"><img src="/IMG/edit.png" alt="" width="16px" height="16px" /></a>
-      <a href="/Delete/{{id}}" class="Delete"><img src="/IMG/trash.png" alt="" width="16px" height="16px" /></a>
-    </td>
-    <td>{{id}}</td>
-    <td>{{nome_cliente}}</td>
-    <td>{{endereco}}</td>
-    <td>{{telefone}}</td>
-    <td>{{nome_vendedora}}</td>
+  <tbody>
+    <tr style="width: 40%;">
+      <td>
+        <a href="/Update/{{id}}"><img src="/IMG/edit.png" alt="" width="16px" height="16px" /></a>
+        <a href="/Delete/{{id}}" class="Delete"><img src="/IMG/trash.png" alt="" width="16px" height="16px" /></a>
+      </td>
+      <td>{{id}}</td>
+      <td>{{nome_cliente}}</td>
+      <td>{{endereco}}</td>
+      <td>{{telefone}}</td>
+      <td>{{nome_vendedora}}</td>
 
-    {{!-- ------------------ --}}
+      {{!-- ------------------ --}}
 
-    <td>{{quant1}}</td>
-    <td>{{quant2}}</td>
-    <td>{{quant3}}</td>
-    <td>{{quant4}}</td>
-    <td>{{quant5}}</td>
-    <td>{{quant6}}</td>
-    <td>{{quant7}}</td>
-    <td>{{quant8}}</td>
+      <td>{{quant1}}</td>
+      <td>{{quant2}}</td>
+      <td>{{quant3}}</td>
+      <td>{{quant4}}</td>
+      <td>{{quant5}}</td>
+      <td>{{quant6}}</td>
+      <td>{{quant7}}</td>
+      <td>{{quant8}}</td>
 
-    {{!-- ------------------ --}}
+      {{!-- ------------------ --}}
 
-    <td>{{descricao1}}</td>
-    <td>{{descricao2}}</td>
-    <td>{{descricao3}}</td>
-    <td>{{descricao4}}</td>
-    <td>{{descricao5}}</td>
-    <td>{{descricao6}}</td>
-    <td>{{descricao7}}</td>
-    <td>{{descricao8}}</td>
+      <td>{{descricao1}}</td>
+      <td>{{descricao2}}</td>
+      <td>{{descricao3}}</td>
+      <td>{{descricao4}}</td>
+      <td>{{descricao5}}</td>
+      <td>{{descricao6}}</td>
+      <td>{{descricao7}}</td>
+      <td>{{descricao8}}</td>
 
-    {{!-- ------------------ --}}
+      {{!-- ------------------ --}}
 
-    <td id="valor" class="valors">R$ {{precoUni1}},00</td>
-    <td>R$ {{precoUni2}}, 00</td>
-    <td>R$ {{precoUni3}}</td>
-    <td>R$ {{precoUni4}}</td>
-    <td>R$ {{precoUni5}}</td>
-    <td>R$ {{precoUni6}}</td>
-    <td>R$ {{precoUni7}}</td>
-    <td>R$ {{precoUni8}}</td>
+      <td id="valor" class="valors">R$ {{precoUni1}},00</td>
+      <td>R$ {{precoUni2}}, 00</td>
+      <td>R$ {{precoUni3}}</td>
+      <td>R$ {{precoUni4}}</td>
+      <td>R$ {{precoUni5}}</td>
+      <td>R$ {{precoUni6}}</td>
+      <td>R$ {{precoUni7}}</td>
+      <td>R$ {{precoUni8}}</td>
 
-    {{!-- ------------------ --}}
+      {{!-- ------------------ --}}
 
-    <td>{{frete1}}</td>
-    <td>{{frete2}}</td>
-    <td>{{frete3}}</td>
-    <td>{{frete4}}</td>
-    <td>{{frete5}}</td>
-    <td>{{frete6}}</td>
-    <td>{{frete7}}</td>
-    <td>{{frete8}}</td>
+      <td>{{frete1}}</td>
+      <td>{{frete2}}</td>
+      <td>{{frete3}}</td>
+      <td>{{frete4}}</td>
+      <td>{{frete5}}</td>
+      <td>{{frete6}}</td>
+      <td>{{frete7}}</td>
+      <td>{{frete8}}</td>
 
-    {{!-- ------------------ --}}
+      {{!-- ------------------ --}}
 
-    <td>{{valor_final1}}</td>
-    <td>{{valor_final2}}</td>
-    <td>{{valor_final3}}</td>
-    <td>{{valor_final4}}</td>
-    <td>{{valor_final5}}</td>
-    <td>{{valor_final6}}</td>
-    <td>{{valor_final7}}</td>
-    <td>{{valor_final8}}</td>
+      <td>{{valor_final1}}</td>
+      <td>{{valor_final2}}</td>
+      <td>{{valor_final3}}</td>
+      <td>{{valor_final4}}</td>
+      <td>{{valor_final5}}</td>
+      <td>{{valor_final6}}</td>
+      <td>{{valor_final7}}</td>
+      <td>{{valor_final8}}</td>
 
-    {{!-- ------------------ --}}
-    <td>{{valor_nota}}</td>
-  </tr>
+      {{!-- ------------------ --}}
+      <td>{{valor_nota}}</td>
+    </tr>
+  </tbody>
   {{/data}}
 </table>
 
 {{!-- <b id="filterKeyword"></b> --}}
+
+
 
 <script src="/JS/DeleteEdit.js"></script>
 

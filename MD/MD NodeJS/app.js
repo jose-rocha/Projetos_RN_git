@@ -35,6 +35,20 @@ app.get('/', function (req, res) {
 });
 
 
+// Route Print
+app.get('/Print/:id?', function (req, res) {
+    if (!req.params.id) {
+        // res.send('Existe');
+        sql.query("select * from dadosnota order by id desc", function (err, results, fields) {
+            res.render('Print', { data: results });
+        });
+    }
+    else {
+        sql.query("select * from dadosnota where id=? order by id desc", [req.params.id], function (err, results, fields) {
+            res.render('Print', { data: results });
+        });
+    }
+});
 
 // Route Insert
 app.get('/Insert', function (req, res) { res.render("Insert"); });
@@ -149,7 +163,7 @@ app.post('/controllerForm', urlencodeParser, function (req, res) {
 });
 
 
-// Startando o Server Nde JS
+// Startando o Server Node JS
 app.listen(3000, function (req, res) {
     console.log('O pai tá ON!')
 });

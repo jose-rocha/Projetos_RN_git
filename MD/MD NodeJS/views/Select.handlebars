@@ -1,5 +1,3 @@
-{{!-- {{{data}}} --}}
-
 <head>
   <link rel="stylesheet" href="/CSS/styles.css" />
 
@@ -11,27 +9,36 @@
     }
 
     #dados {
-      padding-top: 50px;
+      padding-top: 55px;
+      width: 7035px;
 
     }
 
+    td {
+
+      font-size: 25px;
+    }
+
+
+
     thead {
-      background-color: #4e4b4b;
+      background-color: #F5DEB3;
       width: 400;
     }
   </style>
 </head>
 
-<table id="dados" class="dados">
+<table id="dados">
   <thead>
-    <tr style="width: 40%;">
-      <td>Action</td>
+    <tr>
+      <td>Ações</td>
       <td>Nº da Nota</td>
       <td>Ilmo Senhor</td>
       <td>Endereço:</td>
       <td>Telefone para Contato</td>
       <td>Nome da Vendendora</td>
       {{!-- ------------------ --}}
+
       <td>Quantidade (1º)</td>
       <td>Quantidade (2º)</td>
       <td>Quantidade (3º)</td>
@@ -42,6 +49,7 @@
       <td>Quantidade (8º)</td>
 
       {{!-- ------------------ --}}
+
       <td>Descrição 1</td>
       <td>Descrição 2</td>
       <td>Descrição 3</td>
@@ -52,6 +60,7 @@
       <td>Descrição 8</td>
 
       {{!-- ------------------ --}}
+
       <td>precoUni 1</td>
       <td>precoUni 2</td>
       <td>precoUni 3</td>
@@ -62,6 +71,7 @@
       <td>precoUni 8</td>
 
       {{!-- ------------------ --}}
+
       <td>frete 1</td>
       <td>frete 2</td>
       <td>frete 3</td>
@@ -72,6 +82,7 @@
       <td>frete 8</td>
 
       {{!-- ------------------ --}}
+
       <td>Valor Final 1</td>
       <td>Valor Final 2</td>
       <td>Valor Final 3</td>
@@ -82,15 +93,22 @@
       <td>Valor Final 8</td>
 
       {{!-- ------------------ --}}
+
       <td>Total da Nota</td>
     </tr>
   </thead>
   {{#data}}
   <tbody>
-    <tr style="width: 40%;">
+    <tr>
       <td>
-        <a href="/Update/{{id}}"><img src="/IMG/edit.png" alt="" width="16px" height="16px" /></a>
-        <a href="/Delete/{{id}}" class="Delete"><img src="/IMG/trash.png" alt="" width="16px" height="16px" /></a>
+        <b style="margin-left: -8px; margin-right: 5px">Imprimir:</b>
+        <a href="/Print/{{id}}" class="Print"><img src="/IMG/print.png" alt="" width="25px" height="25px" /></a><br>
+        <b style="margin-left: -40px; margin-right: 5px ">Editar:</b>
+        <a href="/Update/{{id}}"><img src="/IMG/edit.png" alt="" width="25px" height="25px" /></a>
+        <br>
+        <b style="margin-left: -10px; margin-right: 25px ">Excluir:</b>
+        <a href="/Delete/{{id}}" class="Delete"><img src="/IMG/trash.png" alt="" width="25px" height="25px" /></a>
+
       </td>
       <td>{{id}}</td>
       <td>{{nome_cliente}}</td>
@@ -133,28 +151,29 @@
 
       {{!-- ------------------ --}}
 
-      <td>{{frete1}}</td>
-      <td>{{frete2}}</td>
-      <td>{{frete3}}</td>
-      <td>{{frete4}}</td>
-      <td>{{frete5}}</td>
-      <td>{{frete6}}</td>
-      <td>{{frete7}}</td>
-      <td>{{frete8}}</td>
+      <td>R$ {{frete1}}</td>
+      <td>R$ {{frete2}}</td>
+      <td>R$ {{frete3}}</td>
+      <td>R$ {{frete4}}</td>
+      <td>R$ {{frete5}}</td>
+      <td>R$ {{frete6}}</td>
+      <td>R$ {{frete7}}</td>
+      <td>R$ {{frete8}}</td>
 
       {{!-- ------------------ --}}
 
-      <td>{{valor_final1}}</td>
-      <td>{{valor_final2}}</td>
-      <td>{{valor_final3}}</td>
-      <td>{{valor_final4}}</td>
-      <td>{{valor_final5}}</td>
-      <td>{{valor_final6}}</td>
-      <td>{{valor_final7}}</td>
-      <td>{{valor_final8}}</td>
+      <td>R$ {{valor_final1}}</td>
+      <td>R$ {{valor_final2}}</td>
+      <td>R$ {{valor_final3}}</td>
+      <td>R$ {{valor_final4}}</td>
+      <td>R$ {{valor_final5}}</td>
+      <td>R$ {{valor_final6}}</td>
+      <td>R$ {{valor_final7}}</td>
+      <td>R$ {{valor_final8}}</td>
 
       {{!-- ------------------ --}}
-      <td>{{valor_nota}}</td>
+
+      <td>R$ {{valor_nota}}, 00</td>
     </tr>
   </tbody>
   {{/data}}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/styles.css" />
+
+    <!-- <link rel="stylesheet" href="./styles2.css" /> -->
+    <title>MD Cabeceiras</title>
+</head>
+
+
+<body>
+    {{#data}}
+    <div class="nota">
+        <div class="div1">
+            <div class="cabePai">
+                <div class="cabeFilhoEsq">
+                    <b style="display: flex; justify-content: center; font-size: 14.5px;">Empreendimento e Cabeceira
+                        MD</b>
+                    <b style="display: flex; justify-content: center; font-size: 14.5px;">Estofados(a) Independetes</b>
+                    <b style="display: flex; justify-content: center; font-size: 14.5px;">Tel: 94950-4239</b>
+                    <h6 style="font-size: 12.8px; ">
+                        Rua Izabel Andrade Maia nº498 - CEP: 09790-430 - Vila São José -
+                        S. B. do Campo-SP
+                    </h6>
+                </div>
+                <div>
+                    <div class="cabeCPF">
+                        <span>CNPJ</span>
+                        <br />
+                        <span>36.066703/0001-60</span>
+                    </div>
+
+                    <div class="cabeNIRE">
+                        <span>NIRE</span>
+                        <br />
+                        <span>3584112059-4</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda Parte ads informações -->
+
+            <div class="cabePai2">
+                <div class="cabeFilhoEsq2">
+                    <span>São Bernardo do Campo:
+                    </span>
+                    {{!--  ---------------- Data ---------------------}}
+                    <span class="tempo" style="font-size: 13px"></span>
+                    {{!-- -----------------------------------------  --}}
+                    <br />
+                    <span class="titulosEsq">Ilmo Sr. (a):</span>
+                    {{nome_cliente}}
+                    <br />
+                    <span class="titulosEsq">Endereço:</span>
+                    {{endereco}} <br />
+                    <span class="titulosEsq"> ___________________15_____________________ </span><br>
+                    <span class="titulosEsq">
+                        Telefone para Contato:
+                    </span> {{telefone}}<br>
+                    <span class="titulosEsq">Nome da Vendedora:</span>
+                    {{nome_vendedora}}
+                </div>
+                <div>
+                    <div class="cabeNumNota">
+                        <h4 style="text-align: center;">Nº {{id}} </h4>
+                        <img src="/IMG/logoMD.png" alt="MD Cabeceiras e Baús">
+
+                        <h4 style="text-align: center; margin-top: -3px;">VIA MD</h4>
+                    </div>
+
+                    <div class="cabeDataEntrega">
+                        <span style="color: red; font-weight: bold; padding-bottom: -10px;  ">Data da Entrega</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div name="teste" id="form1">
+                <table>
+                    <tr>
+                        <th style="width: 8%; font-size:12px; ">Quant</th>
+                        <th style="width:48%; ">Descrição</th>
+                        <th style="width: 21.7%; ">Preço Unitário</th>
+                        <th style="width: 10%;">Frete</th>
+                        <th style="width: 15%;">Valor Final</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <!--  <tr>
+              <td style="width: 20%;" >Assinatura do Cliente</td>
+              <td style="width: 40px;">Total da Nota</td>
+              <td style="width:20px">R$ 150,00</td>
+              
+            </tr> -->
+                </table>
+                <span>Assinatura do Cliente</span>___________________________________________
+                <span>Total da Nota:</span> <b>R$150,00</b>
+            </div>
+        </div>
+
+
+        <!-- <hr /> -->
+
+        <!-- Via Empresa MD -->
+
+        <div class="div2">
+            <div class="cabePai">
+                <div class="cabeFilhoEsq">
+                    <b b style="display: flex; justify-content: center; font-size: 14.5px;">Empreendimento e Cabeceira
+                        MD</b>
+                    <b b style="display: flex; justify-content: center; font-size: 14.5px;">Estofados(a)
+                        Independetes</b>
+                    <b b style="display: flex; justify-content: center; font-size: 14.5px;">Tel: 94950-4239</b>
+                    <h6 style="font-size: 12.8px; ">
+                        Rua Izabel Andrade Maia nº498 - CEP: 09790-430 - Vila São José -
+                        S. B. do Campo-SP
+                    </h6>
+                </div>
+                <div>
+                    <div class="cabeCPF">
+                        <span>CNPJ</span>
+                        <br />
+                        <span>36.066703/0001-60</span>
+                    </div>
+
+                    <div class="cabeNIRE">
+                        <span>NIRE</span>
+                        <br />
+                        <span>3584112059-4</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda Parte ads informações -->
+
+            <div class="cabePai2">
+                <div class="cabeFilhoEsq2">
+                    <span style="text-align: center; font-size: 14px; padding-left: 3px">São Bernardo do Campo:
+                    </span>
+                    {{!-- ---------------- Data -------------------- --}}
+                    <span class="tempo2" style="font-size: 13px"></span>
+                    {{!-- ----------------------------------------- -- --}}
+                    <br />
+                    <span class="titulosEsq">Ilmo Sr. (a): </span>
+                    _________________________________________
+                    <br />
+                    <span class="titulosEsq">Endereço:</span>
+                    __________________________________________ <br />
+                    <span class="titulosEsq"> ___________________15_____________________ </span><br>
+                    <span class="titulosEsq">
+                        Telefone para Contato
+                    </span> ___________________________________ <br>
+                    <span class="titulosEsq">Nome da Vendedora</span>
+                    ____________________________________
+                </div>
+                <div>
+                    <div class="cabeNumNota">
+                        <h4 style="text-align: center;">Nº {{id}} </h4>
+                        <img src="/IMG/logoMD.png" alt="MD Cabeceiras e Baús">
+
+                        <h4 style="text-align: center; margin-top: -3px;">VIA CLIENTE</h4>
+                    </div>
+
+                    <div class="cabeDataEntrega">
+                        <span style="color: red; font-weight: bold; padding-bottom: -10px;  ">Data da Entrega</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div name="teste" id="form1">
+                <table>
+                    <tr>
+                        <th style="width: 8%; font-size:12px; ">Quant</th>
+                        <th style="width:48%; ">Descrição</th>
+                        <th style="width: 21.7%; ">Preço Unitário</th>
+                        <th style="width: 10%;">Frete</th>
+                        <th style="width: 15%;">Valor Final</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Kit Queen - Preto SueD</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 10,00</td>
+                        <td>R$ 160,00</td>
+                    </tr>
+                    <!--  <tr>
+              <td style="width: 20%;" >Assinatura do Cliente</td>
+              <td style="width: 40px;">Total da Nota</td>
+              <td style="width:20px">R$ 150,00</td>
+              
+            </tr> -->
+                </table>
+                <span id="assClient">Assinatura do Cliente</span>___________________________________________
+                <span id="assClient">Total da Nota:</span> <b id="assClient">R$150,00</b>
+            </div>
+
+
+        </div>
+        <button id="print">Imprimir</button>
+
+
+    </div>
+
+    <script>
+        let tempo = document.querySelector(".tempo");
+        let tempo2 = document.querySelector('.tempo2')
+        let temp = new Date();
+        let day = temp.getDate();
+        if (day < 10) {
+            day = '0' + day;
+        }
+        let month = temp.getMonth() + 1;
+        let year = temp.getFullYear();
+
+        tempo.innerHTML = `${day}/${month}/${year}`;
+        tempo2.innerHTML = `${day}/${month}/${year}`;
+
+      // console.log(`${day}/${month}/${year}`);
+    </script>
+
+    <script src="/JS/print.js"></script>
+
+    {{/data}}
+</body>
+
+</html>

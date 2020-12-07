@@ -31,9 +31,25 @@ app.use('/img', express.static('img')); //usar um diretório de imagens
 app.get('/', function (req, res) {
     // res.render('index', { id: req.params.id });
     // console.log(req.params.id);
-    res.render('index');
+    // res.render('index');
+    if (!req.params.id) {
+        // res.send('Existe');
+        sql.query("select * from dadosnota order by id desc", function (err, results, fields) {
+            res.render('Home', { data: results });
+        });
+    }
+    else {
+        sql.query("select * from dadosnota where id=? order by id desc", [req.params.id], function (err, results, fields) {
+            res.render('Home', { data: results });
+        });
+    }
+    // res.render("Select");
 });
 
+//Login
+app.get('/Login', function (req, res) {
+    res.render('Login');
+})
 
 // Route Print
 app.get('/Print/:id?', function (req, res) {
@@ -103,20 +119,20 @@ app.get('/Delete/:id', function (req, res) {
 
     res.render('Delete');
 });
-app.get('/Select/:id?', function (req, res) {
-    if (!req.params.id) {
-        // res.send('Existe');
-        sql.query("select * from dadosnota order by id desc", function (err, results, fields) {
-            res.render('Select', { data: results });
-        });
-    }
-    else {
-        sql.query("select * from dadosnota where id=? order by id desc", [req.params.id], function (err, results, fields) {
-            res.render('Select', { data: results });
-        });
-    }
-    // res.render("Select");
-})
+// app.get('/Select/:id?', function (req, res) {
+//     if (!req.params.id) {
+//         // res.send('Existe');
+//         sql.query("select * from dadosnota order by id desc", function (err, results, fields) {
+//             res.render('Select', { data: results });
+//         });
+//     }
+//     else {
+//         sql.query("select * from dadosnota where id=? order by id desc", [req.params.id], function (err, results, fields) {
+//             res.render('Select', { data: results });
+//         });
+//     }
+//     // res.render("Select");
+// })
 app.get('/About', function (req, res) { res.render("About"); });
 app.get('/Users', function (req, res) { res.render("Users"); });
 app.post('/controllerForm', urlencodeParser, function (req, res) {

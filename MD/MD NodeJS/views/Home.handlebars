@@ -10,20 +10,21 @@
 
     #dados {
       padding-top: 55px;
-      width: 7035px;
+      width: 7000px;
+
 
     }
 
     td {
 
-      font-size: 25px;
+      font-size: 17px;
     }
 
 
 
     thead {
       background-color: #F5DEB3;
-      width: 400;
+
     }
   </style>
 </head>
@@ -101,12 +102,12 @@
   <tbody>
     <tr>
       <td>
-        <b style="margin-left: -8px; margin-right: 5px">Imprimir:</b>
-        <a href="/Print/{{id}}" class="Print"><img src="/IMG/print.png" alt="" width="25px" height="25px" /></a><br>
-        <b style="margin-left: -40px; margin-right: 5px ">Editar:</b>
+        {{!-- <b style="margin-left: -45px; margin-right: 0px">Imprimir:</b> --}}
+        <a href="/Print/{{id}}" class="Print"><img src="/IMG/print.png" alt="" width="25px" height="25px" /></a>
+        {{!-- <b style="margin-left: 5px; margin-right: 5px ">Editar:</b> --}}
         <a href="/Update/{{id}}"><img src="/IMG/edit.png" alt="" width="25px" height="25px" /></a>
         <br>
-        <b style="margin-left: -10px; margin-right: 25px ">Excluir:</b>
+        {{!-- <b style="margin-left: -10px; margin-right: 25px ">Excluir:</b> --}}
         <a href="/Delete/{{id}}" class="Delete"><img src="/IMG/trash.png" alt="" width="25px" height="25px" /></a>
 
       </td>
@@ -119,13 +120,13 @@
       {{!-- ------------------ --}}
 
       <td>{{quant1}}</td>
-      <td>{{quant2}}</td>
-      <td>{{quant3}}</td>
-      <td>{{quant4}}</td>
-      <td>{{quant5}}</td>
-      <td>{{quant6}}</td>
-      <td>{{quant7}}</td>
-      <td>{{quant8}}</td>
+      <td class="quant2">{{quant2}}</td>
+      <td class="quant3">{{quant3}}</td>
+      <td class="quant4">{{quant4}}</td>
+      <td class="quant5">{{quant5}}</td>
+      <td class="quant6">{{quant6}}</td>
+      <td class="quant7">{{quant7}}</td>
+      <td class="quant8">{{quant8}}</td>
 
       {{!-- ------------------ --}}
 
@@ -141,39 +142,39 @@
       {{!-- ------------------ --}}
 
       <td id="valor" class="valors">R$ {{precoUni1}},00</td>
-      <td>R$ {{precoUni2}}, 00</td>
-      <td>R$ {{precoUni3}}</td>
-      <td>R$ {{precoUni4}}</td>
-      <td>R$ {{precoUni5}}</td>
-      <td>R$ {{precoUni6}}</td>
-      <td>R$ {{precoUni7}}</td>
-      <td>R$ {{precoUni8}}</td>
+      <td class="precoUni2">R$ {{precoUni2}},00</td>
+      <td class="precoUni3">R$ {{precoUni3}},00</td>
+      <td class="precoUni4">R$ {{precoUni4}},00</td>
+      <td class="precoUni5">R$ {{precoUni5}},00</td>
+      <td class="precoUni6">R$ {{precoUni6}},00</td>
+      <td class="precoUni7">R$ {{precoUni7}},00</td>
+      <td class="precoUni8">R$ {{precoUni8}},00</td>
 
       {{!-- ------------------ --}}
 
-      <td>R$ {{frete1}}</td>
-      <td>R$ {{frete2}}</td>
-      <td>R$ {{frete3}}</td>
-      <td>R$ {{frete4}}</td>
-      <td>R$ {{frete5}}</td>
-      <td>R$ {{frete6}}</td>
-      <td>R$ {{frete7}}</td>
-      <td>R$ {{frete8}}</td>
+      <td class="frete1">R$ {{frete1}},00</td>
+      <td class="frete2">R$ {{frete2}},00</td>
+      <td class="frete3">R$ {{frete3}},00</td>
+      <td class="frete4">R$ {{frete4}},00</td>
+      <td class="frete5">R$ {{frete5}},00</td>
+      <td class="frete6">R$ {{frete6}},00</td>
+      <td class="frete7">R$ {{frete7}},00</td>
+      <td class="frete8">R$ {{frete8}},00</td>
 
       {{!-- ------------------ --}}
 
-      <td>R$ {{valor_final1}}</td>
-      <td>R$ {{valor_final2}}</td>
-      <td>R$ {{valor_final3}}</td>
-      <td>R$ {{valor_final4}}</td>
-      <td>R$ {{valor_final5}}</td>
-      <td>R$ {{valor_final6}}</td>
-      <td>R$ {{valor_final7}}</td>
-      <td>R$ {{valor_final8}}</td>
+      <td class="valor_final1">R$ {{valor_final1}},00</td>
+      <td class="valor_final2">R$ {{valor_final2}},00</td>
+      <td class="valor_final3">R$ {{valor_final3}},00</td>
+      <td class="valor_final4">R$ {{valor_final4}},00</td>
+      <td class="valor_final5">R$ {{valor_final5}},00</td>
+      <td class="valor_final6">R$ {{valor_final6}},00</td>
+      <td class="valor_final7">R$ {{valor_final7}},00</td>
+      <td class="valor_final8">R$ {{valor_final8}},00</td>
 
       {{!-- ------------------ --}}
 
-      <td>R$ {{valor_nota}}, 00</td>
+      <td>R$ {{valor_nota}},00</td>
     </tr>
   </tbody>
   {{/data}}
@@ -184,6 +185,6 @@
 
 
 <script src="/JS/DeleteEdit.js"></script>
-
+<script src="/JS/DesapareceNumeros0.js"></script>
 
 <script src="/JS/Search.js"></script>

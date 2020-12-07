@@ -87,60 +87,60 @@
                         <th style="width: 15%;">Valor Final</th>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant1">{{quant1}} </td>
+                        <td>{{descricao1}}</td>
+                        <td class="precoUni1">R$ {{precoUni1}},00</td>
+                        <td class="frete1">R$ {{frete1}},00</td>
+                        <td class="valor_final1">R$ {{valor_final1}},00</td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant2">{{quant2}} </td>
+                        <td>{{descricao2}}</td>
+                        <td class="precoUni2">R$ {{precoUni2}},00</td>
+                        <td class="frete2">R$ {{frete2}},00</td>
+                        <td class="valor_final2">R$ {{valor_final2}},00</td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant3">{{quant3}} </td>
+                        <td>{{descricao3}}</td>
+                        <td class="precoUni3">R$ {{precoUni3}},00</td>
+                        <td class="frete3">R$ {{frete3}},00</td>
+                        <td class="valor_final3">R$ {{valor_final3}},00</td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant4">{{quant4}} </td>
+                        <td>{{descricao4}}</td>
+                        <td class="precoUni4">R$ {{precoUni4}},00</td>
+                        <td class="frete4">R$ {{frete4}},00</td>
+                        <td class="valor_final4">R$ {{valor_final4}},00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant5">{{quant5}} </td>
+                        <td>{{descricao5}}</td>
+                        <td class="precoUni5">R$ {{precoUni5}},00</td>
+                        <td class="frete5">R$ {{frete5}},00</td>
+                        <td class="valor_final5">R$ {{valor_final5}},00</td>
                     </tr>
                     <tr>
-                        <td>6</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant6">{{quant6}} </td>
+                        <td>{{descricao6}}</td>
+                        <td class="precoUni6">R$ {{precoUni6}},00</td>
+                        <td class="frete6">R$ {{frete6}},00</td>
+                        <td class="valor_final6">R$ {{valor_final6}},00</td>
                     </tr>
                     <tr>
-                        <td>7</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant7">{{quant7}} </td>
+                        <td>{{descricao7}}</td>
+                        <td class="precoUni7">R$ {{precoUni7}},00</td>
+                        <td class="frete7">R$ {{frete7}},00</td>
+                        <td class="valor_final7">R$ {{valor_final7}},00</td>
                     </tr>
                     <tr>
-                        <td>8</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant8">{{quant8}} </td>
+                        <td>{{descricao8}}</td>
+                        <td class="precoUni8" 8>R$ {{precoUni8}},00</td>
+                        <td class="frete8">R$ {{frete8}},00</td>
+                        <td class="valor_final8">R$ {{valor_final8}},00</td>
                     </tr>
                     <!--  <tr>
               <td style="width: 20%;" >Assinatura do Cliente</td>
@@ -150,7 +150,7 @@
             </tr> -->
                 </table>
                 <span>Assinatura do Cliente</span>___________________________________________
-                <span>Total da Nota:</span> <b>R$150,00</b>
+                <span>Total da Nota:</span> <b>R$ {{valor_nota}},00</b>
             </div>
         </div>
 
@@ -197,16 +197,16 @@
                     {{!-- ----------------------------------------- -- --}}
                     <br />
                     <span class="titulosEsq">Ilmo Sr. (a): </span>
-                    _________________________________________
+                    {{nome_cliente}}
                     <br />
                     <span class="titulosEsq">Endereço:</span>
-                    __________________________________________ <br />
+                    {{endereco}} <br />
                     <span class="titulosEsq"> ___________________15_____________________ </span><br>
                     <span class="titulosEsq">
-                        Telefone para Contato
-                    </span> ___________________________________ <br>
-                    <span class="titulosEsq">Nome da Vendedora</span>
-                    ____________________________________
+                        Telefone para Contato:
+                    </span> {{telefone}} <br>
+                    <span class="titulosEsq">Nome da Vendedora:</span>
+                    {{nome_vendedora}}
                 </div>
                 <div>
                     <div class="cabeNumNota">
@@ -233,60 +233,60 @@
                         <th style="width: 15%;">Valor Final</th>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant1s">{{quant1}} </td>
+                        <td>{{descricao1}}</td>
+                        <td class="precoUni1">R$ {{precoUni1}},00</td>
+                        <td class="frete1">R$ {{frete1}},00</td>
+                        <td class="valor_final1">R$ {{valor_final1}},00</td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant2s">{{quant2}} </td>
+                        <td>{{descricao2}}</td>
+                        <td class="precoUni2s">R$ {{precoUni2}},00</td>
+                        <td class="frete2s">R$ {{frete2}},00</td>
+                        <td class="valor_final2s">R$ {{valor_final2}},00</td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant3s">{{quant3}} </td>
+                        <td>{{descricao3}}</td>
+                        <td class="precoUni3s">R$ {{precoUni3}},00</td>
+                        <td class="frete3s">R$ {{frete3}},00</td>
+                        <td class="valor_final3s">R$ {{valor_final3}},00</td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant4s">{{quant4}} </td>
+                        <td>{{descricao4}}</td>
+                        <td class="precoUni4s">R$ {{precoUni4}},00</td>
+                        <td class="frete4s">R$ {{frete4}},00</td>
+                        <td class="valor_final4s">R$ {{valor_final4}},00</td>
                     </tr>
                     <tr>
-                        <td>5</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant5s">{{quant5}} </td>
+                        <td>{{descricao5}}</td>
+                        <td class="precoUni5s">R$ {{precoUni5}},00</td>
+                        <td class="frete5s">R$ {{frete5}},00</td>
+                        <td class="valor_final5s">R$ {{valor_final5}},00</td>
                     </tr>
                     <tr>
-                        <td>6</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant6s">{{quant6}} </td>
+                        <td>{{descricao6}}</td>
+                        <td class="precoUni6s">R$ {{precoUni6}},00</td>
+                        <td class="frete6s">R$ {{frete6}},00</td>
+                        <td class="valor_final6s">R$ {{valor_final6}},00</td>
                     </tr>
                     <tr>
-                        <td>7</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant7s">{{quant7}} </td>
+                        <td>{{descricao7}}</td>
+                        <td class="precoUni7s">R$ {{precoUni7}},00</td>
+                        <td class="frete7s">R$ {{frete7}},00</td>
+                        <td class="valor_final7s">R$ {{valor_final7}},00</td>
                     </tr>
                     <tr>
-                        <td>8</td>
-                        <td>Kit Queen - Preto SueD</td>
-                        <td>R$ 150,00</td>
-                        <td>R$ 10,00</td>
-                        <td>R$ 160,00</td>
+                        <td class="quant8s">{{quant8}} </td>
+                        <td>{{descricao8}}</td>
+                        <td class="precoUni8s">R$ {{precoUni8}},00</td>
+                        <td class="frete8s">R$ {{frete8}},00</td>
+                        <td class="valor_final8s">R$ {{valor_final8}},00</td>
                     </tr>
                     <!--  <tr>
               <td style="width: 20%;" >Assinatura do Cliente</td>
@@ -296,7 +296,7 @@
             </tr> -->
                 </table>
                 <span id="assClient">Assinatura do Cliente</span>___________________________________________
-                <span id="assClient">Total da Nota:</span> <b id="assClient">R$150,00</b>
+                <span id="assClient">Total da Nota:</span> <b id="assClient">R$ {{valor_nota}},00</b>
             </div>
 
 
@@ -324,6 +324,7 @@
     </script>
 
     <script src="/JS/print.js"></script>
+    {{!-- <script src="/JS/DesapareceNumeros0.js"></script> --}}
 
     {{/data}}
 </body>

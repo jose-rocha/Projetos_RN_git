@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Opções</title>
+  </head>
+  <body>
+    <form action="">
+      <tr>
+        <td><label>Motivo*</label></td>
+        <td>
+          <select
+            name="ticketcategories"
+            data-label="ticketcategories"
+            required=""
+          >
+            <option value="SelecioneUmaDasopcoes" id="SelecioneUmaDasopcoes">
+              Selecione uma das opções
+            </option>
+            <option value="Elogio" id="Elogio">Elogio</option>
+            <option value="Informação" id="Informacao">Informação</option>
+            <option value="Reclamação" id="Reclamacao">Reclamação</option>
+            <option value="Sugestão">Sugestão</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Assunto*</label></td>
+        <td>
+          <select
+            name="assunto"
+            data-label="assunto"
+            required=""
+            class="assunto"
+          >
+            <option value="" selected disabled="">Selecione as opções</option>
+          </select>
+        </td>
+      </tr>
+    </form>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
+
+<!-- Função criada para aparecer opções referente a Elogio, Informação, Reclamação e Sugestão com JS puro -->

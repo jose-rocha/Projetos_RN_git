@@ -50,7 +50,7 @@ a:hover {
   color: white;
   float: right;
   line-height: 50px;
-  margin-right: 60px;
+  margin-right: 10px;
   margin-top: 10px;
   cursor: pointer;
   display: none;
@@ -69,6 +69,11 @@ a:hover {
     font-size: 16px;
   }
 }
+@media (max-width: 1002px) {
+  .logo {
+    
+    margin-left: -50px;
+  }
 
 @media (max-width: 1002px) {
   .checkbtn {

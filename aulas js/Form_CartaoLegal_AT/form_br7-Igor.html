@@ -1,0 +1,134 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<form
+  id="__vtigerWebForm"
+  name="Site_br7"
+  action="https://br7.nsgl01.crm.netsac.com.br/modules/Webforms/capture.php"
+  method="post"
+  accept-charset="utf-8"
+  enctype="multipart/form-data"
+>
+  <table>
+  
+      <tr>
+        <td><label>Motivo*</label></td>
+        <td>
+          <select
+            name="ticketcategories"
+            data-label="ticketcategories"
+            required=""
+          >
+            <option value="">Selecione uma das opções</option>
+            <option value="Elogio">Elogio</option>
+            <option value="Informação">Informação</option>
+            <option value="Reclamação">Reclamação</option>
+            <option value="Sugestão">Sugestão</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Assunto*</label></td>
+        <td>
+          <select name="assunto" data-label="assunto" required="">
+            <!-- Elogio --->
+            <option value="" selected disabled="">Selecione as opções</option>
+            
+
+            <!-- Informação -->
+
+            <!-- Reclamação-->
+          </select>
+        </td>
+      </tr>
+      
+</form>
+
+
+<script type="text/javascript">
+  $('[name="ticketcategories"]').change(function () {
+    $('select[name="assunto"] option').each(function () {
+      $(this).remove();
+    });
+
+    
+
+    var picklist_values = "";
+    if (this.value == "Elogio") {
+      var pv_option = "Selecione as opções";
+      picklist_values =
+        picklist_values +
+        '<option value="' +
+        pv_option +
+        '">' +
+        pv_option +
+        "</option>";
+
+      var pv_option =
+        "Elogio comportamental em excelente atendimento do colaborador";
+      picklist_values =
+        picklist_values +
+        '<option value="' +
+        pv_option +
+        '">' +
+        pv_option +
+        "</option>";
+
+    
+    } else if (this.value == "Reclamação") {
+      var pv_option = "Selecione as opções";
+      picklist_values =
+        picklist_values +
+        '<option value="' +
+        pv_option +
+        '">' +
+        pv_option +
+        "</option>";
+
+      var pv_option = "Atendimento Presencial";
+      picklist_values =
+        picklist_values +
+        '<option value="' +
+        pv_option +
+        '">' +
+        pv_option +
+        "</option>";
+
+      
+
+     
+    } else if (this.value == "Informação") {
+      var pv_option = "Selecione as opções";
+      picklist_values =
+        picklist_values +
+        '<option value="' +
+        pv_option +
+        '">' +
+        pv_option +
+        "</option>";
+
+      var pv_option = "Cancelamento por perda/roubo/furto";
+      picklist_values =
+        picklist_values +
+        '<option value="' +
+        pv_option +
+        '">' +
+        pv_option +
+        "</option>";
+
+    
+    }else if(this.value == "Sugestão"){
+      var pv_option ="Selecione as options";
+    picklist_values = picklist_values + '<option value"' + pv_option + '">' +  pv_option + "</option>";
+
+    var pv_option ="Linha nova";
+    picklist_values = picklist_values + '<option value"' + pv_option + '">' +  pv_option + "</option>";
+
+
+      
+    }
+
+    $('select[name="assunto"]').append(picklist_values);
+  });
+</script>
+
+<!-- Função criada para aparecer opções referente a Elogio, Informação, Reclamação e Sugestão com JQuery -->

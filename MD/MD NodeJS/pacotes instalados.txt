@@ -9,3 +9,5 @@
  5: yarn add express-handlebars  --save
 
  6: yarn add @fortawesome/fontawesome-free
+
+ 7: yarn add bcrypt --save

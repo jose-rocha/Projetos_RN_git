@@ -6,13 +6,16 @@ const app = express();
 const urlencodeParser = bodyParser.urlencoded({ extended: false })
 // const { query } = require("express");
 // const { Router } = require('express');
+const brcrypt = require('bcrypt'); //pacote para criptografar a senha por token
 const sql = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    port: 3306
+    host: process.env.MYSQL_HOST,
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD,
+    port: process.env.MYSQL_PORT
 });
 sql.query("use md");
+
+
 
 
 
@@ -46,10 +49,19 @@ app.get('/', function (req, res) {
     // res.render("Select");
 });
 
-//Login
+//Router Cadastro
+app.get("/Cadastro", function (req, res) { res.render('Cadastro'); });
+
+//Cadastrando Usuário
+app.post('/ControllerCadastrar', urlencodeParser, function (req, res) {
+    sql.query('insert into usuarios values (?, ?, ?, ?)', [req.body.id, req.body.nome, req.body.email, req.body.senha]);
+    res.render('ControllerCadastrar');
+});
+
+//Router Login
 app.get('/Login', function (req, res) {
     res.render('Login');
-})
+});
 
 // Route Print
 app.get('/Print/:id?', function (req, res) {

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Display</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            font-size: 1.2rem;
+            background-color: #645e5e;
+        }
+
+        img {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color: blue;">
+        <div>Esta é uma Div normal</div>
+        <div>E aqui a história <div style="background-color: red; width: 500px; height: 50px;">de dentro</div> continua
+        </div>
+    </div>
+    <div>
+        <p style="margin: 0;">Este aqui é um parágrafo normal.</p>
+        <p style="margin: 0;">E aqui a história continua.</p>
+    </div>
+
+    <p>
+        Aqui eu tenho o inicio de um paragráfo <span
+            style="background-color: green; width: 500px; display: inline-block;"> um SPAN
+            no meio</span> E o fim do parágrafo.
+    </p>
+
+
+    <!-- Não se pode colocar div dentro de um paragráfo -->
+    <p style="background-color: blue;">
+        Aqui eu tenho o inicio de um paragráfo
+    <div style="background-color: red;"> uma div no meio</div> E o fim do parágrafo.
+    </p>
+
+    <p>
+        Aqui eu tenho o inicio de um paragráfo <img src="./assets/javascript.jpg" alt="">
+        E o fim do parágrafo.
+    </p>
+</body>
+
+</html>

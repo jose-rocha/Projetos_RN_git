@@ -1,0 +1,1 @@
+document.body.innerHTML = "<h1> Utilizando oDoom para inserir tag HTML </h1>"

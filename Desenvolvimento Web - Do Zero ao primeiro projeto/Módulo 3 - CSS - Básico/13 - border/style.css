@@ -1,0 +1,28 @@
+.borda {
+  /* border-width: 5px 10px 30px 45px; */
+  /* border-style: solid; */
+  /* border-color: green blue red yellow; */
+  border: 5px dashed blue;
+}
+
+.quadrado {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+
+.dotted {
+  border-style: dotted;
+}
+.dashed {
+  border-style: dashed;
+}
+.solid {
+  border-style: solid;
+}
+.none {
+  border-style: none;
+}
+.hidden {
+  border-style: hidden;
+}

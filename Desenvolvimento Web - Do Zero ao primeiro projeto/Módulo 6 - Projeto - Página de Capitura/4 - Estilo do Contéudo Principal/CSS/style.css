@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+header{
+    background-color: #48c5ce;
+    text-align: center;
+    color: white;
+}
+
+.title{
+    font-size: 26px;
+    padding: 10px;
+}
+
+section{
+    padding: 20px;
+   background-image: url('../Images/people.jpg');
+   background-size: cover;
+   overflow: hidden;
+}
+
+/* --------------------------------------- */
+
+.formContainer{
+    max-width: 230px;
+    background-color: #ffffffbb;
+    padding: 20px;
+    float: right;
+}
+
+h2{
+    font-size: 16px;
+}
+
+.mb{
+    margin-bottom: 15px;
+}
+
+input,select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    
+}
+
+input[type="submit"]{
+    cursor: pointer;
+    color: white;
+    background-color: #48c5ce;
+    font-weight: bold;
+}
+
+select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    background-image: url('../Images/arrow.jpg');
+    background-repeat: no-repeat;
+
+    background-position: calc(100% - 10px) center ;
+ 
+}

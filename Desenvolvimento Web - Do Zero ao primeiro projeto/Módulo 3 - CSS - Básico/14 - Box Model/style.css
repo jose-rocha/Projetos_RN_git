@@ -1,0 +1,18 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.container {
+  background-color: red;
+  padding: 5px;
+  border: 5px solid blue;
+  margin: 10px;
+}
+
+.content {
+  background-color: gray;
+  border: 5px solid green;
+  padding: 5px;
+}

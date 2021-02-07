@@ -1,0 +1,18 @@
+p {
+  color: #692727;
+  text-indent: 15px;
+  /* text-decoration: underline; */
+  /* text-decoration: overline; */
+  /* text-decoration: line-through; */
+  letter-spacing: 15px;
+  line-height: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.paragrafo2 {
+  word-spacing: 25px;
+  text-shadow: 2px 2px red;
+}

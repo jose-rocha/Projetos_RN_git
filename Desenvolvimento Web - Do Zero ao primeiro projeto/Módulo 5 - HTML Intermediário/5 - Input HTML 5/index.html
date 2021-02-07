@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input HTML 5</title>
+</head>
+
+<body>
+    <form method="GET" action="">
+        Cor: <br>
+        <input type="color" name="cor">
+
+        <br>
+        Data: <br>
+        <input type="date" name="data" max="2021-01-24">
+        <br>
+
+        Data e Hora: <br>
+        <input type="datetime-local" name="hora"> <!-- O Mozila firefox developer nã tem suporte a essa tag -->
+        <br>
+
+        Arquivos: <br>
+        <input type="file" name="arquivo">
+        <!-- qun do usar 
+            o input tpe="file" o metodo tem que ser o POST -->
+
+        <br>
+
+        Numeros: <br>
+        <input type="number" name="numeros" min="5" max="10">
+
+        <br>
+
+        Range: <br>
+        <input type="range" name="numerico" min="5" max="10" value="5">
+
+        <br>
+
+        Telefone: <br>
+        <input type="tel">
+        <!-- o input type="tel" só será percebido a diferença no celular pois aparecera um numerico-->
+        <br>
+
+        Email: <br>
+        <input type="email">
+
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

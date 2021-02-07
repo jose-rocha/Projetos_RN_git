@@ -1,0 +1,21 @@
+a{
+    text-decoration: none;
+    color: brown;
+    cursor: crosshair;
+    /* background-color: gray; */
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: 2px solid #bc2035;
+}
+
+a:hover{
+    background:#bc2035;
+    color: white;
+}
+
+/* a:active{
+    background:#bc2035;
+    color: white;
+} */

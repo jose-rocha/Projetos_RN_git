@@ -1,0 +1,1 @@
+window.alert('Testando o metodo Window do JavaScript')

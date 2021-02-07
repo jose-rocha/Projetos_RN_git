@@ -1,0 +1,18 @@
+ul{
+    /* list-style-type: none; */
+    list-style-image:  url("./images/JavaScript Full.png");
+    list-style-position: inside;
+    background-color: #f3e;
+    margin: 0px;
+    padding: 0px;
+}
+ol{
+    /* list-style-type: none; */
+    list-style-type: upper-alpha;
+
+    background-color: #59e;
+}
+
+li{
+    border: 1px solid;
+}

@@ -1,0 +1,198 @@
+@media screen and (max-width: 750px  ){
+    footer{
+        /* background-color: red; */
+        padding-left: 50px;
+        padding-top: 5px;
+        
+    }
+    
+    h3{
+        max-width: 150px;
+        text-align: justify;
+        margin-top: 0px;
+        padding-left: 10px;
+    }
+    
+    .paragrafoRodape{
+        padding-left: 0px;
+       
+        width: 250px; 
+    }
+    
+    picture{
+        margin-right: 200px;
+        width: 100px;
+        }
+    
+    }
+    
+    /* 565 */
+    @media screen and (max-width: 565px  ){
+        footer{
+            background-color: #202121;
+            padding: 40px;
+            text-align: center;
+    
+           
+        }
+    
+       
+    
+        .picture{
+            width: 200px;
+        
+        }
+    
+        .paragrafoRodape{
+        text-align: justify;
+        margin-left: 10px;
+       
+    
+        width: 240px;
+       
+       
+        }
+    
+        .descripition{
+            color: white;
+            display: inline-block;
+            text-align: left;
+            max-width: 40%;
+            /* margin-left: 40px; */
+            margin: auto;
+            
+        }
+    }
+    
+    /* 550 */
+    @media screen and (max-width: 550px  ){
+        footer{
+            /* background-color: #202121; */
+            background-color: red;
+            padding: 40px;
+            text-align: center;
+    
+           
+        }
+    
+       
+    
+        .picture{
+            width: 350px;
+            padding-left: 0px;
+        
+        }
+    
+        .paragrafoRodape{
+        text-align: justify;
+        margin-left: -85px;
+        margin-right: 50px;
+        
+        
+       
+    
+        width: 350px;
+       
+       
+        }
+    
+        .descripition{
+            color: white;
+            display: inline-block;
+            /* text-align: left; */
+            max-width: 40%;
+            /* margin-left: 40px; */
+            
+            
+        }
+    }
+    
+    
+    /* 520 */
+    @media screen and (max-width: 525px  ){
+        footer{
+            /* background-color: #202121; */
+            background-color: red;
+            padding: 40px;
+            text-align: center;
+    
+           
+        }
+    
+       
+    
+        .picture{
+            width: 350px;
+            padding-left: 0px;
+        
+        }
+    
+        .paragrafoRodape{
+        text-align: justify;
+        margin-left: -95px;
+        margin-right: 50px;
+        
+        
+       
+    
+        width: 350px;
+       
+       
+        }
+    
+        .descripition{
+            color: white;
+            display: inline-block;
+            /* text-align: left; */
+            max-width: 40%;
+            /* margin-left: 40px; */
+            
+            
+        }
+    
+    }
+    
+    /* 400 */
+
+    @media screen and (max-width: 420px  ){
+        footer{
+            /* background-color: #202121; */
+            background-color: red;
+            padding: 40px;
+            text-align: center;
+    
+           
+        }
+    
+       
+    
+        .picture{
+            width: 150px;
+            /* padding-left: 53px; */
+            margin-right: -150px;
+            margin-bottom: 250px;
+        
+        }
+    
+        .paragrafoRodape{
+        text-align: justify;
+        justify-content: center;
+        margin-left: -105px;
+       
+        }
+    
+        .descripition{
+            color: white;
+            display: inline-block;
+            /* text-align: left; */
+            max-width: 40%;
+            /* margin-left: 40px; */
+            
+            
+        }
+    
+    }
+    
+
+    
+    

@@ -12,17 +12,17 @@
 
     /* -------------------------------------------------- */
 
-    SelecioneUmaDasopcoes.addEventListener('click', function () {
+    // SelecioneUmaDasopcoes.addEventListener('click', function () {
 
-        let opcoes = 'Selecione as opções';
+    //     let opcoes = 'Selecione as opções';
 
-        let newOption = doc.createElement('option').innerText = '<option value"' + opcoes + '">' +
-            opcoes + "</option";
+    //     let newOption = doc.createElement('option').innerText = '<option value"' + opcoes + '">' +
+    //         opcoes + "</option";
 
 
-        assunto.innerHTML = newOption;
+    //     assunto.innerHTML = newOption;
 
-    }, false);
+    // }, false);
 
     /* -------------------------------------------------- */
 
@@ -31,13 +31,13 @@
         let opcoes = 'Selecione uma das Opções de Elogio';
 
 
-        let newOption = doc.createElement('option').innerText = '<option value"' + opcoes + '">' + opcoes + "</option>";
+        let newOption = doc.createElement('option').innerText = '<option  value"' + opcoes + '" selected disabled=""  >' + opcoes + "</option>";
 
 
         let opcoes2 = 'Motorista Atencioso';
 
 
-        let newOption2 = doc.createElement('option').innerText = '<option value"' + opcoes2 + '">' + opcoes2 + "</option>";
+        let newOption2 = doc.createElement('option').innerText = '<option value"' + opcoes2 + '"  >' + opcoes2 + "</option>";
 
 
         assunto.innerHTML = newOption + newOption2;
@@ -50,11 +50,11 @@
     Informacao.addEventListener('click', function () {
         let opcoes = 'Selecione uma das Opções Informações';
 
-        let newOption = doc.createElement('option').innerText = '<option value"' + opcoes + '">' + opcoes + "</option>";
+        let newOption = doc.createElement('option').innerText = '<option value"' + opcoes + '" selected disabled="" >' + opcoes + "</option>";
 
         let opcoes2 = 'Quanto custa nova recarga';
 
-        let newOption2 = doc.createElement('option').innerText = '<option value"' + opcoes2 + '">' + opcoes2 + "</option>";
+        let newOption2 = doc.createElement('option').innerText = '<option value"' + opcoes2 + '"  >' + opcoes2 + "</option>";
 
 
         assunto.innerHTML = newOption + newOption2;
@@ -66,7 +66,7 @@
     Reclamacao.addEventListener('click', function () {
         let opcoes = 'Selecione uma das Opções de Reclamação';
 
-        let newOption = doc.createElement('option').innerText = '<option value"' + opcoes + '">' + opcoes + "</option>";
+        let newOption = doc.createElement('option').innerText = '<option value"' + opcoes + '" selected disabled="" >' + opcoes + "</option>";
 
         assunto.innerHTML = newOption;
     }, false);

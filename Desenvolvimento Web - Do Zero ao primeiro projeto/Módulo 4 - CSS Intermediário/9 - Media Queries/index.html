@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            overflow: hidden;
+            margin: auto;
+            width: 80%;
+            background-color: #5c57a4;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 2px;
+        }
+
+        img {
+            height: 10%;
+            width: 30%;
+
+        }
+
+        .menu {
+            /* display: inline-block; */
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+
+        li {
+            /* display: inline-block; */
+            color: white;
+            margin-left: 15px;
+            float: left;
+        }
+
+        .logo {
+            float: left;
+            color: white;
+
+            /* display: inline-block; */
+        }
+
+        @media screen and (max-width: 600px) {
+
+            /* .header {
+                background: red;
+            } */
+
+            .logo {
+                float: none;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+            }
+
+            .menu {
+                float: none;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            li {
+                float: none;
+                /* background: red; */
+                margin-bottom: 5px;
+                padding: 10px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="assets/JavaScript Full.png" alt="">
+        </div>
+
+        <ul class="menu">
+            <li>Home</li>
+            <li>Cursos</li>
+            <li>Contato</li>
+            <li>Escritórios</li>
+        </ul>
+    </div>
+</body>
+
+</html>

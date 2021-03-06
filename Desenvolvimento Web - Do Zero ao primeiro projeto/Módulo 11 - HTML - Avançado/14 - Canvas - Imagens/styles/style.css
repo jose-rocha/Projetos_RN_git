@@ -1,0 +1,10 @@
+#tela{
+    background-color: beige;
+
+    position: relative;
+    overflow: hidden;
+}
+
+img{
+    display: none;
+}

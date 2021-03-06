@@ -1,0 +1,25 @@
+/* *{
+    background-color: green;
+    margin: 0;
+} */
+/* 
+div, header, h2{
+    background-color: green;
+} */
+
+/* #head > p{
+    background-color: green;
+} */
+
+
+/* #head + p{
+    background-color: green;
+} */
+
+#head ~ p{
+    background-color: green;
+}
+
+[width]{
+    background-color: red;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../Módulo 4 - CSS Intermediário/1 - Display/assets/javascript.jpg">
+    <title>8 - Eventos - Parte 3-3</title>
+
+
+</head>
+
+<body>
+
+    <h1 id="t1">Transformando o titulo 1 maisculo.</h1>
+    <h2 id="t2">Transformando o titulo 2 maisculo.</h2>
+
+    <script>
+        let t1 = document.getElementById('t1');
+        let t2 = document.getElementById('t2');
+
+        t1.onclick = colocarEmMaiusculo;
+        t2.onclick = colocarEmMaiusculo;
+
+        function colocarEmMaiusculo() {
+            this.innerHTML = this.innerHTML.toUpperCase();
+        }
+    </script>
+</body>
+
+</html>

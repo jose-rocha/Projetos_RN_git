@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../Módulo 4 - CSS Intermediário/1 - Display/assets/javascript.jpg">
+    <title>7 - Eventos Parte 2/3</title>
+
+    <!-- <script>
+        function h1Click() {
+            console.log('Clicou no h1')
+        }
+    </script> -->
+
+    <style>
+        div {
+            display: inline-block;
+            padding: 20px;
+            font-size: 2rem;
+            background-color: cornflowerblue;
+            color: aliceblue;
+            cursor: pointer;
+        }
+
+        img {
+            width: 200px;
+            margin-bottom: 25px;
+        }
+    </style>
+
+    <script>
+
+
+        function onOver(e) {
+            // console.log('Passou o mouse!');
+
+
+            e.style.backgroundColor = 'red';
+
+        }
+
+        function onOut(e) {
+            e.style.backgroundColor = 'cornflowerblue'
+        }
+    </script>
+</head>
+
+<body onload="console.log('A página Carregou!')">
+    <img src="images/javascript.jpg" alt="JavaScript">
+    <br>
+
+    <div onmouseover="onOver(this)" onmouseout="onOut(this)">Click</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.container{
+    position: relative;
+       width: 740px;
+       height: 460px;
+}
+
+.video{
+    width: 40%;
+}
+
+.mostraControle{
+position: absolute;
+top: 0;
+
+
+width: 507px;
+height:520px;
+text-align: center;}
+
+.btnControls{
+    position: relative;
+    width: 40px;
+    margin: 10px;
+    top: 87%;
+    cursor: pointer;
+}

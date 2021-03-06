@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 95vh;
+/* transform: scale(5); */
+}
+
+.loading{
+    animation:  is-rotating 1s infinite;
+    width: 50px;
+    height: 50px;
+    border: 6px solid #e5e5e5;
+    border-top-color: #51d4db;
+    border-radius: 50%;
+    
+}
+
+/* fazendo a animação acontecer */
+
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+button{  
+    height: 40px;    
+    background-color: #51d4db;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    font-size: 50px;
+}

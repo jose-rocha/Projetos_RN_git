@@ -6,13 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../Módulo 4 - CSS Intermediário/1 - Display/assets/javascript.jpg">
     <title>5 - Modificando Elementos</title>
+
+    <style>
+        .paragrafo {
+            color: red;
+        }
+
+        span {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Titulo</h1>
-    <p class="paragrafo" id="p1">Parágrafo1</p>
-    <p class="paragrafo">Parágrafo2</p>
-    <p class="paragrafo">Parágrafo3</p>
+    <p meuAtt="Meu atributo é: José Rocha" class="paragrafo" id="p1">Parágrafo1
+        <span>Outro Texto</span>
+    </p>
+    <p meuAtt2="meuAtt2" class="paragrafo" id="p2">Parágrafo2
+        <span>Outro Texto</span>
+    </p>
+
+    <p class="paragrafo" id="p3">Parágrafo3</p>
 
     <script src="script.js"></script>
 </body>

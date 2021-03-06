@@ -1,0 +1,54 @@
+li{
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+/* O focus serve recebe o css no qual está focado */
+input:focus{
+    color: red;
+    background-color: royalblue;
+}
+
+li:nth-of-type(even){
+    background-color: beige;
+}
+
+li:nth-of-type(odd){
+    background-color: gray;
+}
+
+/* li:first-child{
+    color: royalblue;
+} */
+
+
+/* li:first-of-type{
+    color: royalblue;
+} */
+
+
+/* li:nth-child(3){
+    color: royalblue;
+} */
+
+/* li:nth-last-child(1){
+    color: royalblue;
+} */
+
+
+/* nth-of-type(2n) é o mesmo que os numeros são dvisiveis por 2 */
+/* li:nth-of-type(2n){
+    color: royalblue;
+} */
+
+/* nth-of-type(odd) é o mesmo que os dizer só os numeros impa*/
+/* li:nth-of-type(odd){
+    color: royalblue;
+} */
+
+/* nth-of-type(even) é o mesmo que os dizer só os numeros pares*/
+/* li:nth-of-type(even){
+    color: royalblue;
+} */
+

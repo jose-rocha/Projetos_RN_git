@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../Módulo 4 - CSS Intermediário/1 - Display/assets/javascript.jpg">
+    <title>5 - Modificando Elementos</title>
+
+    <!-- <script>
+        function h1Click() {
+            console.log('Clicou no h1')
+        }
+    </script> -->
+
+    <script>
+        function changeH1(i) {
+            let h1 = document.getElementsByTagName('h1')[0];
+            h1.innerText = i.value;
+            // console.log(h1[0])
+        }
+
+        function hideH1() {
+            let h1 = document.getElementsByTagName('h1')[0];
+            h1.style.display = 'none';
+        }
+
+
+    </script>
+    <style>
+        div {
+            display: inline-block;
+            padding: 20px;
+            font-size: 2rem;
+            background-color: cornflowerblue;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1 onclick="console.log('Clicou no h1')">Clique em Mim</h1> -->
+    <!-- <h1 onclick="this.style.display = 'none'">Clique em Mim</h1> -->
+    <h1>Clicou fora</h1>
+
+    <!-- <input type="text" onchange="changeH1(this)"> -->
+    <input type="text" oninput="changeH1(this)">
+
+    <br>
+
+    <div onclick="hideH1()">Click</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

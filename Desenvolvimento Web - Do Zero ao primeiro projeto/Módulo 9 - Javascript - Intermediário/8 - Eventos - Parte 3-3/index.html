@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../Módulo 4 - CSS Intermediário/1 - Display/assets/javascript.jpg">
+    <title>8 - Eventos - Parte 3-3</title>
+
+    <script>
+        function loaded() {
+            let t = document.getElementById('titulo');
+            // t.onclick = mudarText;
+
+            t.addEventListener('click', mudarText);
+            t.addEventListener('mouseout', mouseout);
+        }
+
+        function mudarText() {
+            this.innerHTML = 'Mudando o texto com JS';
+        }
+
+        function mouseout() {
+            this.innerHTML = 'Mouse Fora do elemento!';
+        }
+    </script>
+</head>
+
+<body onload="loaded()">
+
+    <h1 id="titulo">Clique</h1>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+p::first-line{
+    color: red;
+}
+p::first-letter{
+    color: blue;
+    font-size: 5rem;
+}
+
+h1::first-letter{
+    color: red;
+    font-size: 5rem;
+}
+
+li{
+    list-style: none;
+}
+
+li::before{
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background-image: url(../Images/javascript.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/* Pseudo selection serve para texto selecionado receber o valor a qual foi estilizado, no caso aqui foi a cor da letra e o fundo */
+p::selection{
+    background-color: yellow;
+    color: red;
+}

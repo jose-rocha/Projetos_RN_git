@@ -1,0 +1,26 @@
+body{
+   
+    background-color: gray;
+}
+
+/* img{
+    width: 420px;
+    transform: rotate(45deg);
+} */
+
+/* img{
+    width: 420px;
+    transform: skew(-45deg);
+} */
+
+img{
+    width: 420px;
+    transform: skew(30deg, 30deg) scale(0.7, 1) ;
+}
+
+div{
+    background-color: red;
+    height: 420px;
+    width: 420px;
+    transform: skew(30deg, 30deg) scale(0.7, 1);
+}

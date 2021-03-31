@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="NodeJS.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Dados das Multas</title>
+</head>
+
+<body>
+    <div class="tb">
+        <table>
+            <thead>
+                <tr>
+                    <th>AIT</th>
+                    <th>CHAPA</th>
+                    <th>NOME</th>
+                    <th>PREFIXO</th>
+                </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                     <td>
+                        <input 
+                        type="text" 
+                        id="inputAit" 
+                        class="inputAit"
+                         onblur="gravarAit()" 
+                         placeholder="CHAPA"
+                         >
+
+                        <div id="resultAit" class="resultAit"></div>
+                    </td>
+
+                    <td>
+                        <input
+                         type="text" 
+                         id="inputChapa"
+                         class="inputChapa" 
+                         onblur="gravarChapa()"
+                        placeholder="CHAPA"
+                         >
+
+                        <div
+                         id="resultChapa" 
+                         class="resultChapa"
+                         >
+                        </div>
+                    </td>
+
+                    <td>
+                        <!-- <input type="text" class="Nome" placeholder="NOME"> -->
+                        <div id="resultNome" class="resultNome">teste</div>
+                    </td>
+
+                    <td>
+                        <input
+                         type="text" 
+                         id="inputPrefixo"
+                         class="Prefixo" 
+                         placeholder="PREFIXO"
+                         onblur="gravarPrefixo()"
+                         >
+                        <div 
+                        id="resultPrefixo" 
+                        class="resultPrefixo"
+                        >
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+        <script src="http://localhost:35729/livereload.js"></script>
+
+        <script src="src/modules/ifDate.js"></script>
+        <script src="src/modules/localStorageAIT.js" ></script>
+        <script src="src/modules/localSTorageChapa.js"></script>
+        <script src="src/modules/localStoragePrefixo.js"></script>
+       
+
+        <!-- <script src="./src/modules/script.js" type="module"></script> -->
+
+</body>
+
+</html>

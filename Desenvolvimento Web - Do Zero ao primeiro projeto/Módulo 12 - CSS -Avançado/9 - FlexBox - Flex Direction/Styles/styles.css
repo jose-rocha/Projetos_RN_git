@@ -1,0 +1,38 @@
+:root{
+
+    padding: 0px;
+    margin: 0px;
+    background-color: gray;
+   
+}
+
+.container{
+    
+    
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    flex-direction: row-reverse;
+    /* flex-direction: column-reverse; */
+    /* float: right; */
+    background-color: rgba(32, 4, 4, 0.534);
+    height: 400px;
+    color: #fff;
+}
+
+.r1{
+    background-color: red;
+}
+
+.r2{
+    background-color: blue;
+}
+
+.r3{
+    background-color: green;
+}
+
+.rect{
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: rgb(112, 103, 103);
+}
+
+/* .resultAit{
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 30px;
+    justify-content: center;
+} */
+input{
+   /* margin: 0px; */
+    border-radius: 5px;
+    border: #428bca solid;
+    padding-left: 5px;
+    font-size: 30px;
+    width: 54%;
+    height: 25px;
+    /* text-align: center; */
+    justify-content: center;
+    font-size: 30PX;
+    /* background-color: red; */
+}
+
+div {
+    font-size: 30px;
+    border: 1px solid #000;
+}
+.edit{
+    display: none ;
+    margin-top: 5px;
+    width: 120px;
+    height: 50px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #428bca;
+    cursor: pointer;
+    color: #ffd;
+    margin-left: 5px 
+    ;
+
+}
+.save{
+    margin-top: 5px;
+    width: 120px;
+    height: 50px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 0px;
+    background-color: green;
+    cursor: pointer;
+    color: #ffd;
+    margin-left: 5px 
+    ;
+
+}
+
+table, .tb{
+    margin-left: 5px;
+    margin-top: 5px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+tbody{
+    text-align: center;
+    justify-content: center;
+}
+
+thead, th{
+    width: 190px;
+    background-color: #31b0d5 ;
+    border: 1px solid ;
+    border-radius: 5px;
+    
+    
+}
+
+
+/* #fnome{ 
+    width: 220px;
+    margin-left: 7px;
+} */
+
+/* th:last-child{
+    width: 170px;
+} */

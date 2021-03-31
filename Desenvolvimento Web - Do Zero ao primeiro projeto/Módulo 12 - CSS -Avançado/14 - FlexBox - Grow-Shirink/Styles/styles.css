@@ -1,0 +1,56 @@
+:root{
+
+    padding: 0px;
+    margin: 0px;
+    background-color: gray;
+   
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+    /* align-content: space-around; */
+
+    background-color: rgba(32, 4, 4, 0.534);
+    height: 400px;
+    color: #fff;
+}
+
+.r1{
+    background-color: red;
+    flex-grow: 1;
+}
+
+.r2{
+    background-color: blue;
+    flex-grow: 1;
+    /* O flex-grow: 1; ao aumentar o tamanho da tela o elemento aumenta junto, ou seja o tamanho fica maior proporcional a tela*/
+    flex-shrink: 0;
+}
+
+.r3{
+    background-color: green;
+    flex-grow: 1;
+
+    /* flex-shrink: 0; */
+    /* O flex-shrink: 0; não permite ao diminuir o tamanho da tela o elemento diminuir, ou seja o tamanho fica fixo*/
+}
+
+.rect{
+    /* width: 150px; */
+    height: 150px;
+  
+
+}
+
+#mudaPosition{
+    cursor: pointer;
+}

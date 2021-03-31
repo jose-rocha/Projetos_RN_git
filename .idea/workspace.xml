@@ -1,75 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="076daa1b-9b27-4ab3-9ec5-63d889ff2ba4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/.buckconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/.flowconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/.prettierrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/.watchmanconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/__tests__/App-test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/BUCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/build_defs.bzl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/debug.keystore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/debug/java/com/persondrawnav/ReactNativeFlipper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/main/java/com/persondrawnav/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/main/java/com/persondrawnav/MainApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/android/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/ios/PersonDrawNav-tvOS/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/ios/PersonDrawNav-tvOSTests/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/ios/PersonDrawNav.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/ios/PersonDrawNav.xcodeproj/xcshareddata/xcschemes/PersonDrawNav-tvOS.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/ios/PersonDrawNav.xcodeproj/xcshareddata/xcschemes/PersonDrawNav.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/ios/PersonDrawNav/AppDelegate.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/ios/PersonDrawNav/AppDelegate.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/ios/PersonDrawNav/Base.lproj/LaunchScreen.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/ios/PersonDrawNav/Images.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/ios/PersonDrawNav/Images.xcassets/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/ios/PersonDrawNav/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/ios/PersonDrawNav/main.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/ios/PersonDrawNavTests/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/ios/PersonDrawNavTests/PersonDrawNavTests.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/ios/Podfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/metro.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDrawNav/yarn.lock" beforeDir="false" />
-    </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="076daa1b-9b27-4ab3-9ec5-63d889ff2ba4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_29_x86" />
   <component name="FavoritesManager">
     <favorites_list name="Projetos_RN" />
   </component>
@@ -77,22 +14,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Yrie2dPEar8uq9DvtjePLSVBiB" />
-  <component name="PropertiesComponent">
-    <property name="android.sdk.path" value="$PROJECT_DIR$/../Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDraNav/android" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunManager" selected="Gradle./home/jose-rocha/Pojetos_RN_git/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDraNav/android/build.gradle">
     <configuration name="/home/jose-rocha/Pojetos_RN_git/AULAS RN BONIEKY/Personalização do DrawerNavigator/PersonDraNav/android/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -153,12 +84,11 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

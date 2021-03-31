@@ -1,0 +1,31 @@
+:root{
+   
+    background-color: gray;
+    --var-color: aqua;
+    --var-font: 26px;
+
+    --square-size: 200px;
+}
+
+.p2{
+    color: var(--var-color);
+    font-size: var(--var-font);
+}
+
+.p3{
+    color: var(--var_color);
+
+    font-size: 14px;
+}
+
+.sqr1{
+    width: var(--square-size);
+    height: var(--square-size);
+    background-color: blue;
+}
+
+.sqr2{
+    width: var(--square-size);
+    height: var(--square-size);
+    background-color: rgb(153, 40, 40);
+}

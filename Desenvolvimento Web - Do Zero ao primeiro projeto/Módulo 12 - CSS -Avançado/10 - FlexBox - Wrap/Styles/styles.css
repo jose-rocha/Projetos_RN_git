@@ -1,0 +1,34 @@
+:root{
+
+    padding: 0px;
+    margin: 0px;
+    background-color: gray;
+   
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    background-color: rgba(32, 4, 4, 0.534);
+    height: 400px;
+    color: #fff;
+}
+
+.r1{
+    background-color: red;
+}
+
+.r2{
+    background-color: blue;
+}
+
+.r3{
+    background-color: green;
+}
+
+.rect{
+    width: 150px;
+    height: 100px;
+}

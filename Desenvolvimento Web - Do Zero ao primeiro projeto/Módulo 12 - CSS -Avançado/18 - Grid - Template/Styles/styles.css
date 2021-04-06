@@ -1,0 +1,42 @@
+:root {
+  padding: 0px;
+  margin: 0px;
+  background-color: gray;
+}
+
+.container {
+  color: white;
+  display: grid;
+  padding: 10px;
+  background-color: white;
+  /* grid-template-rows: auto auto; cada auto grid-template-rows: siginifica uma linha */
+  /* grid-template-columns: auto auto auto;  cada auto grid-template-columns: siginifica uma coluna  */
+
+  /* grid-template-rows: auto auto;
+  grid-template-columns: 15% 55% 30%;  */
+
+ /* grid-template: auto auto / 15% 55% 30%;  essa linha é mesmo que as duas dde cima */
+  grid-template: auto auto / 1fr 2fr 1fr; /* essa linha é mesmo que a de cima, o fr segnifica fração */
+
+}
+
+.r1 {
+  background-color: red;
+  
+}
+
+.r2 {
+  background-color: blue;
+  color: white;
+ 
+}
+
+.r3 {
+  background-color: green;
+  cursor: pointer;
+}
+
+/* .rect {
+  width: 150px;
+  height: 150px;
+} */

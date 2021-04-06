@@ -11,15 +11,15 @@
 
 
 
-    if (checkbox.checked == '0') {
-        texto.innerHTML = 'Pedente';
-        texto.style.color = 'red';
+    // if (checkbox.checked == '0') {
+    //     texto.innerHTML = 'Pedente';
+    //     texto.style.color = 'red';
 
-    } else {
-        texto.innerHTML = 'Ok';
-        texto.style.color = 'green';
+    // } else {
+    //     texto.innerHTML = 'Ok';
+    //     texto.style.color = 'green';
 
-    }
+    // }
 
     checkbox.addEventListener('click', function () {
         if (checkbox.checked == '0') {

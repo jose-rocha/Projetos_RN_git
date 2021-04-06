@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(20, 20, 49);
+}
+@keyframes mudaCor {
+  from {
+    background-color: blueviolet;
+  }
+  to {
+    background-color: brown;
+  }
+}
+
+.box {
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  border: solid;
+  animation-name: mudaCor;
+  animation-duration: 3s;
+}

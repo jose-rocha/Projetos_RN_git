@@ -1,0 +1,35 @@
+:root {
+  padding: 0px;
+  margin: 0px;
+  background-color: gray;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-around;
+   background-color: violet;
+   padding-top: 15px;padding-bottom: 15px;
+}
+
+.r1 {
+  background-color: red;
+  
+}
+
+.r2 {
+  background-color: blue;
+  color: white;
+ 
+}
+
+.r3 {
+  background-color: green;
+  cursor: pointer;
+}
+
+.rect {
+  width: 150px;
+  height: 150px;
+}

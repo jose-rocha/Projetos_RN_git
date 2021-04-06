@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas em JS</title>
+    <style>
+        body{
+            background-color: rgb(0, 153, 255);
+            
+        }
+
+        .horas{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+
+        }
+        #result{
+            display: flex;
+            border: 1px solid red;
+            border-radius: 50%;
+            height: 500px;
+            width:90%;
+            align-items: center;
+            background-color: chocolate;
+            justify-content: center;
+            text-align: center;
+            font-size: 60px;
+            color: rgb(37, 49, 45);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="horas" >
+        <h1>Horas em JS</h1>
+        <div id="result"></div>
+    </div>
+
+    <p id="p"> texto </p>
+
+    <script>
+        let result = document.getElementById('result');
+        let p = document.getElementById('p');
+      
+        
+
+     p.addEventListener('mouseover', ()=>{
+         p.style.textDecoration = 'underline red'
+         p.style.cursor = 'pointer'
+     });
+
+
+    p.addEventListener('mouseout', ()=>{
+         p.style.textDecoration = 'none';
+     })
+
+
+
+
+         setInterval(
+        async   () => {
+
+            let temp = new Date();
+            let Hour = temp.getHours();
+            let minutes = temp.getMinutes();
+            let seconds =  temp.getSeconds();
+
+
+            if (seconds < 10) {
+                seconds = '0' + seconds;
+            }
+            if (minutes < 10) {
+                minutes = '0' + minutes;
+            }
+
+        let full =  `${Hour}:${minutes}:${seconds}`;
+            // console.log(full)
+
+            result.innerHTML = `Hora: ${full}`
+        }
+        , 1000);
+    </script>
+</body>
+</html>

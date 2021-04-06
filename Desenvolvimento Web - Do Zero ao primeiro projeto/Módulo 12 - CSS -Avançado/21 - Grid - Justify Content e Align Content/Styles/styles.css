@@ -1,0 +1,44 @@
+:root {
+  padding: 0px;
+  margin: 0px;
+  background-color: gray;
+}
+
+.container {
+  height: 500px;
+  color: white;
+  display: grid;
+  padding: 10px;
+  background-color: white;
+ 
+ grid-template: auto auto / auto auto auto;
+/* 
+ justify-items: center;
+ align-items: center; */
+
+ justify-content: center;
+ align-content: stretch;
+
+  grid-gap: 15px;
+}
+
+.r1 {
+  background-color: red;
+  
+}
+
+.r2 {
+  background-color: blue;
+  color: white;
+ 
+}
+
+.r3 {
+  background-color: green;
+  cursor: pointer;
+}
+
+.rect {
+  width: 100px;
+  /* height: 300px; */
+}

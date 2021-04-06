@@ -20,7 +20,8 @@ body{
 
 /* fazendo a animação acontecer */
 
-@keyframes is-rotating {
+@keyframes is-rotating
+ {
     to {
         transform: rotate(1turn);
     }

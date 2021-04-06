@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+
+    background-color:rgb(20, 20, 49);
+}
+
+.elemento{ 
+    /* display: flex;  */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+  
+  
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: blanchedalmond;
+    width: 45vh;
+    height: 30vh;
+    padding: 15px 40px 60px 30px;
+    border: 1px solid cornflowerblue;
+    
+    border-radius: 8px;
+    
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+img{
+    padding-top: -10px;
+    margin-top: -10px;    
+    width: 23%;
+    height: 100%;
+    /* position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+    
+}
+
+
+
+label{
+    margin-top: -5px;
+    margin-bottom: -10px;
+    font-weight: bold;
+    color: rgb(20, 20, 49);
+}
+
+input{
+    height: 30px;
+    width: 100%; 
+    border-radius: 5px;
+    border: none; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+}
+button{
+    width: 46.5vh;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: aqua;
+    color: rgb(20, 20, 49);
+    font-weight: bold;
+    
+}
+
+a{
+    margin-top: 40px;
+    margin-bottom: -60px;
+    text-align: center;
+}

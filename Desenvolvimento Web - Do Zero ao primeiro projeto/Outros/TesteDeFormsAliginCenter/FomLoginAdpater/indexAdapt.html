@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <title>Teste De Align</title>
+    
+   <style>
+       body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(11, 21, 54); */
+    background-color: rgb(20, 20, 49);
+    height: 100vh;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 30%;
+    height: 25%;
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 8px;
+    border: 1px solid blueviolet;
+    
+   
+}
+
+
+
+label{
+    color: blueviolet;
+    font-size: 25px;
+    
+
+}
+
+input{
+    height: 25px;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    border: 2px solid blueviolet;
+    padding-left: 5px;
+    font-size: 15px;
+}
+button{
+    margin-top: 2%;
+    height: 35px;
+    border-radius: 5px;
+    /* border-color: blueviolet; */
+    border: 2px solid blueviolet;
+    font-size: 25px;
+    
+    background-color: blueviolet;
+    /* color: blueviolet; */
+    color: rgb(221, 208, 208); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+cursor: pointer;
+}
+
+@media screen and ( max-width:475px)   {
+    form{
+        width: 50%;
+        height: 25%; 
+        
+    }
+}
+
+   </style>
+</head>
+<body>
+    <div class="container" >
+      
+            <form action="">
+                <label for="">User</label>
+                <input type="text" placeholder="Digite aqui seu usuário">
+
+                <label for="">Password</label>
+                <input type="text" placeholder="Digite aqui sua senha">
+
+                <button>Entrar</button>
+            </form>
+       
+        
+    </div>
+</body>
+</html>

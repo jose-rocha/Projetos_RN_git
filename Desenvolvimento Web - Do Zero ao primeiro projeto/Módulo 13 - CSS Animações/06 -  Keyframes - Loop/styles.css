@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(20, 20, 49);
+}
+@keyframes mudaCor {
+  /* from {
+    background-color: blueviolet;
+  }
+  to {
+    background-color: brown;
+  } */
+  0% {
+    background-color: blueviolet;
+  }
+  25% {
+    background-color: chartreuse;
+    width: 400px;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: #f3f3;
+    width: 300px;
+  }
+  100% {
+    background-color: brown;
+  }
+}
+
+.box {
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  border: solid;
+  animation-name: mudaCor;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}

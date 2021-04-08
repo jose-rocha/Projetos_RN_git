@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>04 - Conectando o Firebase com JS</title>
+</head>
+<body>
+    
+<div id="nome"></div>
+    <!-- Conectando com o firebase -->  
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+
+<!-- <script>
+var firebaseConfig = {
+    apiKey: "AIzaSyCfFRQsBovQwTjUjy3M7FSYUA5AjIYWO78",
+    authDomain: "app-fire-eca10.firebaseapp.com",
+    databaseURL: "https://app-fire-eca10.firebaseio.com",
+    projectId: "app-fire-eca10",
+    storageBucket: "app-fire-eca10.appspot.com",
+    messagingSenderId: "498957835456",
+    appId: "1:498957835456:web:86a1b89619d3c820aa6125",
+    measurementId: "G-6K3RYLKTZP"
+  }; 
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+  let db = firebase.firestore();
+  console.log(db)
+
+  db.collection("TurmaA").get()
+  .then((snapshot)=>{
+    snapshot.forEach((doc) => {
+      console.log(doc)
+    });
+  });
+
+  
+</script> -->
+
+
+
+
+    <script src="Scripts/app.js" ></script>
+</body>
+</html>

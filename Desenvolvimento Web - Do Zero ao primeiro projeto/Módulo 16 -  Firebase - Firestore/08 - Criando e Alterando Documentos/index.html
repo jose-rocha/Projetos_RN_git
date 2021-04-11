@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>08 - Criando e Alterando Documentos</title>
+</head>
+<body>
+
+    <!-- Essa página cria Nome e SobreNome no Firestore -->
+    <div id="container">
+        <div id="nome" style="color: aliceblue;">
+            <ul>
+                <li>Tsete</li>
+                <li>Tsete</li>
+                <li>Tsete</li>
+            </ul>
+        </div>
+        <form action="">
+            <label for="">Digite seu nome</label>
+            <input type="text" class="inpNome" id="inpNome">
+
+            <label for="">Digite seu sobrenome</label>
+            <input type="text" class="inpSobrenome" id="inpSobrenome">
+            
+            <label for="">Digite a nota 1</label>
+            <input type="text" class="nota1" id="nota1">
+
+            <label for="">Digite a nota 2</label>
+            <input type="text" class="nota2" id="nota2">
+
+            <button>Cadastrar Dados</button>
+
+        </form>
+
+    </div>
+    
+
+
+
+    <!-- Conectando com o firebase -->  
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase.js"></script>
+    <script src="Scripts/app.js" ></script>
+</body>
+</html>

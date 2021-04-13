@@ -1,3 +1,4 @@
+let ID = document.getElementById('ID');
 let inpNome = document.getElementById('inpNome');
 let inpSobrenome = document.getElementById('inpSobrenome');
 let nota1 = document.getElementById('nota1');
@@ -48,23 +49,24 @@ forrm.addEventListener('submit', (e) => {
   e.preventDefault();
   let TurmaA = 'TurmaA';
 
-  let numAleatorio = Math.round(Math.random() * 1000);
-  let num = 5;
-
-  let sum = numAleatorio + num;
-  console.log(sum)
 
 
-  db.collection(TurmaA).doc(sum.toLocaleString()).set({
+
+  db.collection(TurmaA).doc(ID.value).update({
+
+
     Nome: inpNome.value,
     Sobrenome: inpSobrenome.value,
-    Notas: { Nota1: nota1.value, Nota2: nota2.value }
+    // Notas: { Nota1: nota1.value, Nota2: nota2.value },
+
 
   }).then(() => {
     console.log('Documento inserido com sucesso!')
   }).catch(err => {
-    alert(err);
+    console.log(err);
   })
+
+
 
 }, false)
 

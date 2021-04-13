@@ -1,4 +1,5 @@
 let nome = document.getElementById('nome');
+let nome2 = document.getElementById('nome2');
 
 
 var firebaseConfig = {
@@ -10,30 +11,34 @@ var firebaseConfig = {
   messagingSenderId: "498957835456",
   appId: "1:498957835456:web:86a1b89619d3c820aa6125",
   measurementId: "G-6K3RYLKTZP"
-}; 
+};
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
 let db = firebase.firestore();
 // console.log(db)
 
-db.collection("TurmaA").get().then((snapshot)=>{
+db.collection("TurmaA").where('Nome', '>', 'José').where('Nome', '<=', 'Mario').get()
+  .then((snapshot) => {
 
-  snapshot.forEach( (doc) => {
+    snapshot.forEach((doc) => {
 
-    let nomeAluno = doc.data().Nome;
-    let sobreNomeAluno = doc.data().Sobrenome;
-    
-    nome.innerHTML = `O nome do Aluno é ${nomeAluno} e o sobrenome é ${sobreNomeAluno}, e esses dados estão vindo do Firebase/Firestore.`
-    // console.log(doc.data().Notas)
+      let nomeAluno = doc.data().Nome;
+
+      let sobreNomeAluno = doc.data().Sobrenome;
+
+      nome.innerHTML = `O nome do Aluno é ${nomeAluno} e o sobrenome é ${sobreNomeAluno}, e esses dados estão vindo do Firebase/Firestore.`
+
+      nome2.innerHTML = `O nome do Aluno é ${nomeAluno} e o sobrenome é ${sobreNomeAluno}, e esses dados estão vindo do Firebase/Firestore.`
+      console.log(nomeAluno)
+
+    });
 
   });
 
-});
 
+// let docRef = db.collection('TurmaA').doc('tlCkTfeVuByxU0PmpvWN');
 
-let docRef = db.collection('TurmaA').doc('tlCkTfeVuByxU0PmpvWN');
-
-docRef.get().then((doc)=>{
-  console.log(doc.data())
-})
+// docRef.get().then((doc) => {
+//   console.log(doc.data())
+// })

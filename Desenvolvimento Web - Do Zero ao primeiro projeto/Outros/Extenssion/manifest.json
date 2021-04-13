@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "Modo black",
+    "description": "Muda o  background da página",
+    "author": "José Rocha",
+    "browser_action": {
+        "default_title": "Modo B",
+        "default_popup": "index.html"
+    }
+}

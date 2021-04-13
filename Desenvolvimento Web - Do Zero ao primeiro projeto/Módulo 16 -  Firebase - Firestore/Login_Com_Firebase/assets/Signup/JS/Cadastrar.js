@@ -1,4 +1,6 @@
 console.log('Cadastrar');
+let form = document.querySelector('form');
+// console.log(form)
 let email = document.getElementById('email');
 // console.log(email)
 let password = document.getElementById('password');
@@ -20,4 +22,22 @@ firebase.initializeApp(firebaseConfig);
 
 let db = firebase.firestore();
 
+// Cadastrando usuário Firebase Authentiction
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let authenticator = firebase.auth();
 
+    let emailValue = email.value;
+    let passValue = password.value;
+
+    authenticator.createUserWithEmailAndPassword(emailValue, passValue)
+        .then((userCadastrado) => {
+            console.log(`Usuário Cadstrado com sucesso `, userCadastrado)
+        }).catch((err) => {
+            let errCode = err.code;
+            let errMsg = err.message;
+            console.log(errCode)
+            console.log(errMsg)
+        })
+
+}, false)

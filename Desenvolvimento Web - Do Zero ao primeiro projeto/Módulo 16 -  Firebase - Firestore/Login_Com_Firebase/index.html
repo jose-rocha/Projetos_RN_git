@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/Styles/styles.css">
-    <link rel="icon" href="assets/images/">
+    <link rel="icon" href="assets/images/favicon.ico">
     <title>Login com Firebase</title>
 </head>
 <body>
         <div id="container" class="container">
+            
                <form action="">
+                <b class="titleLogin">Login</b>
                    <label for="">User</label>
-                   <input type="text">
+                   <input type="text" class="email">
 
                    <label for="">Password</label>
-                   <input type="text" >
+                   <input type="password" class="password" >
 
                    <button>Entrar</button>
 
+                   <b class="errMsg">Usuário ou senha inválido</b>
             
                         <a href="assets/Signup/index.html">Ainda não é cadastrado?</a>
                     
@@ -27,6 +30,7 @@
     
     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
-    <script src="assets/JS/App.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+    <script src="JS/Login.js"></script>
 </body>
 </html>

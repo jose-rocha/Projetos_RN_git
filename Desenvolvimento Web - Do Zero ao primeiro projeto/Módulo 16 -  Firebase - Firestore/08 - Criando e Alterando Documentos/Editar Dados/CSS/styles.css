@@ -41,7 +41,7 @@ input {
   height: 7%;
   border-radius: 5px;
   border: 0px;
-  background: rebeccapurple;
+  background-color: rgb(135, 179, 179);
   font-size: 19px;
 }
 
@@ -53,12 +53,11 @@ button {
   border-radius: 5px;
   font-size: 25px;
   cursor: pointer;
-  background: rebeccapurple;
+  background-color: rgb(135, 179, 179);
 }
 
 a {
-  padding-top: 25px;
-  text-decoration: none;
-  color: red;
   text-align: center;
+  text-decoration: none;
+  padding-top: 25px;
 }

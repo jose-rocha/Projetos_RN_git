@@ -1,0 +1,14 @@
+com/firstgit/MainActivity.java
+ com.firstgit.MainActivity
+com/firstgit/ReactNativeFlipper.java
+ com.firstgit.ReactNativeFlipper
+ com.firstgit.ReactNativeFlipper$1
+ com.firstgit.ReactNativeFlipper$2
+ com.firstgit.ReactNativeFlipper$2$1
+com/firstgit/BuildConfig.java
+ com.firstgit.BuildConfig
+com/firstgit/MainApplication.java
+ com.firstgit.MainApplication
+ com.firstgit.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
